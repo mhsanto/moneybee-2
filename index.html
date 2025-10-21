@@ -1839,6 +1839,159 @@
       </div>
     </section>
 
+    <!-- Blog Carousel Section -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-gray-100 rounded-lg py-12 px-6">
+          <!-- Header with Title and Navigation -->
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-black">Blog</h2>
+            <div class="flex space-x-2">
+              <button
+                id="blog-prev-btn"
+                class="w-10 h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                id="blog-next-btn"
+                class="w-10 h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel Container -->
+          <div class="overflow-hidden">
+            <div id="blog-carousel" class="flex space-x-6 pb-4">
+              <!-- Blog Card 1 -->
+              <div class="flex-shrink-0 w-[280px] rounded-lg overflow-hidden">
+                <img
+                  src="./assets/images/person/mask-man.png"
+                  alt="Person preparing/serving food"
+                  class="w-full h-64 object-contain"
+                />
+                <div class="pt-2">
+                  <h3 class="text-sm font-bold mb-2 text-black">
+                    Stay Smart, Stay Financially Fit.
+                  </h3>
+                  <p class="text-gray-600 text-xs">
+                    Explore expert tips, real stories, and the latest insights
+                    to improve your financial health and make better money
+                    decisions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Blog Card 2 -->
+              <div class="flex-shrink-0 w-[280px] rounded-lg overflow-hidden">
+                <img
+                  src="./assets/images/person/mask-man.png"
+                  alt="Malaysian Ringgit banknotes"
+                  class="w-full h-64 object-contain"
+                />
+                <div class="pt-2">
+                  <h3 class="text-sm font-bold mb-2 text-black">
+                    Stay Smart, Stay Financially Fit.
+                  </h3>
+                  <p class="text-gray-600 text-xs">
+                    Explore expert tips, real stories, and the latest insights
+                    to improve your financial health and make better money
+                    decisions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Blog Card 3 -->
+              <div class="flex-shrink-0 w-[280px] rounded-lg overflow-hidden">
+                <img
+                  src="./assets/images/person/mask-man.png"
+                  alt="Diverse group of people smiling"
+                  class="w-full h-64 object-contain"
+                />
+                <div class="pt-2">
+                  <h3 class="text-sm font-bold mb-2 text-black">
+                    Stay Smart, Stay Financially Fit.
+                  </h3>
+                  <p class="text-gray-600 text-xs">
+                    Explore expert tips, real stories, and the latest insights
+                    to improve your financial health and make better money
+                    decisions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Blog Card 4 -->
+              <div class="flex-shrink-0 w-[280px] rounded-lg overflow-hidden">
+                <img
+                  src="./assets/images/person/mask-man.png"
+                  alt="Malaysian flag with silhouettes of people"
+                  class="w-full h-64 object-contain"
+                />
+                <div class="pt-2">
+                  <h3 class="text-sm font-bold mb-2 text-black">
+                    Stay Smart, Stay Financially Fit.
+                  </h3>
+                  <p class="text-gray-600 text-xs">
+                    Explore expert tips, real stories, and the latest insights
+                    to improve your financial health and make better money
+                    decisions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View More Button -->
+          <div class="text-center mt-8">
+            <button
+              class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center"
+            >
+              View More
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
       <nav class="container mx-auto px-4 py-4 space-y-2">
@@ -2135,6 +2288,56 @@
 
       // Auto slide (optional)
       // setInterval(nextSlide, 5000);
+
+      // Blog Carousel
+      let blogCurrentPosition = 0;
+      const blogCarousel = document.getElementById("blog-carousel");
+      const blogPrevBtn = document.getElementById("blog-prev-btn");
+      const blogNextBtn = document.getElementById("blog-next-btn");
+      const cardWidth = 320; // w-[280px] = 320px
+      const gap = 24; // space-x-6 = 24px
+      const scrollAmount = cardWidth + gap;
+      const totalCards = 4;
+      let visibleCards = window.innerWidth >= 1024 ? 3 : 1; // Show 3 on desktop, 1 on mobile
+      let maxPosition = (totalCards - visibleCards) * scrollAmount;
+
+      function updateBlogCarousel() {
+        blogCarousel.style.transform = `translateX(-${blogCurrentPosition}px)`;
+
+        // Disable buttons at limits
+        blogPrevBtn.style.opacity = blogCurrentPosition <= 0 ? "0.5" : "1";
+        blogNextBtn.style.opacity =
+          blogCurrentPosition >= maxPosition ? "0.5" : "1";
+      }
+
+      function blogNext() {
+        if (blogCurrentPosition < maxPosition) {
+          blogCurrentPosition += scrollAmount;
+          updateBlogCarousel();
+        }
+      }
+
+      function blogPrev() {
+        if (blogCurrentPosition > 0) {
+          blogCurrentPosition -= scrollAmount;
+          updateBlogCarousel();
+        }
+      }
+
+      // Event listeners for blog carousel
+      blogNextBtn.addEventListener("click", blogNext);
+      blogPrevBtn.addEventListener("click", blogPrev);
+
+      // Update on window resize
+      window.addEventListener("resize", () => {
+        const newVisibleCards = window.innerWidth >= 1024 ? 3 : 1;
+        if (newVisibleCards !== visibleCards) {
+          visibleCards = newVisibleCards;
+          maxPosition = (totalCards - visibleCards) * scrollAmount;
+          blogCurrentPosition = 0;
+          updateBlogCarousel();
+        }
+      });
     </script>
   </body>
 </html>
