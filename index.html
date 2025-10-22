@@ -23,10 +23,10 @@
         },
       };
     </script>
-    <title>MoneyBee - Tailwind Test</title>
+    <title>MoneyBee</title>
   </head>
   <body class="bg-gray-100 min-h-screen font-manrope">
-    <div class="mx-auto max-w-screen-2xl px-4 px-2 sm:px-0 overflow-hidden">
+    <div class="mx-auto max-w-screen-2xl px-4 px-2 sm:px-0">
       <div class="flex h-16 items-center justify-between">
         <!-- Left: Logo -->
         <a href="#" class="inline-flex items-center gap-2">
@@ -42,7 +42,7 @@
           class="hidden lg:flex items-center justify-center gap-2 font-medium"
         >
           <!-- Our Services dropdown -->
-          <div class="relative group">
+          <div class="relative group dropdown-group">
             <button
               type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
@@ -65,7 +65,7 @@
               </svg>
             </button>
             <ul
-              class="invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
               role="menu"
             >
               <li role="none">
@@ -96,7 +96,7 @@
           </div>
 
           <!-- Financial Health Hub dropdown -->
-          <div class="relative group">
+          <div class="relative group dropdown-group">
             <button
               type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
@@ -119,7 +119,7 @@
               </svg>
             </button>
             <ul
-              class="invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
               role="menu"
             >
               <li role="none">
@@ -150,7 +150,7 @@
           </div>
 
           <!-- For Lenders dropdown -->
-          <div class="relative group">
+          <div class="relative group dropdown-group">
             <button
               type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
@@ -173,7 +173,7 @@
               </svg>
             </button>
             <ul
-              class="invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
               role="menu"
             >
               <li role="none">
@@ -204,7 +204,7 @@
           </div>
 
           <!-- About Us dropdown -->
-          <div class="relative group">
+          <div class="relative group dropdown-group">
             <button
               type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
@@ -227,7 +227,7 @@
               </svg>
             </button>
             <ul
-              class="invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
               role="menu"
             >
               <li role="none">
@@ -265,7 +265,7 @@
           >
 
           <!-- Compliance & Privacy dropdown -->
-          <div class="relative group">
+          <div class="relative group dropdown-group">
             <button
               type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
@@ -288,7 +288,7 @@
               </svg>
             </button>
             <ul
-              class="invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
               role="menu"
             >
               <li role="none">
@@ -373,12 +373,252 @@
         </div>
       </div>
     </div>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
+      <nav class="container mx-auto px-4 py-4 space-y-2">
+        <!-- Our Services (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-services"
+          >
+            <span class="font-medium">Our Services</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-services"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#service-1"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Service 1</a
+            >
+            <a
+              href="#service-2"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Service 2</a
+            >
+            <a
+              href="#service-3"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Service 3</a
+            >
+          </div>
+        </div>
+
+        <!-- Financial Health Hub (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-health"
+          >
+            <span class="font-medium">Financial Health Hub</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-health"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#hub-1"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Hub Item 1</a
+            >
+            <a
+              href="#hub-2"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Hub Item 2</a
+            >
+            <a
+              href="#hub-3"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Hub Item 3</a
+            >
+          </div>
+        </div>
+
+        <!-- For Lenders (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-lenders"
+          >
+            <span class="font-medium">For Lenders</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-lenders"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#lender-1"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Lender Info 1</a
+            >
+            <a
+              href="#lender-2"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Lender Info 2</a
+            >
+            <a
+              href="#lender-3"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Lender Info 3</a
+            >
+          </div>
+        </div>
+
+        <!-- About Us (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-about"
+          >
+            <span class="font-medium">About Us</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-about"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#about-company"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Our Company</a
+            >
+            <a
+              href="#about-team"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Our Team</a
+            >
+            <a
+              href="#about-mission"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Our Mission</a
+            >
+          </div>
+        </div>
+
+        <!-- FAQ (mobile - no dropdown) -->
+        <div class="border-b border-gray-200 pb-2">
+          <a
+            href="#faq"
+            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium"
+            >FAQ</a
+          >
+        </div>
+
+        <!-- Compliance & Privacy (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-compliance"
+          >
+            <span class="font-medium">Compliance & Privacy</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-compliance"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#privacy-policy"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Privacy Policy</a
+            >
+            <a
+              href="#terms"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Terms & Conditions</a
+            >
+            <a
+              href="#compliance"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Compliance</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- Hero Section -->
     <section
       class="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl overflow-hidden mx-auto max-w-screen-2xl px-4 mt-8"
     >
-      <div class="relative z-10 px-4 md:px-8 py-12 md:py-20 lg:py-32 flex min-h-[60vh] md:min-h-[70vh]">
+      <div
+        class="relative z-10 px-4 md:px-8 py-12 md:py-20 lg:py-32 flex md:min-h-[60vh] md:min-h-[70vh]"
+      >
         <div class="max-w-2xl md:absolute md:top-20">
           <h1
             class="text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 md:mb-6 md:leading-relaxed"
@@ -395,7 +635,7 @@
             expert case managers. More than just a loan matcher, we provide
             tailored advice, data protection, and continuous support.
           </p>
-          
+
           <!-- Apply Button (Mobile/Tablet - below description) -->
           <div class="md:hidden mb-6">
             <button
@@ -421,7 +661,9 @@
       </div>
 
       <!-- Feature Cards Grid -->
-      <div class="relative md:absolute md:bottom-4 md:right-4 z-20 px-4 md:px-0 pb-6 md:pb-0 md:max-w-[calc(100%-2rem)]">
+      <div
+        class="relative md:absolute md:bottom-4 md:right-4 z-20 px-4 md:px-0 pb-6 md:pb-0 md:max-w-[calc(100%-2rem)]"
+      >
         <div class="flex flex-col gap-2 md:gap-0">
           <!-- Top Row: 3 articles (2 per row on mobile/tablet) -->
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-0">
@@ -449,7 +691,9 @@
                   </svg>
                 </div>
                 <div class="flex flex-col min-w-0">
-                  <h3 class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate">
+                  <h3
+                    class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate"
+                  >
                     Instant Loan Matching
                   </h3>
                   <p class="text-[9px] md:text-xs text-white line-clamp-2">
@@ -495,7 +739,9 @@
                   </svg>
                 </div>
                 <div class="flex flex-col min-w-0">
-                  <h3 class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate">
+                  <h3
+                    class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate"
+                  >
                     Safe & Compliant
                   </h3>
                   <p class="text-[9px] md:text-xs text-white line-clamp-2">
@@ -569,7 +815,9 @@
                   </svg>
                 </div>
                 <div class="flex flex-col min-w-0 md:w-full">
-                  <h3 class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate">
+                  <h3
+                    class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate"
+                  >
                     Hybrid Support
                   </h3>
                   <p class="text-[9px] md:text-xs text-white line-clamp-2">
@@ -578,7 +826,7 @@
                 </div>
               </div>
             </article>
-                 <article
+            <article
               class="bg-black/30 backdrop-blur-sm p-3 shadow-sm hover:shadow-md transition"
             >
               <div class="flex items-center gap-2">
@@ -599,7 +847,7 @@
                     />
                   </svg>
                 </div>
-                <div class="flex flex-col ">
+                <div class="flex flex-col">
                   <h3 class="font-semibold text-white text-xs mb-1">
                     Financial Health Hub
                   </h3>
@@ -654,7 +902,6 @@
           </div>
 
           <!-- Bottom Row: 2 articles -->
-        
         </div>
       </div>
 
@@ -1071,113 +1318,120 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
           <!-- Left Column -->
-          <div class="py-12 flex flex-col justify-between h-full items-start">
-            <h2 class="text-4xl font-bold text-black mb-8">
-              Trusted Regionally, Committed Locally
-            </h2>
-            <ul class="space-y-6">
-              <li class="flex items-center">
-                <div
-                  class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
-                >
-                  <svg
-                    class="w-5 h-5 text-black"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 text-lg"
-                  >10+ years of lending expertise across Asia</span
-                >
-              </li>
-              <li class="flex items-center">
-                <div
-                  class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
-                >
-                  <svg
-                    class="w-5 h-5 text-black"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
-                    ></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 text-lg"
-                  >RM200 million+ loan applications processed regionally</span
-                >
-              </li>
-              <li class="flex items-center">
-                <div
-                  class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
-                >
-                  <svg
-                    class="w-5 h-5 text-black"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                    ></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 text-lg"
-                  >Partnered with licensed Malaysian banks & moneylenders</span
-                >
-              </li>
-              <li class="flex items-center">
-                <div
-                  class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
-                >
-                  <svg
-                    class="w-5 h-5 text-black"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 21v-4.25L21 3v4.25z"
-                    ></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 text-lg"
-                  >First platform in Malaysia to introduce Case Manager
-                  post-loan support</span
-                >
-              </li>
-            </ul>
-            <button
-              class="mt-8 bg-yellow-400 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-500 transition text-lg"
+          <div
+            class=" flex flex-col justify-between h-full items-start relative"
+          >
+            <div
+              class="bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-8 border border-white/20  flex flex-col h-full justify-between items-start "
             >
-              Learn More
-            </button>
+              <h2 class="text-4xl font-bold text-black mb-8">
+                Trusted Regionally, Committed Locally
+              </h2>
+              <ul class="space-y-6">
+                <li class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5 text-black"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 text-lg"
+                    >10+ years of lending expertise across Asia</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5 text-black"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 text-lg"
+                    >RM200 million+ loan applications processed regionally</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5 text-black"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 text-lg"
+                    >Partnered with licensed Malaysian banks &
+                    moneylenders</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-yellow-400 rounded-sm flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5 text-black"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 21v-4.25L21 3v4.25z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 text-lg"
+                    >First platform in Malaysia to introduce Case Manager
+                    post-loan support</span
+                  >
+                </li>
+              </ul>
+              <button
+                class="mt-8 bg-yellow-400 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-500 transition text-lg"
+              >
+                Learn More
+              </button>
+            </div>
           </div>
           <!-- Right Column -->
-          <div>
+          <div class="h-full ">
             <img
               src="./assets/images/person/suit-guy.png"
               alt="Professional man using smartphone"
-              class="w-full h-auto rounded-lg shadow-lg"
+              class="w-full h-full object-contain rounded-lg "
             />
           </div>
         </div>
@@ -1341,607 +1595,628 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="py-16 bg-gradient-to-b from-blue-100 to-white">
-      <div class="max-w-screen-2xl mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-            Hear From Our Happy Borrowers
-          </h2>
-        </div>
-        <div class="relative">
-          <!-- Carousel Container -->
-          <div
-            class="overflow-hidden rounded-lg h-[350px] md:h-[400px] flex items-center"
-          >
+ <section
+  class="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-b from-blue-100 to-white"
+>
+  <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8 sm:mb-10 md:mb-12">
+      <h2
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 sm:mb-4 px-4"
+      >
+        Hear From Our Happy Borrowers
+      </h2>
+    </div>
+    <div class="relative">
+      <!-- Carousel Container -->
+      <div
+        class="overflow-hidden rounded-lg h-auto min-h-[450px] sm:min-h-[400px] md:min-h-[380px] lg:min-h-[420px] flex items-center"
+      >
+        <div
+          id="testimonial-carousel"
+          class="flex transition-transform duration-500 ease-in-out w-full"
+        >
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0 px-2 sm:px-0">
             <div
-              id="testimonial-carousel"
-              class="flex transition-transform duration-500 ease-in-out"
+              class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 items-stretch"
             >
-              <!-- Slide 1 -->
-              <div class="w-full flex-shrink-0">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <!-- Card 1 -->
+              <!-- Card 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                <div class="flex flex-col sm:flex-row h-full">
+                  <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
                   <div
-                    class="bg-white p-6 rounded-lg shadow-lg min-h-[250px] md:min-h-[300px]"
+                    class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
                   >
-                    <div class="flex flex-col md:flex-row h-full">
-                      <!-- Left Section: Full Height Photo -->
-                      <div class="md:w-2/5 flex-shrink-0 mb-4 md:mb-0 md:pr-4">
-                        <img
-                          src="./assets/images/person/hijab-lady-2.png"
-                          alt="Elizabeth"
-                          class="w-full h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="md:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-3">
-                          <h3
-                            class="text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Elizabeth
-                          </h3>
-                          <span
-                            class="text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div class="flex items-center justify-between mb-4">
-                          <div class="flex">
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-sm text-gray-500">October 25</p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p class="text-gray-700 mb-3 text-base md:text-lg">
-                            "I needed a quick personal loan to handle medical
-                            expenses. The AI matched me with the best option in
-                            seconds, and the staff explained everything
-                            clearly."
-                          </p>
-                          <p class="text-sm text-gray-500">
-                            Kuala Lumpur, 34, Executive
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    <img
+                      src="./assets/images/person/hijab-lady-2.png"
+                      alt="Elizabeth"
+                      class="w-full h-48 sm:h-full object-cover rounded-lg"
+                    />
                   </div>
-                  <!-- Card 2 -->
-                  <div
-                    class="bg-white p-6 rounded-lg shadow-lg min-h-[250px] md:min-h-[300px]"
-                  >
-                    <div class="flex flex-col md:flex-row h-full">
-                      <!-- Left Section: Full Height Photo -->
-                      <div class="md:w-2/5 flex-shrink-0 mb-4 md:mb-0 md:pr-4">
-                        <img
-                          src="./assets/images/person/yuan.png"
-                          alt="Yuan"
-                          class="w-full h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="md:w-3/5 flex flex-col justify-between h-full"
+                  <!-- Right Section: Three Rows -->
+                  <div class="sm:w-3/5 flex flex-col justify-between h-full">
+                    <!-- First Row: Name and Comma Icon -->
+                    <div class="flex items-center mb-2 sm:mb-3">
+                      <h3
+                        class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
                       >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-3">
-                          <h3
-                            class="text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Yuan
-                          </h3>
-                          <span
-                            class="text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div class="flex items-center justify-between mb-4">
-                          <div class="flex">
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-sm text-gray-500">June 19, 2024</p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p class="text-gray-700 mb-3 text-base md:text-lg">
-                            "I needed a quick personal loan to handle medical
-                            expenses. The AI matched me with the best option in
-                            seconds, and the staff explained everything
-                            clearly."
-                          </p>
-                          <p class="text-sm text-gray-500">
-                            Kuala Lumpur, 34, Executive
-                          </p>
-                        </div>
+                        Elizabeth
+                      </h3>
+                      <span
+                        class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
+                        >,</span
+                      >
+                    </div>
+                    <!-- Second Row: Stars and Date -->
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                      <div class="flex gap-0.5 sm:gap-1">
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
                       </div>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        October 25
+                      </p>
+                    </div>
+                    <!-- Third Row: Testimonial and Details -->
+                    <div>
+                      <p
+                        class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                      >
+                        "I needed a quick personal loan to handle medical
+                        expenses. The AI matched me with the best option in
+                        seconds, and the staff explained everything clearly."
+                      </p>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        Kuala Lumpur, 34, Executive
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Slide 2 -->
-              <div class="w-full flex-shrink-0">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <!-- Card 3 -->
+              <!-- Card 2 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                <div class="flex flex-col sm:flex-row h-full">
+                  <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
                   <div
-                    class="bg-white p-6 rounded-lg shadow-lg min-h-[250px] md:min-h-[300px]"
+                    class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
                   >
-                    <div class="flex flex-col md:flex-row h-full">
-                      <!-- Left Section: Full Height Photo -->
-                      <div class="md:w-2/5 flex-shrink-0 mb-4 md:mb-0 md:pr-4">
-                        <img
-                          src="./assets/images/person/suit-guy.png"
-                          alt="Muhammad Ali"
-                          class="w-full h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="md:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-3">
-                          <h3
-                            class="text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Muhammad Ali
-                          </h3>
-                          <span
-                            class="text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div class="flex items-center justify-between mb-4">
-                          <div class="flex">
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-sm text-gray-500">August 2023</p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p class="text-gray-700 mb-3 text-base md:text-lg">
-                            "MoneyBee helped me secure funding for my startup.
-                            The platform is user-friendly and the customer
-                            support is excellent."
-                          </p>
-                          <p class="text-sm text-gray-500">
-                            Johor, 42, Business Owner
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    <img
+                      src="./assets/images/person/yuan.png"
+                      alt="Yuan"
+                      class="w-full h-48 sm:h-full object-cover rounded-lg"
+                    />
                   </div>
-                  <!-- Card 4 -->
-                  <div
-                    class="bg-white p-6 rounded-lg shadow-lg min-h-[250px] md:min-h-[300px]"
-                  >
-                    <div class="flex flex-col md:flex-row h-full">
-                      <!-- Left Section: Full Height Photo -->
-                      <div class="md:w-2/5 flex-shrink-0 mb-4 md:mb-0 md:pr-4">
-                        <img
-                          src="./assets/images/person/hijab-lady.png"
-                          alt="Nurul Huda"
-                          class="w-full h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="md:w-3/5 flex flex-col justify-between h-full"
+                  <!-- Right Section: Three Rows -->
+                  <div class="sm:w-3/5 flex flex-col justify-between h-full">
+                    <!-- First Row: Name and Comma Icon -->
+                    <div class="flex items-center mb-2 sm:mb-3">
+                      <h3
+                        class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
                       >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-3">
-                          <h3
-                            class="text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Nurul Huda
-                          </h3>
-                          <span
-                            class="text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div class="flex items-center justify-between mb-4">
-                          <div class="flex">
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-sm text-gray-500">July 2023</p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p class="text-gray-700 mb-3 text-base md:text-lg">
-                            "As a nurse, I needed a loan for my education.
-                            MoneyBee made the process stress-free with
-                            transparent terms and quick approval."
-                          </p>
-                          <p class="text-sm text-gray-500">
-                            Selangor, 31, Nurse
-                          </p>
-                        </div>
-                      </div>
+                        Yuan
+                      </h3>
+                      <span
+                        class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
+                        >,</span
+                      >
                     </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide 3 -->
-              <div class="w-full flex-shrink-0">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <!-- Card 5 -->
-                  <div
-                    class="bg-white p-6 rounded-lg shadow-lg min-h-[250px] md:min-h-[300px]"
-                  >
-                    <div class="flex flex-col md:flex-row h-full">
-                      <!-- Left Section: Full Height Photo -->
-                      <div class="md:w-2/5 flex-shrink-0 mb-4 md:mb-0 md:pr-4">
-                        <img
-                          src="./assets/images/person/mask-man.png"
-                          alt="Tan Wei Ming"
-                          class="w-full h-full object-cover rounded-lg"
-                        />
+                    <!-- Second Row: Stars and Date -->
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                      <div class="flex gap-0.5 sm:gap-1">
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
                       </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="md:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-3">
-                          <h3
-                            class="text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Tan Wei Ming
-                          </h3>
-                          <span
-                            class="text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div class="flex items-center justify-between mb-4">
-                          <div class="flex">
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-sm text-gray-500">June 2023</p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p class="text-gray-700 mb-3 text-base md:text-lg">
-                            "The financial planning tools helped me understand
-                            my options better. Got my home loan approved with
-                            great terms."
-                          </p>
-                          <p class="text-sm text-gray-500">
-                            Kuala Lumpur, 38, Accountant
-                          </p>
-                        </div>
-                      </div>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        June 19, 2024
+                      </p>
                     </div>
-                  </div>
-                  <!-- Card 6 -->
-                  <div
-                    class="bg-white p-6 rounded-lg shadow-lg min-h-[250px] md:min-h-[300px]"
-                  >
-                    <div class="flex flex-col md:flex-row h-full">
-                      <!-- Left Section: Full Height Photo -->
-                      <div class="md:w-2/5 flex-shrink-0 mb-4 md:mb-0 md:pr-4">
-                        <img
-                          src="./assets/images/person/hijab-lady.png"
-                          alt="Aisha Binti"
-                          class="w-full h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="md:w-3/5 flex flex-col justify-between h-full"
+                    <!-- Third Row: Testimonial and Details -->
+                    <div>
+                      <p
+                        class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
                       >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-3">
-                          <h3
-                            class="text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Aisha Binti
-                          </h3>
-                          <span
-                            class="text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div class="flex items-center justify-between mb-4">
-                          <div class="flex">
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-sm text-gray-500">May 2023</p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p class="text-gray-700 mb-3 text-base md:text-lg">
-                            "Starting my online business was made possible with
-                            MoneyBee's entrepreneur loan. The support team was
-                            incredibly helpful."
-                          </p>
-                          <p class="text-sm text-gray-500">
-                            Penang, 29, Entrepreneur
-                          </p>
-                        </div>
-                      </div>
+                        "I needed a quick personal loan to handle medical
+                        expenses. The AI matched me with the best option in
+                        seconds, and the staff explained everything clearly."
+                      </p>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        Kuala Lumpur, 34, Executive
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Navigation Buttons -->
-          <!--
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0 px-2 sm:px-0">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 items-stretch"
+            >
+              <!-- Card 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                <div class="flex flex-col sm:flex-row h-full">
+                  <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
+                  <div
+                    class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
+                  >
+                    <img
+                      src="./assets/images/person/hijab-lady-2.png"
+                      alt="Elizabeth"
+                      class="w-full h-48 sm:h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <!-- Right Section: Three Rows -->
+                  <div class="sm:w-3/5 flex flex-col justify-between h-full">
+                    <!-- First Row: Name and Comma Icon -->
+                    <div class="flex items-center mb-2 sm:mb-3">
+                      <h3
+                        class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
+                      >
+                        Elizabeth
+                      </h3>
+                      <span
+                        class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
+                        >,</span
+                      >
+                    </div>
+                    <!-- Second Row: Stars and Date -->
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                      <div class="flex gap-0.5 sm:gap-1">
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        October 25
+                      </p>
+                    </div>
+                    <!-- Third Row: Testimonial and Details -->
+                    <div>
+                      <p
+                        class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                      >
+                        "I needed a quick personal loan to handle medical
+                        expenses. The AI matched me with the best option in
+                        seconds, and the staff explained everything clearly."
+                      </p>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        Kuala Lumpur, 34, Executive
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                <div class="flex flex-col sm:flex-row h-full">
+                  <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
+                  <div
+                    class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
+                  >
+                    <img
+                      src="./assets/images/person/yuan.png"
+                      alt="Yuan"
+                      class="w-full h-48 sm:h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <!-- Right Section: Three Rows -->
+                  <div class="sm:w-3/5 flex flex-col justify-between h-full">
+                    <!-- First Row: Name and Comma Icon -->
+                    <div class="flex items-center mb-2 sm:mb-3">
+                      <h3
+                        class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
+                      >
+                        Yuan
+                      </h3>
+                      <span
+                        class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
+                        >,</span
+                      >
+                    </div>
+                    <!-- Second Row: Stars and Date -->
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                      <div class="flex gap-0.5 sm:gap-1">
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        June 19, 2024
+                      </p>
+                    </div>
+                    <!-- Third Row: Testimonial and Details -->
+                    <div>
+                      <p
+                        class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                      >
+                        "I needed a quick personal loan to handle medical
+                        expenses. The AI matched me with the best option in
+                        seconds, and the staff explained everything clearly."
+                      </p>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        Kuala Lumpur, 34, Executive
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0 px-2 sm:px-0">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 items-stretch"
+            >
+              <!-- Card 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                <div class="flex flex-col sm:flex-row h-full">
+                  <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
+                  <div
+                    class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
+                  >
+                    <img
+                      src="./assets/images/person/hijab-lady-2.png"
+                      alt="Elizabeth"
+                      class="w-full h-48 sm:h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <!-- Right Section: Three Rows -->
+                  <div class="sm:w-3/5 flex flex-col justify-between h-full">
+                    <!-- First Row: Name and Comma Icon -->
+                    <div class="flex items-center mb-2 sm:mb-3">
+                      <h3
+                        class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
+                      >
+                        Elizabeth
+                      </h3>
+                      <span
+                        class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
+                        >,</span
+                      >
+                    </div>
+                    <!-- Second Row: Stars and Date -->
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                      <div class="flex gap-0.5 sm:gap-1">
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        October 25
+                      </p>
+                    </div>
+                    <!-- Third Row: Testimonial and Details -->
+                    <div>
+                      <p
+                        class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                      >
+                        "I needed a quick personal loan to handle medical
+                        expenses. The AI matched me with the best option in
+                        seconds, and the staff explained everything clearly."
+                      </p>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        Kuala Lumpur, 34, Executive
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                <div class="flex flex-col sm:flex-row h-full">
+                  <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
+                  <div
+                    class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
+                  >
+                    <img
+                      src="./assets/images/person/yuan.png"
+                      alt="Yuan"
+                      class="w-full h-48 sm:h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <!-- Right Section: Three Rows -->
+                  <div class="sm:w-3/5 flex flex-col justify-between h-full">
+                    <!-- First Row: Name and Comma Icon -->
+                    <div class="flex items-center mb-2 sm:mb-3">
+                      <h3
+                        class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
+                      >
+                        Yuan
+                      </h3>
+                      <span
+                        class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
+                        >,</span
+                      >
+                    </div>
+                    <!-- Second Row: Stars and Date -->
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                      <div class="flex gap-0.5 sm:gap-1">
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        June 19, 2024
+                      </p>
+                    </div>
+                    <!-- Third Row: Testimonial and Details -->
+                    <div>
+                      <p
+                        class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                      >
+                        "I needed a quick personal loan to handle medical
+                        expenses. The AI matched me with the best option in
+                        seconds, and the staff explained everything clearly."
+                      </p>
+                      <p class="text-xs sm:text-sm text-gray-500">
+                        Kuala Lumpur, 34, Executive
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <!--
           <button
             id="prev-btn"
             class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-colors"
@@ -1961,7 +2236,7 @@
             </svg>
           </button>
           -->
-          <!--
+      <!--
           <button
             id="next-btn"
             class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-colors"
@@ -1981,41 +2256,46 @@
             </svg>
           </button>
           -->
-          <!-- Dots -->
-          <div class="flex justify-center mt-8">
-            <div class="flex space-x-2">
-              <div
-                class="dot w-3 h-3 bg-blue-500 rounded-full cursor-pointer"
-                data-slide="0"
-              ></div>
-              <div
-                class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
-                data-slide="1"
-              ></div>
-              <div
-                class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
-                data-slide="2"
-              ></div>
-            </div>
-          </div>
+      <!-- Dots -->
+      <div class="flex justify-center md:mt-8">
+        <div class="flex space-x-2">
+          <div
+            class="dot w-3 h-3 bg-blue-500 rounded-full cursor-pointer"
+            data-slide="0"
+          ></div>
+          <div
+            class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+            data-slide="1"
+          ></div>
+          <div
+            class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+            data-slide="2"
+          ></div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Blog Carousel Section -->
-    <section class="py-16">
-      <div class="max-w-screen-2xl mx-auto px-4">
-        <div class="bg-gray-100 rounded-lg py-12 px-6">
+    <section class="py-8 md:py-12 lg:py-16">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-gray-100 rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8"
+        >
           <!-- Header with Title and Navigation -->
-          <div class="flex justify-between items-center mb-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-black">Blog</h2>
+          <div class="flex justify-between items-center mb-6 md:mb-8">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
+              Blog
+            </h2>
             <div class="flex space-x-2">
               <button
                 id="blog-prev-btn"
-                class="w-10 h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                aria-label="Previous blog"
               >
                 <svg
-                  class="w-5 h-5"
+                  class="w-4 h-4 sm:w-5 sm:h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2030,10 +2310,11 @@
               </button>
               <button
                 id="blog-next-btn"
-                class="w-10 h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                aria-label="Next blog"
               >
                 <svg
-                  class="w-5 h-5"
+                  class="w-4 h-4 sm:w-5 sm:h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -2050,20 +2331,25 @@
           </div>
 
           <!-- Carousel Container -->
-          <div class="overflow-hidden">
-            <div id="blog-carousel" class="flex space-x-6 pb-4">
+          <div class="overflow-hidden -mx-2">
+            <div
+              id="blog-carousel"
+              class="flex gap-3 sm:gap-4 lg:gap-6 px-2 overflow-x-auto pb-4"
+            >
               <!-- Blog Card 1 -->
-              <div class="flex-1 rounded-lg overflow-hidden">
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
+              >
                 <img
-                  src="./assets/images/person/mask-man.png"
+                  src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
                   alt="Person preparing/serving food"
-                  class="w-full h-80 object-fill"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
                 />
-                <div class="pt-2">
-                  <h3 class="text-sm font-bold mb-2 text-black">
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
                     Stay Smart, Stay Financially Fit.
                   </h3>
-                  <p class="text-gray-600 text-xs">
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
                     Explore expert tips, real stories, and the latest insights
                     to improve your financial health and make better money
                     decisions.
@@ -2072,58 +2358,61 @@
               </div>
 
               <!-- Blog Card 2 -->
-              <div class="flex-1 rounded-lg overflow-hidden">
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
+              >
                 <img
-                  src="./assets/images/blogs/money.png"
+                  src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
                   alt="Malaysian Ringgit banknotes"
-                  class="w-full h-80 object-fill"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
                 />
-                <div class="pt-2">
-                  <h3 class="text-sm font-bold mb-2 text-black">
-                    Stay Smart, Stay Financially Fit.
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                    Master Your Money Management
                   </h3>
-                  <p class="text-gray-600 text-xs">
-                    Explore expert tips, real stories, and the latest insights
-                    to improve your financial health and make better money
-                    decisions.
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Discover practical strategies for budgeting, saving, and
+                    investing to achieve your financial goals faster.
                   </p>
                 </div>
               </div>
 
               <!-- Blog Card 3 -->
-              <div class="flex-1 rounded-lg overflow-hidden">
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
+              >
                 <img
-                  src="./assets/images/blogs/people.png"
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
                   alt="Diverse group of people smiling"
-                  class="w-full h-80 object-fill"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
                 />
-                <div class="pt-2">
-                  <h3 class="text-sm font-bold mb-2 text-black">
-                    Stay Smart, Stay Financially Fit.
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                    Community Financial Success Stories
                   </h3>
-                  <p class="text-gray-600 text-xs">
-                    Explore expert tips, real stories, and the latest insights
-                    to improve your financial health and make better money
-                    decisions.
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Read inspiring stories from people who transformed their
+                    financial situations and learn from their experiences.
                   </p>
                 </div>
               </div>
 
               <!-- Blog Card 4 -->
-              <div class="flex-1 rounded-lg overflow-hidden">
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
+              >
                 <img
-                  src="./assets/images/blogs/shadow.png"
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
                   alt="Malaysian flag with silhouettes of people"
-                  class="w-full h-80 object-fill"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
                 />
-                <div class="pt-2">
-                  <h3 class="text-sm font-bold mb-2 text-black">
-                    Stay Smart, Stay Financially Fit.
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                    Economic Trends & Insights
                   </h3>
-                  <p class="text-gray-600 text-xs">
-                    Explore expert tips, real stories, and the latest insights
-                    to improve your financial health and make better money
-                    decisions.
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Stay informed about market trends, economic updates, and how
+                    they impact your personal finances.
                   </p>
                 </div>
               </div>
@@ -2131,14 +2420,13 @@
           </div>
 
           <!-- View More Button -->
-          <div class="text-center mt-8">
+          <div class="text-center mt-6 md:mt-8">
             <button
-              class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center gap-4"
+              class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2.5 px-5 sm:py-3 sm:px-6 rounded-lg transition-colors inline-flex items-center gap-2 sm:gap-4 text-sm sm:text-base"
             >
-              <span> View More</span>
+              <span>View More</span>
               <svg
-                width="25"
-                height="25"
+                class="w-5 h-5 sm:w-6 sm:h-6"
                 viewBox="0 0 25 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -2169,31 +2457,33 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="h-[60vh] relative bg-transparent w-full mb-16">
+    <section
+      class="min-h-[60vh] md:h-[60vh] relative bg-transparent w-full mb-16"
+    >
       <img
         src="./assets/images/person/question-girl.png"
         alt="Person holding a large question mark cutout"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="w-full h-48 md:h-full object-cover md:absolute md:inset-0"
       />
-      <div class="relative z-10 max-w-screen-2xl px-4 ml-[30%] h-full">
+      <div class="relative z-10 max-w-screen-2xl px-4 md:ml-[30%] h-full">
         <div
-          class="bg-white bg-opacity-5 rounded-lg p-8 shadow-2xl h-full flex flex-col justify-center"
+          class="bg-white bg-opacity-5 rounded-lg p-4 md:p-8 shadow-2xl h-full flex flex-col justify-center md:justify-center"
           style="backdrop-filter: blur(51px)"
         >
-          <h2 class="text-3xl font-bold text-black mb-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8">
             Frequently Asked Questions
           </h2>
-          <div class="space-y-16">
+          <div class="space-y-8 md:space-y-16">
             <div class="faq-item">
               <div
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
               >
-                <h3 class="text-lg font-bold text-black">
+                <h3 class="text-base md:text-lg font-bold text-black">
                   Can I apply if I earn less than RM2,000?
                 </h3>
                 <svg
-                  class="w-6 h-6 transition-transform"
+                  class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0"
                   fill="none"
                   viewBox="0 0 36 38"
                 >
@@ -2206,7 +2496,9 @@
                   ></path>
                 </svg>
               </div>
-              <p class="faq-answer hidden text-gray-700 text-sm mt-2">
+              <p
+                class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
+              >
                 Yes. Some licensed lenders accept borrowers earning from
                 RM1,500. Our AI will filter for these lenders so you don't miss
                 out.
@@ -2217,11 +2509,11 @@
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
               >
-                <h3 class="text-lg font-bold text-black">
+                <h3 class="text-base md:text-lg font-bold text-black">
                   Can civil servants get special rates?
                 </h3>
                 <svg
-                  class="w-6 h-6 transition-transform"
+                  class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0"
                   fill="none"
                   viewBox="0 0 36 38"
                 >
@@ -2234,7 +2526,9 @@
                   ></path>
                 </svg>
               </div>
-              <p class="faq-answer hidden text-gray-700 text-sm mt-2">
+              <p
+                class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
+              >
                 Yes, many lenders offer preferential rates for government
                 employees.
               </p>
@@ -2244,11 +2538,11 @@
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
               >
-                <h3 class="text-lg font-bold text-black">
+                <h3 class="text-base md:text-lg font-bold text-black">
                   How soon can I get funds?
                 </h3>
                 <svg
-                  class="w-6 h-6 transition-transform"
+                  class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0"
                   fill="none"
                   viewBox="0 0 36 38"
                 >
@@ -2261,7 +2555,9 @@
                   ></path>
                 </svg>
               </div>
-              <p class="faq-answer hidden text-gray-700 text-sm mt-2">
+              <p
+                class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
+              >
                 Funds can be disbursed within 1-3 business days after approval.
               </p>
             </div>
@@ -2270,11 +2566,11 @@
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
               >
-                <h3 class="text-lg font-bold text-black">
+                <h3 class="text-base md:text-lg font-bold text-black">
                   Are there Islamic personal loans?
                 </h3>
                 <svg
-                  class="w-6 h-6 transition-transform"
+                  class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0"
                   fill="none"
                   viewBox="0 0 36 38"
                 >
@@ -2287,7 +2583,9 @@
                   ></path>
                 </svg>
               </div>
-              <p class="faq-answer hidden text-gray-700 text-sm mt-2">
+              <p
+                class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
+              >
                 Yes, we partner with Islamic banks offering Shariah-compliant
                 financing.
               </p>
@@ -2317,9 +2615,15 @@
               See Your Whole Financial Picture In One Place, Alongside A Smarter
               Approach To Investing And Real Human.
             </p>
-            <div class="text-gray-400 flex flex-col md:flex-row gap-2 items-start mb-2">
+            <div
+              class="text-gray-400 flex flex-col lg:flex-row gap-2 items-start mb-2"
+            >
               <div class="flex items-start gap-4">
-               <img src="./assets//images/icon/location.png" alt="location" class="w-8 h-8 md:w-8 md:h-8 flex-shrink-0 object-contain" />
+                <img
+                  src="./assets//images/icon/location.png"
+                  alt="location"
+                  class="w-8 h-8 md:w-8 md:h-8 flex-shrink-0 object-contain"
+                />
                 <p class="text-sm break-all md:break-words">
                   12/F, Menara Symphony, No. 5 Jalan Prof. Khoo Kay, Seksyen 13,
                   Petaling, 46200, Selangor, Malaysia
@@ -2402,7 +2706,9 @@
         <div
           class="border-t border-gray-700 mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center"
         >
-          <div class="flex space-x-6">
+          <div
+            class="flex space-x-6 justify-center md:justify-start mb-4 md:mb-0"
+          >
             <a href="#" class="text-gray-300 hover:text-white transition"
               >Terms</a
             >
@@ -2513,229 +2819,6 @@
       </div>
     </footer>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
-      <nav class="container mx-auto px-4 py-4 space-y-2">
-        <!-- Our Services (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-services"
-          >
-            <span class="font-medium">Our Services</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-services"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#service-1"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Service 1</a
-            >
-            <a
-              href="#service-2"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Service 2</a
-            >
-            <a
-              href="#service-3"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Service 3</a
-            >
-          </div>
-        </div>
-
-        <!-- Financial Health Hub (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-health"
-          >
-            <span class="font-medium">Financial Health Hub</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-health"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#hub-1"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Hub Item 1</a
-            >
-            <a
-              href="#hub-2"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Hub Item 2</a
-            >
-            <a
-              href="#hub-3"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Hub Item 3</a
-            >
-          </div>
-        </div>
-
-        <!-- For Lenders (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-lenders"
-          >
-            <span class="font-medium">For Lenders</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-lenders"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#lender-1"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Lender Info 1</a
-            >
-            <a
-              href="#lender-2"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Lender Info 2</a
-            >
-            <a
-              href="#lender-3"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Lender Info 3</a
-            >
-          </div>
-        </div>
-
-        <!-- About Us (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-about"
-          >
-            <span class="font-medium">About Us</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-about"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#about-company"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Our Company</a
-            >
-            <a
-              href="#about-team"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Our Team</a
-            >
-            <a
-              href="#about-mission"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Our Mission</a
-            >
-          </div>
-        </div>
-
-        <!-- FAQ (mobile - no dropdown) -->
-        <div class="border-b border-gray-200 pb-2">
-          <a
-            href="#faq"
-            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium"
-            >FAQ</a
-          >
-        </div>
-
-        <!-- Compliance & Privacy (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-compliance"
-          >
-            <span class="font-medium">Compliance & Privacy</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-compliance"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#privacy-policy"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Privacy Policy</a
-            >
-            <a
-              href="#terms"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Terms & Conditions</a
-            >
-            <a
-              href="#compliance"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg text-sm"
-              >Compliance</a
-            >
-          </div>
-        </div>
-      </nav>
-    </div>
 
     <script>
       // Mobile menu toggle
@@ -2766,6 +2849,20 @@
           // Toggle the specific dropdown
           targetContent.classList.toggle("hidden");
           arrow.classList.toggle("rotate-180");
+        });
+      });
+
+      // Desktop dropdown functionality
+      const dropdownGroups = document.querySelectorAll(".dropdown-group");
+      dropdownGroups.forEach((group) => {
+        const ul = group.querySelector("ul");
+        group.addEventListener("mouseenter", () => {
+          ul.classList.remove("invisible", "opacity-0", "translate-y-2");
+          ul.classList.add("visible", "opacity-100", "translate-y-0");
+        });
+        group.addEventListener("mouseleave", () => {
+          ul.classList.remove("visible", "opacity-100", "translate-y-0");
+          ul.classList.add("invisible", "opacity-0", "translate-y-2");
         });
       });
 
