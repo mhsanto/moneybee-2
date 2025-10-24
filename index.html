@@ -93,7 +93,58 @@
               </li>
             </ul>
           </div>
-
+     <div class="relative group dropdown-group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <a href="resourses.html">Resources</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu"
+            >
+              <li role="none">
+                <a
+                  href="#service-1"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >Service 1</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#service-2"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >Service 2</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#service-3"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >Service 3</a
+                >
+              </li>
+            </ul>
+          </div>
           <!-- Financial Health Hub dropdown -->
           <div class="relative group dropdown-group">
             <button
@@ -416,6 +467,51 @@
               class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
               role="menuitem"
               >Service 3</a
+            >
+          </div>
+        </div>
+
+        <!-- Resources (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-resources"
+          >
+            <span class="font-medium">Resources</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-resources"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#resource-1"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Resource 1</a
+            >
+            <a
+              href="#resource-2"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Resource 2</a
+            >
+            <a
+              href="#resource-3"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Resource 3</a
             >
           </div>
         </div>
