@@ -2501,182 +2501,126 @@
     </section>
 
     <!-- Blog Carousel Section -->
-    <section class="py-8 md:py-12 lg:py-16">
-      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="bg-gray-100 rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8"
-        >
-          <!-- Header with Title and Navigation -->
-          <div class="flex justify-between items-center mb-6 md:mb-8">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
-              Blog
-            </h2>
-            <div class="flex space-x-2">
-              <button
-                id="blog-prev-btn"
-                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
-                aria-label="Previous blog"
-              >
-                <svg
-                  class="w-4 h-4 sm:w-5 sm:h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 19l-7-7 7-7"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                id="blog-next-btn"
-                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
-                aria-label="Next blog"
-              >
-                <svg
-                  class="w-4 h-4 sm:w-5 sm:h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </button>
+  <section class="py-8 md:py-12 lg:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class=" rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
+                <!-- Header with Title and Navigation -->
+                <div class="flex justify-between items-center mb-6 md:mb-8">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
+                        Blog
+                    </h2>
+                    <div class="flex space-x-2">
+                        <button id="blog-prev-btn"
+                            class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                            aria-label="Previous blog">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button id="blog-next-btn"
+                            class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                            aria-label="Next blog">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carousel Container -->
+                <div class="overflow-hidden -mx-2">
+                    <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 px-2 overflow-x-auto pb-4">
+                        <!-- Blog Card 1 -->
+                        <div
+                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
+                            <img src="./assets/images/person/mask-man.png" alt="Person preparing/serving food"
+                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
+                            <div class="p-3 sm:p-4">
+                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                                    Stay Smart, Stay Financially Fit.
+                                </h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                    Explore expert tips, real stories, and the latest insights
+                                    to improve your financial health and make better money
+                                    decisions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 2 -->
+                        <div
+                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
+                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
+                                alt="Malaysian Ringgit banknotes"
+                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
+                            <div class="p-3 sm:p-4">
+                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                                    Master Your Money Management
+                                </h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                    Discover practical strategies for budgeting, saving, and
+                                    investing to achieve your financial goals faster.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 3 -->
+                        <div
+                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
+                            <img src="./assets/images/person/groups-of-people.png" alt="Diverse group of people smiling"
+                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
+                            <div class="p-3 sm:p-4">
+                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                                    Community Financial Success Stories
+                                </h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                    Read inspiring stories from people who transformed their
+                                    financial situations and learn from their experiences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 4 -->
+                        <div
+                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
+                            <img src="./assets/images/blogs/shadow.png" alt="Malaysian flag with silhouettes of people"
+                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
+                            <div class="p-3 sm:p-4">
+                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                                    Economic Trends & Insights
+                                </h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                    Stay informed about market trends, economic updates, and how
+                                    they impact your personal finances.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More Button -->
+                <div class="text-center mt-6 md:mt-8">
+                    <button
+                        class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2.5 px-5 sm:py-3 sm:px-6 rounded-lg transition-colors inline-flex items-center gap-2 sm:gap-4 text-sm sm:text-base">
+                        <a href="blog-grid.html">View More</a>
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 25 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_7_6832" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="25" height="25">
+                                <rect width="25" height="25" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_7_6832)">
+                                <path
+                                    d="M6.66665 18.7502L5.20831 17.2918L15.2083 7.29183H6.24998V5.2085H18.75V17.7085H16.6666V8.75016L6.66665 18.7502Z"
+                                    fill="black" fill-opacity="0.9" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
             </div>
-          </div>
-
-          <!-- Carousel Container -->
-          <div class="overflow-hidden -mx-2">
-            <div
-              id="blog-carousel"
-              class="flex gap-3 sm:gap-4 lg:gap-6 px-2 overflow-x-auto pb-4"
-            >
-              <!-- Blog Card 1 -->
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
-                  alt="Person preparing/serving food"
-                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
-                />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Stay Smart, Stay Financially Fit.
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Explore expert tips, real stories, and the latest insights
-                    to improve your financial health and make better money
-                    decisions.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Blog Card 2 -->
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
-                  alt="Malaysian Ringgit banknotes"
-                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
-                />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Master Your Money Management
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Discover practical strategies for budgeting, saving, and
-                    investing to achieve your financial goals faster.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Blog Card 3 -->
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
-                  alt="Diverse group of people smiling"
-                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
-                />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Community Financial Success Stories
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Read inspiring stories from people who transformed their
-                    financial situations and learn from their experiences.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Blog Card 4 -->
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden bg-white shadow-sm"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
-                  alt="Malaysian flag with silhouettes of people"
-                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
-                />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Economic Trends & Insights
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Stay informed about market trends, economic updates, and how
-                    they impact your personal finances.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- View More Button -->
-          <div class="text-center mt-6 md:mt-8">
-            <button
-              class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2.5 px-5 sm:py-3 sm:px-6 rounded-lg transition-colors inline-flex items-center gap-2 sm:gap-4 text-sm sm:text-base"
-            >
-              <a href="blog-grid.html">View More</a>
-              <svg
-                class="w-5 h-5 sm:w-6 sm:h-6"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <mask
-                  id="mask0_7_6832"
-                  style="mask-type: alpha"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="25"
-                  height="25"
-                >
-                  <rect width="25" height="25" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_7_6832)">
-                  <path
-                    d="M6.66665 18.7502L5.20831 17.2918L15.2083 7.29183H6.24998V5.2085H18.75V17.7085H16.6666V8.75016L6.66665 18.7502Z"
-                    fill="black"
-                    fill-opacity="0.9"
-                  />
-                </g>
-              </svg>
-            </button>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- FAQ Section -->
