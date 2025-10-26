@@ -97,6 +97,7 @@ body {
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-play-state: paused;
+  animation-name: fadeInUp; /* Default animation */
 }
 
 .animate-on-scroll.animated {
@@ -143,26 +144,56 @@ body {
 .delay-800 { animation-delay: 0.8s; }
 
 /* Hero section load animation */
+.hero-title, .hero-description, .hero-button, .hero-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
 .hero-loaded .hero-title {
-  animation: fadeInDown 0.8s ease-out forwards;
   opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
 }
 
 .hero-loaded .hero-description {
-  animation: fadeInUp 0.8s ease-out 0.2s forwards;
   opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
 }
 
 .hero-loaded .hero-button {
-  animation: bounceIn 0.8s ease-out 0.4s forwards;
   opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.4s;
 }
 
-.hero-loaded .hero-card {
-  animation: fadeInUp 0.6s ease-out forwards;
+.hero-loaded .hero-card:nth-child(1) {
   opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
 }
 
-.hero-title, .hero-description, .hero-button, .hero-card {
-  opacity: 0;
+.hero-loaded .hero-card:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+.hero-loaded .hero-card:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.0s;
+}
+
+.hero-loaded .hero-card:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.2s;
+}
+
+.hero-loaded .hero-card:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.4s;
 }

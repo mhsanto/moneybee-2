@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Hero section load animation
   const heroSection = document.getElementById('hero-section');
   if (heroSection) {
+    // Small delay to ensure styles are applied
     setTimeout(() => {
       heroSection.classList.add('hero-loaded');
     }, 100);
