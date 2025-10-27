@@ -25,6 +25,7 @@
     <title>MoneyBee</title>
   </head>
   <body class="bg-gray-100 min-h-screen font-manrope">
+    <script src="animations.js"></script>
     <div class="mx-auto max-w-screen-2xl px-4 px-2 sm:px-0">
       <div class="flex h-16 items-center justify-between">
         <!-- Left: Logo -->
@@ -93,7 +94,7 @@
               </li>
             </ul>
           </div>
-     <div class="relative group dropdown-group">
+          <div class="relative group dropdown-group">
             <button
               type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
@@ -709,6 +710,7 @@
 
     <!-- Hero Section -->
     <section
+      id="hero-section"
       class="relative mx-auto max-w-screen-2xl px-6 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 overflow-hidden rounded-3xl"
       style="background: rgba(35, 82, 134, 1)"
     >
@@ -720,21 +722,23 @@
           class="w-full md:max-w-4xl text-center md:text-left md:w-1/2 flex flex-col gap-6 items-center md:items-start"
         >
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
+            class="hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
           >
-            <div class="flex flex-col gap-6 ">
+            <div class="flex flex-col gap-6">
               <p>One Loan. One</p>
               <p>Payment. A Fresh Start.</p>
             </div>
           </h1>
-          <p class="text-base md:text-lg text-blue-200 mb-8 leading-relaxed">
+          <p
+            class="hero-description text-base md:text-lg text-blue-200 mb-8 leading-relaxed"
+          >
             Simplify your finances by merging all your debts into a single
             manageable repayment. Powered by AI, reviewed by real experts, and
             supported by Case Managers who help you stay debt-free.
           </p>
           <button
             type="button"
-            class="bg-yellow-400 text-black font-semibold rounded-lg px-12 py-3 hover:bg-yellow-300 transition-all duration-300 shadow-lg mx-auto md:mx-0"
+            class="hero-button bg-yellow-400 text-black font-semibold rounded-lg px-12 py-3 hover:bg-yellow-300 transition-all duration-300 shadow-lg mx-auto md:mx-0"
           >
             Apply Now
           </button>
@@ -747,7 +751,7 @@
             <img
               src="./assets/images/hero/human-robot-hand.png"
               alt="Human hand reaching out to touch a robotic hand"
-              class="w-full h-auto"
+              class="hero-image w-full h-auto"
             />
             <!-- Stacks of gold coins -->
             <div
@@ -756,7 +760,7 @@
               <img
                 src="./assets/images/hero/coins.png"
                 alt="Stack of gold coins"
-                class="w-full h-full object-contain"
+                class="hero-image w-full h-full object-contain"
               />
             </div>
           </div>
@@ -872,10 +876,14 @@
       </div>
       <div class="max-w-screen-2xl mx-auto px-4 bg-white/10 backdrop-blur-md">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+          <h2
+            class="animate-on-scroll fade-in-up text-3xl md:text-4xl font-extrabold text-gray-900 mb-4"
+          >
             Target Customer Groups
           </h2>
-          <p class="text-lg text-gray-600 max-w-5xl mx-auto mb-12 pb-16">
+          <p
+            class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 max-w-5xl mx-auto mb-12 pb-16"
+          >
             Debt Consolidation is designed for Malaysians who want to simplify
             their monthly commitments and regain financial control:
           </p>
@@ -886,7 +894,9 @@
         <div
           class="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-8 items-center gap-y-[5rem]"
         >
-          <div class="transition duration-300 border border-white/20">
+          <div
+            class="animate-on-scroll fade-in-up delay-100 transition duration-300 border border-white/20"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/images/ourservices/icons/mul-users.png"
@@ -907,7 +917,9 @@
           </div>
 
           <!-- Borrowers with Several Personal Loans -->
-          <div class="transition duration-300 border border-white/20">
+          <div
+            class="animate-on-scroll fade-in-up delay-200 transition duration-300 border border-white/20"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/images/ourservices/icons/personal-loans.png"
@@ -927,7 +939,9 @@
           </div>
 
           <!-- Civil Servants & Salaried Workers -->
-          <div class="transition duration-300 border border-white/20">
+          <div
+            class="animate-on-scroll fade-in-up delay-300 transition duration-300 border border-white/20"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/images/ourservices/icons/civil-servant.png"
@@ -947,7 +961,9 @@
           </div>
 
           <!-- Borrowers with Lower Credit Scores -->
-          <div class="transition duration-300 border border-white/20">
+          <div
+            class="animate-on-scroll fade-in-up delay-400 transition duration-300 border border-white/20"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/images/ourservices/icons/lower-credit.png"
@@ -968,7 +984,9 @@
           </div>
 
           <!-- Self-Employed & Gig Workers -->
-          <div class="transition duration-300 border border-white/20">
+          <div
+            class="animate-on-scroll fade-in-up delay-500 transition duration-300 border border-white/20"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/images/ourservices/icons/self-employe.png"
@@ -997,11 +1015,13 @@
         <!-- Section Header -->
         <div class="text-center mb-12">
           <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
+            class="animate-on-scroll fade-in-up text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
           >
             Our Promise
           </h2>
-          <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+          <p
+            class="animate-on-scroll fade-in-up delay-100 text-base md:text-lg text-gray-600 max-w-3xl mx-auto"
+          >
             When you consolidate with Moneybee Sdn. Bhd., you get
           </p>
         </div>
@@ -1010,7 +1030,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Speed with Accuracy -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-100 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1046,7 +1066,7 @@
 
           <!-- Safety with Licensed Lenders Only -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-200 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1082,7 +1102,7 @@
 
           <!-- Support Beyond Approval -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-300 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1118,7 +1138,7 @@
 
           <!-- Transparent Fees -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-400 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1153,7 +1173,7 @@
 
           <!-- Flexible Repayment Options -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-500 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1189,7 +1209,7 @@
 
           <!-- 24/7 Customer Support -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-600 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1236,11 +1256,13 @@
         <!-- Section Header -->
         <div class="text-center mb-12">
           <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
+            class="animate-on-scroll fade-in-up text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
           >
             Service Providers
           </h2>
-          <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+          <p
+            class="animate-on-scroll fade-in-up delay-100 text-base md:text-lg text-gray-600 max-w-3xl mx-auto"
+          >
             We match you with
           </p>
         </div>
@@ -1249,7 +1271,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Local Banks -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-100 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1285,7 +1307,7 @@
 
           <!-- Islamic Banks & Financial Institutions -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-200 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1320,7 +1342,7 @@
 
           <!-- Licensed Moneylenders (KPKT-Approved) -->
           <div
-            class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
+            class="animate-on-scroll fade-in-up delay-300 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden"
           >
             <!-- Blue glow effects -->
             <div
@@ -1364,7 +1386,7 @@
     </section>
 
     <!-- Payment Calculator Section -->
-    <section class="py-16 md:py-20 lg:py-24  ">
+    <section class="py-16 md:py-20 lg:py-24">
       <div class="max-w-screen-2xl mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <!-- Left Column: Calculator Image -->
@@ -1372,7 +1394,7 @@
             <img
               src="assets/images/ourservices/objects/calculator.png"
               alt="Payment Calculator"
-              class="w-full h-auto object-contain"
+              class="animate-on-scroll scale-in w-full h-auto object-contain"
             />
           </div>
           <!-- Right Column: Text Content -->
@@ -1380,13 +1402,21 @@
             class="text-center lg:text-left flex flex-col justify-between h-full"
           >
             <div>
-              <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Payment Calculator
-            </h2>
-            <p class="text-lg text-gray-600 mb-16">See How Much You Can Save</p>
+              <h2
+                class="animate-on-scroll fade-in-up text-3xl md:text-5xl font-bold text-gray-900 mb-4"
+              >
+                Payment Calculator
+              </h2>
+              <p
+                class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 mb-16"
+              >
+                See How Much You Can Save
+              </p>
             </div>
             <ul class="text-lg text-gray-600 mb-12 text-start">
-              <li class="flex items-center mb-2">
+              <li
+                class="animate-on-scroll fade-in-left delay-200 flex items-center mb-2"
+              >
                 <span
                   class="mr-3 p-4 rounded-xl"
                   style="background-color: rgba(249, 209, 87, 1)"
@@ -1413,7 +1443,9 @@
                   </ul>
                 </div>
               </li>
-              <li class="flex items-center mb-2">
+              <li
+                class="animate-on-scroll fade-in-left delay-300 flex items-center mb-2"
+              >
                 <span
                   class="mr-3 p-4 rounded-xl"
                   style="background-color: rgba(249, 209, 87, 1)"
@@ -1442,7 +1474,9 @@
                   </ul>
                 </div>
               </li>
-              <li class="flex items-center mb-4">
+              <li
+                class="animate-on-scroll fade-in-left delay-400 flex items-center mb-4"
+              >
                 <span
                   class="mr-3 p-4 rounded-xl"
                   style="background-color: rgba(249, 209, 87, 1)"
@@ -1471,7 +1505,7 @@
                 </div>
               </li>
             </ul>
-            <p class="text-lg">
+            <p class="animate-on-scroll fade-in-up delay-500 text-lg">
               <span class="text-red-600"
                 >(Calculator provides estimates. Final terms depend on the
                 lender.)</span
@@ -1483,7 +1517,7 @@
       </div>
     </section>
     <!-- Eligibility  Section -->
-    <section class="py-16 md:py-20 lg:py-24  ">
+    <section class="py-16 md:py-20 lg:py-24">
       <div class="max-w-screen-2xl mx-auto px-4">
         <div
           class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:items-start"
@@ -1493,18 +1527,20 @@
             class="lg:text-left flex flex-col justify-between h-full lg:order-1"
           >
             <h2
-              class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-start"
+              class="animate-on-scroll fade-in-up text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-start"
             >
               Eligibility
             </h2>
-            <p class="text-lg text-gray-600 mb-8 md:mb-12 text-start">
+            <p
+              class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 mb-8 md:mb-12 text-start"
+            >
               General requirements for debt consolidation in Malaysia
             </p>
             <div
               class="text-lg text-gray-600 mb-8 md:mb-12 text-center md:text-start"
             >
               <div
-                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4"
+                class="animate-on-scroll fade-in-left delay-200 flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4"
               >
                 <span
                   class="mr-3 p-4 rounded-xl flex-shrink-0"
@@ -1531,7 +1567,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4"
+                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-300"
               >
                 <span
                   class="mr-3 p-4 rounded-xl flex-shrink-0"
@@ -1560,7 +1596,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4"
+                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-400"
               >
                 <span
                   class="mr-3 p-4 rounded-xl flex-shrink-0"
@@ -1590,7 +1626,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4"
+                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-500"
               >
                 <span
                   class="mr-3 p-4 rounded-xl flex-shrink-0"
@@ -1624,7 +1660,9 @@
             </div>
           </div>
           <!-- Left Column: Calculator Image - Appears second on mobile, first on large screens -->
-          <div class="flex justify-center lg:order-2">
+          <div
+            class="animate-on-scroll scale-in flex justify-center lg:order-2"
+          >
             <img
               src="assets/images/person/three-person.png"
               alt="Eligibility Requirements"
@@ -1646,14 +1684,20 @@
       </div>
       <div class="max-w-screen-2xl mx-auto px-4">
         <div class="flex flex-col items-center mb-12 text-center">
-          <h2 class="text-5xl font-bold text-black mb-4">How to Apply</h2>
-          <p class="text-gray-600 text-base mb-6">
+          <h2
+            class="animate-on-scroll fade-in-up text-5xl font-bold text-black mb-4"
+          >
+            How to Apply
+          </h2>
+          <p
+            class="animate-on-scroll fade-in-up delay-100 text-gray-600 text-base mb-6"
+          >
             Getting a personal loan with us is simple and transparent:
           </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
           <!-- Left Column -->
-          <div class="h-full">
+          <div class="animate-on-scroll scale-in h-full">
             <img
               src="./assets/images/person/hijab-women-phone.png"
               alt="Woman working on laptop"
@@ -1664,30 +1708,31 @@
           <div class="p-8 rounded-lg h-full">
             <ol class="flex flex-col gap-4 justify-between h-full">
               <li
-                class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
+                class="animate-on-scroll fade-in-left delay-100 text-xl p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
               >
                 <div class="flex items-center">
                   <span
-                    class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                    class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
                     >1</span
                   >
                   <span
-                    class="text-gray-700 font-semibold group-hover:text-black text-2xl "
+                    class="text-gray-700 font-semibold group-hover:text-black text-2xl"
                     >Start Your Enquiry</span
                   >
                 </div>
                 <div
                   class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300"
                 >
-                  Fill in our enquiry form or chat with us via WhatsApp/AI chatbot.
+                  Fill in our enquiry form or chat with us via WhatsApp/AI
+                  chatbot.
                 </div>
               </li>
               <li
-                class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
+                class="animate-on-scroll fade-in-left delay-200 text-xl p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
               >
                 <div class="flex items-center">
                   <span
-                    class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                    class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
                     >2</span
                   >
                   <span
@@ -1703,11 +1748,11 @@
                 </div>
               </li>
               <li
-                class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
+                class="animate-on-scroll fade-in-left delay-300 text-xl p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
               >
                 <div class="flex items-center">
                   <span
-                    class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                    class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
                     >3</span
                   >
                   <span
@@ -1723,11 +1768,11 @@
                 </div>
               </li>
               <li
-                class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
+                class="animate-on-scroll fade-in-left delay-400 text-xl p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
               >
                 <div class="flex items-center">
                   <span
-                    class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                    class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
                     >4</span
                   >
                   <span
@@ -1743,11 +1788,11 @@
                 </div>
               </li>
               <li
-                class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
+                class="animate-on-scroll fade-in-left delay-500 text-xl p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
               >
                 <div class="flex items-center">
                   <span
-                    class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                    class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
                     >5</span
                   >
                   <span
@@ -1763,11 +1808,11 @@
                 </div>
               </li>
               <li
-                class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
+                class="animate-on-scroll fade-in-left delay-600 text-xl p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300"
               >
                 <div class="flex items-center">
                   <span
-                    class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                    class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
                     >6</span
                   >
                   <span
@@ -1789,168 +1834,85 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section
-      class="py-8 sm:py-12 md:py-16 lg:py-12 bg-gradient-to-b from-blue-100 to-white"
-    >
-      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-8 sm:mb-10 md:mb-12">
+    <section class="py-8 sm:py-12 md:py-16 lg:py-12">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 sm:mb-10 md:mb-12 animate-on-scroll">
           <h2
-            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 sm:mb-4 px-4"
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-gray-900 mb-12 sm:mb-4 px-4"
           >
             Hear From Our Happy Borrowers
           </h2>
         </div>
-        <div class="relative">
+        <div class="relative mt-12 md:ml-[10rem]">
           <!-- Carousel Container -->
-          <div
-            class="overflow-hidden rounded-lg h-auto min-h-[450px] sm:min-h-[400px] md:min-h-[380px] lg:min-h-[420px] flex items-center"
-          >
+          <div class="overflow-hidden relative testimonial-carousel">
             <div
-              id="testimonial-carousel"
-              class="flex transition-transform duration-500 ease-in-out w-full"
+              class="flex transition-transform duration-500 ease-in-out testimonial-slide"
             >
               <!-- Slide 1 -->
-              <div class="w-full flex-shrink-0 px-2 sm:px-0">
+              <div
+                class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-100 hover:bg-gray-50 transition-all duration-300"
+                style="width: 80vw; max-width: 900px"
+              >
                 <div
-                  class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 items-stretch"
+                  class="overflow-hidden rounded-xl"
+                  style="width: 100%; height: 416.2909240722656px"
                 >
-                  <!-- Card 1 -->
-                  <div class="bg-white p-6 rounded-lg shadow-lg h-full">
-                    <div class="flex flex-col sm:flex-row h-full">
-                      <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
-                      <div
-                        class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
-                      >
-                        <img
-                          src="./assets/images/person/hijab-lady-2.png"
-                          alt="Elizabeth"
-                          class="w-full h-48 sm:h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="sm:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-2 sm:mb-3">
-                          <h3
-                            class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Elizabeth
-                          </h3>
-                          <span
-                            class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div
-                          class="flex items-center justify-between mb-3 sm:mb-4"
-                        >
-                          <div class="flex gap-0.5 sm:gap-1">
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            October 25
-                          </p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p
-                            class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
-                          >
-                            "I needed a quick personal loan to handle medical
-                            expenses. The AI matched me with the best option in
-                            seconds, and the staff explained everything
-                            clearly."
-                          </p>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            Kuala Lumpur, 34, Executive
-                          </p>
-                        </div>
-                      </div>
+                  <div class="flex h-full rounded-xl">
+                    <!-- Left Section: Photo -->
+                    <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                      <img
+                        src="./assets/images/person/hijab-lady-2.png"
+                        alt="Elizabeth"
+                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
                     </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="bg-white p-6 rounded-lg shadow-lg h-full">
-                    <div class="flex flex-col sm:flex-row h-full">
-                      <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
-                      <div
-                        class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
-                      >
-                        <img
-                          src="./assets/images/person/yuan.png"
-                          alt="Yuan"
-                          class="w-full h-48 sm:h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="sm:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-2 sm:mb-3">
-                          <h3
-                            class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Yuan
-                          </h3>
-                          <span
-                            class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
+                    <!-- Right Section: Content -->
+                    <div class="w-3/5 flex flex-col p-6">
+                      <!-- First Row: Name and Comma Icon -->
+                      <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl md:text-4xl font-bold text-black">
+                          Elizabeth
+                        </h3>
                         <div
-                          class="flex items-center justify-between mb-3 sm:mb-4"
+                          class="text-xl md:text-3xl text-gray-400 font-bold flex gap-1 hidden sm:flex"
                         >
-                          <div class="flex gap-0.5 sm:gap-1">
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-between h-[15rem]">
+                        <!-- Second Row: Stars and Date -->
+                        <div class="flex items-center gap-12 mb-4">
+                          <div class="flex gap-1">
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -1959,7 +1921,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -1968,7 +1930,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -1977,7 +1939,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -1986,7 +1948,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -1995,21 +1957,19 @@
                               />
                             </svg>
                           </div>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            June 19, 2024
-                          </p>
+                          <p class="text-sm text-gray-500">October 25</p>
                         </div>
                         <!-- Third Row: Testimonial and Details -->
                         <div>
                           <p
-                            class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                            class="text-gray-700 text-base md:text-lg leading-relaxed mb-2"
                           >
                             "I needed a quick personal loan to handle medical
                             expenses. The AI matched me with the best option in
                             seconds, and the staff explained everything
                             clearly."
                           </p>
-                          <p class="text-xs sm:text-sm text-gray-500">
+                          <p class="text-sm text-gray-500">
                             Kuala Lumpur, 34, Executive
                           </p>
                         </div>
@@ -2018,148 +1978,71 @@
                   </div>
                 </div>
               </div>
-              <!-- Slide 1 -->
-              <div class="w-full flex-shrink-0 px-2 sm:px-0">
+
+              <!-- Slide 2 -->
+              <div
+                class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-200 hover:bg-gray-50 transition-all duration-300"
+                style="width: 80vw; max-width: 900px"
+              >
                 <div
-                  class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 items-stretch"
+                  class="overflow-hidden rounded-xl"
+                  style="width: 100%; height: 416.2909240722656px"
                 >
-                  <!-- Card 1 -->
-                  <div class="bg-white p-6 rounded-lg shadow-lg h-full">
-                    <div class="flex flex-col sm:flex-row h-full">
-                      <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
-                      <div
-                        class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
-                      >
-                        <img
-                          src="./assets/images/person/hijab-lady-2.png"
-                          alt="Elizabeth"
-                          class="w-full h-48 sm:h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="sm:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-2 sm:mb-3">
-                          <h3
-                            class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Elizabeth
-                          </h3>
-                          <span
-                            class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
-                        <div
-                          class="flex items-center justify-between mb-3 sm:mb-4"
-                        >
-                          <div class="flex gap-0.5 sm:gap-1">
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            October 25
-                          </p>
-                        </div>
-                        <!-- Third Row: Testimonial and Details -->
-                        <div>
-                          <p
-                            class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
-                          >
-                            "I needed a quick personal loan to handle medical
-                            expenses. The AI matched me with the best option in
-                            seconds, and the staff explained everything
-                            clearly."
-                          </p>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            Kuala Lumpur, 34, Executive
-                          </p>
-                        </div>
-                      </div>
+                  <div class="flex h-full rounded-xl">
+                    <!-- Left Section: Photo -->
+                    <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                      <img
+                        src="./assets/images/person/yuan.png"
+                        alt="Yuan"
+                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
                     </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="bg-white p-6 rounded-lg shadow-lg h-full">
-                    <div class="flex flex-col sm:flex-row h-full">
-                      <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
-                      <div
-                        class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
-                      >
-                        <img
-                          src="./assets/images/person/yuan.png"
-                          alt="Yuan"
-                          class="w-full h-48 sm:h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="sm:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-2 sm:mb-3">
-                          <h3
-                            class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Yuan
-                          </h3>
-                          <span
-                            class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
+                    <!-- Right Section: Content -->
+                    <div class="w-3/5 flex flex-col p-6">
+                      <!-- First Row: Name and Comma Icon -->
+                      <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black">
+                          Yuan
+                        </h3>
                         <div
-                          class="flex items-center justify-between mb-3 sm:mb-4"
+                          class="text-2xl md:text-3xl text-gray-400 font-bold flex gap-1"
                         >
-                          <div class="flex gap-0.5 sm:gap-1">
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-between h-[15rem]">
+                        <!-- Second Row: Stars and Date -->
+                        <div class="flex items-center gap-12 mb-4">
+                          <div class="flex gap-1">
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2168,7 +2051,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2177,7 +2060,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2186,7 +2069,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2195,7 +2078,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2204,21 +2087,19 @@
                               />
                             </svg>
                           </div>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            June 19, 2024
-                          </p>
+                          <p class="text-sm text-gray-500">June 19, 2024</p>
                         </div>
                         <!-- Third Row: Testimonial and Details -->
                         <div>
                           <p
-                            class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                            class="text-gray-700 text-base md:text-lg leading-relaxed mb-2"
                           >
                             "I needed a quick personal loan to handle medical
                             expenses. The AI matched me with the best option in
                             seconds, and the staff explained everything
                             clearly."
                           </p>
-                          <p class="text-xs sm:text-sm text-gray-500">
+                          <p class="text-sm text-gray-500">
                             Kuala Lumpur, 34, Executive
                           </p>
                         </div>
@@ -2227,47 +2108,71 @@
                   </div>
                 </div>
               </div>
-              <!-- Slide 1 -->
-              <div class="w-full flex-shrink-0 px-2 sm:px-0">
+
+              <!-- Slide 3 -->
+              <div
+                class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card hover:bg-gray-50 transition-all duration-300"
+                style="width: 100vw; max-width: 900px"
+              >
                 <div
-                  class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 items-stretch"
+                  class="overflow-hidden rounded-xl"
+                  style="width: 100%; height: 416.2909240722656px"
                 >
-                  <!-- Card 1 -->
-                  <div class="bg-white p-6 rounded-lg shadow-lg h-full">
-                    <div class="flex flex-col sm:flex-row h-full">
-                      <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
-                      <div
-                        class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
-                      >
-                        <img
-                          src="./assets/images/person/hijab-lady-2.png"
-                          alt="Elizabeth"
-                          class="w-full h-48 sm:h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="sm:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-2 sm:mb-3">
-                          <h3
-                            class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Elizabeth
-                          </h3>
-                          <span
-                            class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
+                  <div class="flex h-full rounded-xl">
+                    <!-- Left Section: Photo -->
+                    <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                      <img
+                        src="./assets/images/person/hijab-lady-2.png"
+                        alt="Elizabeth"
+                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <!-- Right Section: Content -->
+                    <div class="w-3/5 flex flex-col p-6">
+                      <!-- First Row: Name and Comma Icon -->
+                      <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black">
+                          Elizabeth
+                        </h3>
                         <div
-                          class="flex items-center justify-between mb-3 sm:mb-4"
+                          class="text-2xl md:text-3xl text-gray-400 font-bold flex gap-1"
                         >
-                          <div class="flex gap-0.5 sm:gap-1">
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-between h-[15rem]">
+                        <!-- Second Row: Stars and Date -->
+                        <div class="flex items-center gap-12 mb-4">
+                          <div class="flex gap-1">
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2276,7 +2181,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2285,7 +2190,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2294,7 +2199,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2303,7 +2208,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2312,63 +2217,92 @@
                               />
                             </svg>
                           </div>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            October 25
-                          </p>
+                          <p class="text-sm text-gray-500">October 25</p>
                         </div>
                         <!-- Third Row: Testimonial and Details -->
                         <div>
                           <p
-                            class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                            class="text-gray-700 text-base md:text-lg leading-relaxed mb-2"
                           >
                             "I needed a quick personal loan to handle medical
                             expenses. The AI matched me with the best option in
                             seconds, and the staff explained everything
                             clearly."
                           </p>
-                          <p class="text-xs sm:text-sm text-gray-500">
+                          <p class="text-sm text-gray-500">
                             Kuala Lumpur, 34, Executive
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Card 2 -->
-                  <div class="bg-white p-6 rounded-lg shadow-lg h-full">
-                    <div class="flex flex-col sm:flex-row h-full">
-                      <!-- Left Section: Fixed Height Photo on Mobile, Full Height on SM+ -->
-                      <div
-                        class="sm:w-2/5 flex-shrink-0 mb-3 sm:mb-0 sm:pr-3 md:pr-4"
-                      >
-                        <img
-                          src="./assets/images/person/yuan.png"
-                          alt="Yuan"
-                          class="w-full h-48 sm:h-full object-cover rounded-lg"
-                        />
-                      </div>
-                      <!-- Right Section: Three Rows -->
-                      <div
-                        class="sm:w-3/5 flex flex-col justify-between h-full"
-                      >
-                        <!-- First Row: Name and Comma Icon -->
-                        <div class="flex items-center mb-2 sm:mb-3">
-                          <h3
-                            class="text-lg sm:text-xl md:text-2xl font-bold text-black mr-2"
-                          >
-                            Yuan
-                          </h3>
-                          <span
-                            class="text-xl sm:text-2xl md:text-3xl text-gray-400 font-bold"
-                            >,</span
-                          >
-                        </div>
-                        <!-- Second Row: Stars and Date -->
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div
+                class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-300 hover:bg-gray-50 transition-all duration-300"
+                style="width: 100vw; max-width: 900px"
+              >
+                <div
+                  class="overflow-hidden rounded-xl"
+                  style="width: 100%; height: 416.2909240722656px"
+                >
+                  <div class="flex h-full rounded-xl">
+                    <!-- Left Section: Photo -->
+                    <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                      <img
+                        src="./assets/images/person/yuan.png"
+                        alt="Yuan"
+                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <!-- Right Section: Content -->
+                    <div class="w-3/5 flex flex-col p-6">
+                      <!-- First Row: Name and Comma Icon -->
+                      <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black">
+                          Yuan
+                        </h3>
                         <div
-                          class="flex items-center justify-between mb-3 sm:mb-4"
+                          class="text-2xl md:text-3xl text-gray-400 font-bold flex gap-1"
                         >
-                          <div class="flex gap-0.5 sm:gap-1">
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                          <svg
+                            width="41"
+                            height="60"
+                            viewBox="0 0 41 73"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
+                              fill="#235286"
+                              fill-opacity="0.1"
+                              stroke="#F6F6F6"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-between h-[15rem]">
+                        <!-- Second Row: Stars and Date -->
+                        <div class="flex items-center gap-12 mb-4">
+                          <div class="flex gap-1">
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2377,7 +2311,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2386,7 +2320,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2395,7 +2329,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2404,7 +2338,7 @@
                               />
                             </svg>
                             <svg
-                              class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
+                              class="w-5 h-5 text-yellow-400"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -2413,21 +2347,19 @@
                               />
                             </svg>
                           </div>
-                          <p class="text-xs sm:text-sm text-gray-500">
-                            June 19, 2024
-                          </p>
+                          <p class="text-sm text-gray-500">June 19, 2024</p>
                         </div>
                         <!-- Third Row: Testimonial and Details -->
                         <div>
                           <p
-                            class="text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg leading-relaxed"
+                            class="text-gray-700 text-base md:text-lg leading-relaxed mb-2"
                           >
                             "I needed a quick personal loan to handle medical
                             expenses. The AI matched me with the best option in
                             seconds, and the staff explained everything
                             clearly."
                           </p>
-                          <p class="text-xs sm:text-sm text-gray-500">
+                          <p class="text-sm text-gray-500">
                             Kuala Lumpur, 34, Executive
                           </p>
                         </div>
@@ -2438,60 +2370,20 @@
               </div>
             </div>
           </div>
-          <!-- Navigation Buttons -->
-          <!--
-          <button
-            id="prev-btn"
-            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-colors"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              ></path>
-            </svg>
-          </button>
-          -->
-          <!--
-          <button
-            id="next-btn"
-            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-colors"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-          </button>
-          -->
+
           <!-- Dots -->
-          <div class="flex justify-center md:mt-8">
+          <div class="flex justify-center mt-8">
             <div class="flex space-x-2">
               <div
-                class="dot w-3 h-3 bg-blue-500 rounded-full cursor-pointer"
+                class="carousel-dot w-3 h-3 bg-blue-500 rounded-full cursor-pointer"
                 data-slide="0"
               ></div>
               <div
-                class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+                class="carousel-dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
                 data-slide="1"
               ></div>
               <div
-                class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+                class="carousel-dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
                 data-slide="2"
               ></div>
             </div>
@@ -2501,147 +2393,207 @@
     </section>
 
     <!-- Blog Carousel Section -->
-  <section class="py-8 md:py-12 lg:py-16">
-        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class=" rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
-                <!-- Header with Title and Navigation -->
-                <div class="flex justify-between items-center mb-6 md:mb-8">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
-                        Blog
-                    </h2>
-                    <div class="flex space-x-2">
-                        <button id="blog-prev-btn"
-                            class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
-                            aria-label="Previous blog">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 19l-7-7 7-7"></path>
-                            </svg>
-                        </button>
-                        <button id="blog-next-btn"
-                            class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
-                            aria-label="Next blog">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Carousel Container -->
-                <div class="overflow-hidden -mx-2">
-                    <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 px-2 pb-4">
-                        <!-- Blog Card 1 -->
-                        <div
-                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
-                            <img src="./assets/images/person/mask-man.png" alt="Person preparing/serving food"
-                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
-                            <div class="p-3 sm:p-4">
-                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                                    Stay Smart, Stay Financially Fit.
-                                </h3>
-                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                    Explore expert tips, real stories, and the latest insights
-                                    to improve your financial health and make better money
-                                    decisions.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Blog Card 2 -->
-                        <div
-                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
-                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
-                                alt="Malaysian Ringgit banknotes"
-                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
-                            <div class="p-3 sm:p-4">
-                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                                    Master Your Money Management
-                                </h3>
-                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                    Discover practical strategies for budgeting, saving, and
-                                    investing to achieve your financial goals faster.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Blog Card 3 -->
-                        <div
-                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
-                            <img src="./assets/images/person/groups-of-people.png" alt="Diverse group of people smiling"
-                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
-                            <div class="p-3 sm:p-4">
-                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                                    Community Financial Success Stories
-                                </h3>
-                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                    Read inspiring stories from people who transformed their
-                                    financial situations and learn from their experiences.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Blog Card 4 -->
-                        <div
-                            class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  ">
-                            <img src="./assets/images/blogs/shadow.png" alt="Malaysian flag with silhouettes of people"
-                                class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
-                            <div class="p-3 sm:p-4">
-                                <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                                    Economic Trends & Insights
-                                </h3>
-                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                    Stay informed about market trends, economic updates, and how
-                                    they impact your personal finances.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- View More Button -->
-                <div class="text-center mt-6 md:mt-8">
-                    <button
-                        class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2.5 px-5 sm:py-3 sm:px-6 rounded-lg transition-colors inline-flex items-center gap-2 sm:gap-4 text-sm sm:text-base">
-                        <a href="blog-grid.html">View More</a>
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 25 25" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0_7_6832" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="25" height="25">
-                                <rect width="25" height="25" fill="#D9D9D9" />
-                            </mask>
-                            <g mask="url(#mask0_7_6832)">
-                                <path
-                                    d="M6.66665 18.7502L5.20831 17.2918L15.2083 7.29183H6.24998V5.2085H18.75V17.7085H16.6666V8.75016L6.66665 18.7502Z"
-                                    fill="black" fill-opacity="0.9" />
-                            </g>
-                        </svg>
-                    </button>
-                </div>
+    <section class="py-8 md:py-12 lg:py-16">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
+          <!-- Header with Title and Navigation -->
+          <div class="flex justify-between items-center mb-6 md:mb-8">
+            <h2
+              class="animate-on-scroll fade-in-up text-2xl sm:text-3xl md:text-4xl font-bold text-black"
+            >
+              Blog
+            </h2>
+            <div class="animate-on-scroll fade-in-up delay-100 flex space-x-2">
+              <button
+                id="blog-prev-btn"
+                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                aria-label="Previous blog"
+              >
+                <svg
+                  class="w-4 h-4 sm:w-5 sm:h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                id="blog-next-btn"
+                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                aria-label="Next blog"
+              >
+                <svg
+                  class="w-4 h-4 sm:w-5 sm:h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </button>
             </div>
+          </div>
+
+          <!-- Carousel Container -->
+          <div
+            class="overflow-hidden -mx-2 animate-on-scroll scale-in delay-200"
+          >
+            <div
+              id="blog-carousel"
+              class="flex gap-3 sm:gap-4 lg:gap-6 px-2 pb-4"
+            >
+              <!-- Blog Card 1 -->
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden"
+              >
+                <img
+                  src="./assets/images/person/mask-man.png"
+                  alt="Person preparing/serving food"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
+                />
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                    Stay Smart, Stay Financially Fit.
+                  </h3>
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Explore expert tips, real stories, and the latest insights
+                    to improve your financial health and make better money
+                    decisions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Blog Card 2 -->
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
+                  alt="Malaysian Ringgit banknotes"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
+                />
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                    Master Your Money Management
+                  </h3>
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Discover practical strategies for budgeting, saving, and
+                    investing to achieve your financial goals faster.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Blog Card 3 -->
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden"
+              >
+                <img
+                  src="./assets/images/person/groups-of-people.png"
+                  alt="Diverse group of people smiling"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
+                />
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                    Community Financial Success Stories
+                  </h3>
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Read inspiring stories from people who transformed their
+                    financial situations and learn from their experiences.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Blog Card 4 -->
+              <div
+                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden"
+              >
+                <img
+                  src="./assets/images/blogs/shadow.png"
+                  alt="Malaysian flag with silhouettes of people"
+                  class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
+                />
+                <div class="p-3 sm:p-4">
+                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                    Economic Trends & Insights
+                  </h3>
+                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Stay informed about market trends, economic updates, and how
+                    they impact your personal finances.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View More Button -->
+          <div class="text-center mt-6 md:mt-8">
+            <button
+              class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2.5 px-5 sm:py-3 sm:px-6 rounded-lg transition-colors inline-flex items-center gap-2 sm:gap-4 text-sm sm:text-base"
+            >
+              <a href="blog-grid.html">View More</a>
+              <svg
+                class="w-5 h-5 sm:w-6 sm:h-6"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_7_6832"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="25"
+                  height="25"
+                >
+                  <rect width="25" height="25" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_7_6832)">
+                  <path
+                    d="M6.66665 18.7502L5.20831 17.2918L15.2083 7.29183H6.24998V5.2085H18.75V17.7085H16.6666V8.75016L6.66665 18.7502Z"
+                    fill="black"
+                    fill-opacity="0.9"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section
-      class="min-h-[60vh]  md:min-h-[60vh] relative bg-transparent w-full mb-16 h-auto"
+      class="min-h-[60vh] md:min-h-[60vh] relative bg-transparent w-full mb-16 h-auto"
     >
       <img
         src="./assets/images/person/question-girl.png"
         alt="Person holding a large question mark cutout"
-        class="w-full h-48 md:h-full object-cover md:absolute md:inset-0"
+        class="animate-on-scroll scale-in w-full h-48 md:h-full object-cover md:absolute md:inset-0"
       />
       <div class="relative z-10 max-w-screen-2xl px-4 md:ml-[30%] h-full">
         <div
           class="bg-white bg-opacity-5 rounded-lg p-4 md:p-8 shadow-2xl h-full flex flex-col justify-center md:justify-center"
           style="backdrop-filter: blur(51px)"
         >
-          <h2 class="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8">
+          <h2
+            class="animate-on-scroll fade-in-up text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8"
+          >
             Frequently Asked Questions
           </h2>
           <div class="space-y-8 md:space-y-12">
-            <div class="faq-item">
+            <div class="animate-on-scroll fade-in-up delay-100 faq-item">
               <div
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
@@ -2666,10 +2618,12 @@
               <p
                 class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
               >
-                Because it simplifies your life: one payment, one lender, lower stress. You may also save money on interest and improve your credit score.
+                Because it simplifies your life: one payment, one lender, lower
+                stress. You may also save money on interest and improve your
+                credit score.
               </p>
             </div>
-            <div class="faq-item">
+            <div class="animate-on-scroll fade-in-up delay-200 faq-item">
               <div
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
@@ -2694,10 +2648,12 @@
               <p
                 class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
               >
-                Yes, you can consolidate your credit card balances into a single loan with potentially lower interest rates and easier repayment terms.
+                Yes, you can consolidate your credit card balances into a single
+                loan with potentially lower interest rates and easier repayment
+                terms.
               </p>
             </div>
-            <div class="faq-item">
+            <div class="animate-on-scroll fade-in-up delay-300 faq-item">
               <div
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
@@ -2722,10 +2678,12 @@
               <p
                 class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
               >
-                Even with a poor credit score, you may still qualify for debt consolidation loans. Our AI will match you with lenders who accept lower credit scores.
+                Even with a poor credit score, you may still qualify for debt
+                consolidation loans. Our AI will match you with lenders who
+                accept lower credit scores.
               </p>
             </div>
-            <div class="faq-item">
+            <div class="animate-on-scroll fade-in-up delay-400 faq-item">
               <div
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
@@ -2750,10 +2708,11 @@
               <p
                 class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
               >
-                Approval can be as fast as within hours to a few days, depending on the lender and your documentation.
+                Approval can be as fast as within hours to a few days, depending
+                on the lender and your documentation.
               </p>
             </div>
-            <div class="faq-item">
+            <div class="animate-on-scroll fade-in-up delay-500 faq-item">
               <div
                 class="flex justify-between items-center cursor-pointer"
                 onclick="toggleFAQ(this)"
@@ -2778,7 +2737,8 @@
               <p
                 class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
               >
-                Yes, we partner with Islamic banks offering Shariah-compliant debt consolidation options.
+                Yes, we partner with Islamic banks offering Shariah-compliant
+                debt consolidation options.
               </p>
             </div>
             <div class="faq-item">
@@ -2806,7 +2766,9 @@
               <p
                 class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2"
               >
-                Yes, consolidating debts can improve your credit score by reducing your credit utilization and making payments more manageable.
+                Yes, consolidating debts can improve your credit score by
+                reducing your credit utilization and making payments more
+                manageable.
               </p>
             </div>
           </div>
@@ -2833,42 +2795,48 @@
             backdrop-filter: blur(10px);
           "
         >
-          <h2 class="text-2xl md:text-5xl font-bold text-white mb-4">
+          <h2
+            class="text-2xl md:text-5xl font-bold text-white mb-4 animate-on-scroll fade-in-up delay-100"
+          >
             Terms & Conditions
           </h2>
-          <p class="text-sm md:text-xl text-white mb-6">
+          <p
+            class="text-sm md:text-xl text-white mb-6 animate-on-scroll delay-200"
+          >
             Effective Date: 01 Oct 2025
           </p>
           <button
-            class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2"
+            class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2 animate-on-scroll delay-300"
           >
             <span>Read More</span>
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask
-                id="mask0_7_7462"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
+            <div class="animate-on-scroll delay-400 duration-200 transition">
+              <svg
                 width="25"
                 height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="25" height="25" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_7_7462)">
-                <path
-                  d="M6.66659 18.7497L5.20825 17.2913L15.2083 7.29134H6.24992V5.20801H18.7499V17.708H16.6666V8.74967L6.66659 18.7497Z"
-                  fill="black"
-                  fill-opacity="0.9"
-                />
-              </g>
-            </svg>
+                <mask
+                  id="mask0_7_7462"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="25"
+                  height="25"
+                >
+                  <rect width="25" height="25" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_7_7462)">
+                  <path
+                    d="M6.66659 18.7497L5.20825 17.2913L15.2083 7.29134H6.24992V5.20801H18.7499V17.708H16.6666V8.74967L6.66659 18.7497Z"
+                    fill="black"
+                    fill-opacity="0.9"
+                  />
+                </g>
+              </svg>
+            </div>
           </button>
         </div>
       </div>
