@@ -66,11 +66,11 @@ class TestimonialCarousel {
     });
     
     // Start autoplay
-    this.startAutoPlay();
+    // this.startAutoPlay();
     
     // Pause autoplay on hover
-    this.carousel.addEventListener('mouseenter', () => this.stopAutoPlay());
-    this.carousel.addEventListener('mouseleave', () => this.startAutoPlay());
+    // this.carousel.addEventListener('mouseenter', () => this.stopAutoPlay());
+    // this.carousel.addEventListener('mouseleave', () => this.startAutoPlay());
     
     // Touch/swipe support for mobile
     this.setupTouchSupport();
@@ -112,12 +112,12 @@ class TestimonialCarousel {
     this.updateCarousel();
   }
   
-  startAutoPlay() {
-    this.stopAutoPlay(); // Clear any existing interval
-    this.autoPlayInterval = setInterval(() => {
-      this.nextSlide();
-    }, this.autoPlayDelay);
-  }
+  // startAutoPlay() {
+  //   this.stopAutoPlay(); // Clear any existing interval
+  //   this.autoPlayInterval = setInterval(() => {
+  //     this.nextSlide();
+  //   }, this.autoPlayDelay);
+  // }
   
   stopAutoPlay() {
     if (this.autoPlayInterval) {
@@ -151,7 +151,7 @@ class TestimonialCarousel {
         }
       }
       
-      this.startAutoPlay();
+      // this.startAutoPlay();
     });
   }
   
@@ -205,7 +205,7 @@ class TestimonialCarousel {
         this.updateCarousel();
       }
       
-      this.startAutoPlay();
+      // this.startAutoPlay();
     });
     
     // Mouse leave (cancel drag)
@@ -215,7 +215,7 @@ class TestimonialCarousel {
         this.carousel.style.cursor = 'grab';
         this.carousel.classList.remove('dragging');
         this.updateCarousel();
-        this.startAutoPlay();
+        // this.startAutoPlay();
       }
     });
   }
