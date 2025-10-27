@@ -37,8 +37,6 @@ class TestimonialCarousel {
     this.carousel = document.querySelector('.testimonial-carousel');
     this.slides = document.querySelector('.testimonial-slide');
     this.cards = document.querySelectorAll('.testimonial-card');
-    this.prevBtn = document.querySelector('.carousel-nav.prev');
-    this.nextBtn = document.querySelector('.carousel-nav.next');
     this.dots = document.querySelectorAll('.carousel-dot');
     
     this.currentIndex = 0;
@@ -46,23 +44,25 @@ class TestimonialCarousel {
     this.autoPlayInterval = null;
     this.autoPlayDelay = 5000; // 5 seconds
     
+    // Mouse drag variables
+    this.isDragging = false;
+    this.startPos = 0;
+    this.currentTranslate = 0;
+    this.prevTranslate = 0;
+    this.animationID = 0;
+    
     this.init();
   }
   
   init() {
     if (!this.carousel || !this.slides || this.cards.length === 0) return;
     
-    // Set up event listeners
-    if (this.prevBtn) {
-      this.prevBtn.addEventListener('click', () => this.prevSlide());
-    }
-    if (this.nextBtn) {
-      this.nextBtn.addEventListener('click', () => this.nextSlide());
-    }
-    
     // Set up dot navigation
-    this.dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => this.goToSlide(index));
+    this.dots.forEach((dot) => {
+      dot.addEventListener('click', (e) => {
+        const slideIndex = parseInt(e.target.getAttribute('data-slide'));
+        this.goToSlide(slideIndex);
+      });
     });
     
     // Start autoplay
@@ -75,8 +75,12 @@ class TestimonialCarousel {
     // Touch/swipe support for mobile
     this.setupTouchSupport();
     
+    // Mouse drag support
+    this.setupMouseSupport();
+    
     // Update initial state
     this.updateCarousel();
+    this.carousel.style.cursor = 'grab'; // Set initial cursor
   }
   
   updateCarousel() {
@@ -86,7 +90,10 @@ class TestimonialCarousel {
     
     // Update dots
     this.dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === this.currentIndex);
+      const slideIndex = parseInt(dot.getAttribute('data-slide'));
+      dot.classList.toggle('active', slideIndex === this.currentIndex);
+      dot.classList.toggle('bg-blue-500', slideIndex === this.currentIndex);
+      dot.classList.toggle('bg-gray-300', slideIndex !== this.currentIndex);
     });
   }
   
@@ -145,6 +152,71 @@ class TestimonialCarousel {
       }
       
       this.startAutoPlay();
+    });
+  }
+  
+  setupMouseSupport() {
+    // Mouse down
+    this.carousel.addEventListener('mousedown', (e) => {
+      this.isDragging = true;
+      this.startPos = e.clientX;
+      this.stopAutoPlay();
+      this.carousel.style.cursor = 'grabbing';
+      this.carousel.classList.add('dragging');
+      e.preventDefault(); // Prevent text selection
+    });
+    
+    // Mouse move
+    this.carousel.addEventListener('mousemove', (e) => {
+      if (!this.isDragging) return;
+      
+      const currentPosition = e.clientX;
+      const diff = currentPosition - this.startPos;
+      const containerWidth = this.carousel.offsetWidth;
+      const dragPercentage = (diff / containerWidth) * 100;
+      
+      // Apply transform with drag
+      const currentTranslate = -this.currentIndex * 100 + dragPercentage;
+      this.slides.style.transform = `translateX(${currentTranslate}%)`;
+    });
+    
+    // Mouse up
+    this.carousel.addEventListener('mouseup', (e) => {
+      if (!this.isDragging) return;
+      
+      this.isDragging = false;
+      this.carousel.style.cursor = 'grab';
+      this.carousel.classList.remove('dragging');
+      
+      // Determine slide direction based on drag distance
+      const endPos = e.clientX;
+      const diff = this.startPos - endPos;
+      const containerWidth = this.carousel.offsetWidth;
+      const threshold = containerWidth * 0.1; // 10% of container width
+      
+      if (Math.abs(diff) > threshold) {
+        if (diff > 0) {
+          this.nextSlide(); // Dragged left
+        } else {
+          this.prevSlide(); // Dragged right
+        }
+      } else {
+        // Snap back to current slide
+        this.updateCarousel();
+      }
+      
+      this.startAutoPlay();
+    });
+    
+    // Mouse leave (cancel drag)
+    this.carousel.addEventListener('mouseleave', () => {
+      if (this.isDragging) {
+        this.isDragging = false;
+        this.carousel.style.cursor = 'grab';
+        this.carousel.classList.remove('dragging');
+        this.updateCarousel();
+        this.startAutoPlay();
+      }
     });
   }
 }

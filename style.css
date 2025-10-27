@@ -338,3 +338,24 @@ body {
     bottom: 10px;
   }
 }
+
+/* Testimonial Carousel Styles */
+.testimonial-carousel {
+  user-select: none; /* Prevent text selection during drag */
+}
+
+.testimonial-slide {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth slide animation */
+}
+
+.testimonial-carousel.dragging .testimonial-slide {
+  transition: none; /* Disable transition during drag for smooth feedback */
+}
+
+.carousel-dot {
+  transition: all 0.3s ease;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.2);
+}
