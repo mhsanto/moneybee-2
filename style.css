@@ -209,3 +209,132 @@ body {
   transform: translateY(0);
   transition-delay: 1.4s;
 }
+
+/* Testimonial Carousel Styles */
+.testimonial-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex: 0 0 auto;
+  width: 941.9567260742188px;
+  height: 416.2909240722656px;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.carousel-nav:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Responsive Design for Testimonial Carousel */
+@media (max-width: 1024px) {
+  .testimonial-card {
+    width: 90vw;
+    height: 400px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 95vw;
+    height: 350px;
+    margin: 0 5px;
+  }
+  
+  .carousel-nav {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .carousel-nav.prev {
+    left: 5px;
+  }
+  
+  .carousel-nav.next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 100vw;
+    height: 300px;
+    margin: 0;
+  }
+  
+  .carousel-nav {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .carousel-nav.prev {
+    left: 2px;
+  }
+  
+  .carousel-nav.next {
+    right: 2px;
+  }
+  
+  .carousel-dots {
+    bottom: 10px;
+  }
+}
