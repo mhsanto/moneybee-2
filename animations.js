@@ -31,7 +31,56 @@ document.addEventListener('DOMContentLoaded', () => {
   animatedElements.forEach(el => observer.observe(el));
 });
 
-// ===== TESTIMONIAL CAROUSEL SYSTEM =====
+// ===== COUNTER ANIMATION SYSTEM =====
+// Counter animation for numbers
+function animateCounter(counter) {
+  const target = parseInt(counter.getAttribute('data-target'));
+  const suffix = counter.getAttribute('data-suffix') || '';
+  const duration = 4000; // 4 seconds
+  const start = 0;
+  const startTime = performance.now();
+
+  function updateCounter(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    
+    // Easing function for smooth animation
+    const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+    
+    const current = Math.floor(start + (target - start) * easeOutQuart);
+    counter.textContent = current + suffix;
+    
+    if (progress < 1) {
+      requestAnimationFrame(updateCounter);
+    } else {
+      counter.textContent = target + suffix;
+    }
+  }
+  
+  requestAnimationFrame(updateCounter);
+}
+
+// Counter observer
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+      entry.target.classList.add('counted');
+      animateCounter(entry.target);
+    }
+  });
+}, {
+  threshold: 0.5,
+  rootMargin: '0px 0px -100px 0px'
+});
+
+// Initialize counters when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // ... existing code ...
+  
+  // Observe counter elements
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => counterObserver.observe(counter));
+});
 class TestimonialCarousel {
   constructor() {
     this.carousel = document.querySelector('.testimonial-carousel');
