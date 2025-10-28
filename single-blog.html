@@ -25,371 +25,715 @@
 
 <body class="bg-gray-100 min-h-screen font-manrope">
     <div class="mx-auto max-w-screen-2xl px-4 px-2 sm:px-0">
-        <div class="flex h-16 items-center justify-between">
-            <!-- Left: Logo -->
-            <a href="index.html" class="inline-flex items-center gap-2">
-                <img src="assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
-            </a>
+      <div class="flex h-16 items-center justify-between">
+        <!-- Left: Logo -->
+        <a href="index.html" class="inline-flex items-center gap-2">
+          <img
+            src="assets/images/header/logo.png"
+            alt="logo"
+            class="h-[40px] w-auto"
+          />
+        </a>
 
-            <!-- Middle: Desktop Nav (>=1024px) -->
-            <nav class="hidden lg:flex items-center justify-center gap-2 font-medium">
-                <!-- Our Services dropdown -->
-                <div class="relative group dropdown-group">
-                    <button type="button"
-                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                        aria-haspopup="menu" aria-expanded="false">
-                        <a href="ourServices.html">Our Services</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                        role="menu">
-                        <li role="none">
-                            <a href="ourServices.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Service 1</a>
-                        </li>
-                        <li role="none">
-                            <a href="#service-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Service 2</a>
-                        </li>
-                        <li role="none">
-                            <a href="#service-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Service 3</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="relative group dropdown-group">
-                    <button type="button"
-                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                        aria-haspopup="menu" aria-expanded="false">
-                        <a href="resourses.html">Resources</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                        role="menu">
-                        <li role="none">
-                            <a href="#service-1" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Service 1</a>
-                        </li>
-                        <li role="none">
-                            <a href="#service-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Service 2</a>
-                        </li>
-                        <li role="none">
-                            <a href="#service-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Service 3</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Financial Health Hub dropdown -->
-                <div class="relative group dropdown-group">
-                    <button type="button"
-                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                        aria-haspopup="menu" aria-expanded="false">
-                        <a href="financial.html">Financial Health Hub</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                        role="menu">
-                        <li role="none">
-                            <a href="#hub-1" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Hub Item 1</a>
-                        </li>
-                        <li role="none">
-                            <a href="#hub-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Hub Item 2</a>
-                        </li>
-                        <li role="none">
-                            <a href="#hub-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Hub Item 3</a>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Middle: Desktop Nav (>=1024px) -->
+        <nav
+          class="hidden lg:flex items-center justify-center gap-2 font-medium"
+        >
+          <!-- Our Services dropdown -->
+          <div class="relative group dropdown-group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <a href="ourServices.html">Our Services</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu"
+            >
+              <li role="none">
+                <a
+                  href="ourServices.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Product One</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#product-two"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Product Two</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#product-three"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Product Three</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#product-four"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >Product Four</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="relative group dropdown-group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <a href="resourses.html">Resources</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu"
+            >
+              <li role="none">
+                <a
+                  href="#blog-youtube"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Blog/Youtube</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#personal-loan-calculator"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Personal Loan Calculator</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#debt-consolidation-calculator"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Debt Consolidation Calculator</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#download-bank-statements"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >How to download bank statements</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Financial Health Hub dropdown -->
+          <div class="relative group dropdown-group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <a href="financial.html">Financial Health Hub</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu"
+            >
+              <li role="none">
+                <a
+                  href="#knowledge-sharing"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >Knowledge Sharing</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                <!-- For Lenders dropdown -->
-                <div class="relative group dropdown-group">
-                    <button type="button"
-                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                        aria-haspopup="menu" aria-expanded="false">
-                        <span>For Lenders</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                        role="menu">
-                        <li role="none">
-                            <a href="#lender-1" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Lender Info 1</a>
-                        </li>
-                        <li role="none">
-                            <a href="#lender-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Lender Info 2</a>
-                        </li>
-                        <li role="none">
-                            <a href="#lender-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Lender Info 3</a>
-                        </li>
-                    </ul>
-                </div>
+          <!-- For Lenders dropdown -->
+          <div class="relative group dropdown-group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <span>For Lenders</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu"
+            >
+              <li role="none">
+                <a
+                  href="#why-us"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Why Us?</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#risk-tools"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Risk Tools</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#contact-business-development"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >Contact Business Development Manager</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                <!-- About Us dropdown -->
-                <div class="relative group dropdown-group">
-                    <button type="button"
-                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                        aria-haspopup="menu" aria-expanded="false">
-                        <span>About Us</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                        role="menu">
-                        <li role="none">
-                            <a href="#about-company" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Our Company</a>
-                        </li>
-                        <li role="none">
-                            <a href="#about-team" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Our Team</a>
-                        </li>
-                        <li role="none">
-                            <a href="#about-mission" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Our Mission</a>
-                        </li>
-                    </ul>
-                </div>
+          <!-- About Us dropdown -->
+          <div class="relative group dropdown-group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <span>About Us</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu"
+            >
+              <li role="none">
+                <a
+                  href="#our-story"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Our Story</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#our-promise"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Our Promise</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#media"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Media</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#career"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Career</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#contact"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                <!-- FAQ (no dropdown) -->
-                <a href="#faq" class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">FAQ</a>
+          <!-- FAQ (no dropdown) -->
+          <a
+            href="#faq"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+            >FAQ</a
+          >
 
-                <!-- Compliance & Privacy dropdown -->
-                <div class="relative group dropdown-group">
-                    <button type="button"
-                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                        aria-haspopup="menu" aria-expanded="false">
-                        <span>Compliance & Privacy</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                        role="menu">
-                        <li role="none">
-                            <a href="#privacy-policy" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Privacy Policy</a>
-                        </li>
-                        <li role="none">
-                            <a href="#terms" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Terms & Conditions</a>
-                        </li>
-                        <li role="none">
-                            <a href="#compliance" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                                role="menuitem">Compliance</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+          <!-- Compliance & Privacy dropdown -->
+          <div class="relative group dropdown-group">
+            <button
+              type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <span>Compliance & Privacy</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu"
+            >
+              <li role="none">
+                <a
+                  href="#pdpa-security"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >PDPA Security</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#partner-disclosure"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem"
+                  >Partner Disclosure</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="#terms-conditions"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem"
+                  >T&C</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-            <!-- Right: Actions -->
-            <!-- Desktop (>=1024px): Contact Us button -->
-            <div class="hidden lg:flex items-center gap-3">
-                <a href="contact-us.html" style="background-color: #f9d157"
-                    class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition">Contact Us</a>
-            </div>
-
-            <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
-            <div class="flex lg:hidden items-center gap-2">
-                <a href="contact-us.html" style="background-color: #f9d157"
-                    class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition">Contact
-                    Us</a>
-                <button id="mobileMenuButton"
-                    class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
-                    aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
-                    <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="h-5 w-5">
-                        <path d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z" />
-                    </svg>
-                    <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="h-5 w-5 hidden">
-                        <path fill-rule="evenodd"
-                            d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-            </div>
+        <!-- Right: Actions -->
+        <!-- Desktop (>=1024px): Contact Us button -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a
+            href="contact-us.html"
+            style="background-color: #f9d157"
+            class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition"
+            >Contact Us</a
+          >
         </div>
+
+        <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
+        <div class="flex lg:hidden items-center gap-2">
+          <a
+            href="contact-us.html"
+            style="background-color: #f9d157"
+            class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition"
+            >Contact Us</a
+          >
+          <button
+            id="mobileMenuButton"
+            class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle menu"
+          >
+            <svg
+              id="iconHamburger"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z"
+              />
+            </svg>
+            <svg
+              id="iconClose"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-5 w-5 hidden"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
-        <nav class="container mx-auto px-4 py-4 space-y-2">
-            <!-- Our Services (mobile) -->
-            <div class="border-b border-gray-200 pb-2">
-                <button
-                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-                    data-target="mobile-services">
-                    <span class="font-medium">Our Services</span>
-                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="mobile-services" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-                    <a href="#service-1" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Service 1</a>
-                    <a href="#service-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Service 2</a>
-                    <a href="#service-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Service 3</a>
-                </div>
-            </div>
+      <nav class="container mx-auto px-4 py-4 space-y-2">
+        <!-- Our Services (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-services"
+          >
+            <span class="font-medium">Our Services</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-services"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#product-one"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Product One</a
+            >
+            <a
+              href="#product-two"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Product Two</a
+            >
+            <a
+              href="#product-three"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Product Three</a
+            >
+            <a
+              href="#product-four"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Product Four</a
+            >
+          </div>
+        </div>
 
-            <!-- Resources (mobile) -->
-            <div class="border-b border-gray-200 pb-2">
-                <button
-                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-                    data-target="mobile-resources">
-                    <span class="font-medium">Resources</span>
-                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="mobile-resources" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-                    <a href="#resource-1" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Resource 1</a>
-                    <a href="#resource-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Resource 2</a>
-                    <a href="#resource-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Resource 3</a>
-                </div>
-            </div>
+        <!-- Resources (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-resources"
+          >
+            <span class="font-medium">Resources</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-resources"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#blog-youtube"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Blog/Youtube</a
+            >
+            <a
+              href="#personal-loan-calculator"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Personal Loan Calculator</a
+            >
+            <a
+              href="#debt-consolidation-calculator"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Debt Consolidation Calculator</a
+            >
+            <a
+              href="#download-bank-statements"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >How to download bank statements</a
+            >
+          </div>
+        </div>
 
-            <!-- Financial Health Hub (mobile) -->
-            <div class="border-b border-gray-200 pb-2">
-                <button
-                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-                    data-target="mobile-health">
-                    <span class="font-medium">Financial Health Hub</span>
-                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="mobile-health" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-                    <a href="#hub-1" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Hub
-                        Item 1</a>
-                    <a href="#hub-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Hub
-                        Item 2</a>
-                    <a href="#hub-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Hub
-                        Item 3</a>
-                </div>
-            </div>
+        <!-- Financial Health Hub (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-health"
+          >
+            <span class="font-medium">Financial Health Hub</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-health"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#knowledge-sharing"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Knowledge Sharing</a
+            >
+          </div>
+        </div>
 
-            <!-- For Lenders (mobile) -->
-            <div class="border-b border-gray-200 pb-2">
-                <button
-                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-                    data-target="mobile-lenders">
-                    <span class="font-medium">For Lenders</span>
-                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="mobile-lenders" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-                    <a href="#lender-1" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Lender Info 1</a>
-                    <a href="#lender-2" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Lender Info 2</a>
-                    <a href="#lender-3" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Lender Info 3</a>
-                </div>
-            </div>
+        <!-- For Lenders (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-lenders"
+          >
+            <span class="font-medium">For Lenders</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-lenders"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#why-us"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Why Us?</a
+            >
+            <a
+              href="#risk-tools"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Risk Tools</a
+            >
+            <a
+              href="#contact-business-development"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Contact Business Development Manager</a
+            >
+          </div>
+        </div>
 
-            <!-- About Us (mobile) -->
-            <div class="border-b border-gray-200 pb-2">
-                <button
-                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-                    data-target="mobile-about">
-                    <span class="font-medium">About Us</span>
-                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="mobile-about" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-                    <a href="#about-company" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Our Company</a>
-                    <a href="#about-team" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Our Team</a>
-                    <a href="#about-mission" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Our Mission</a>
-                </div>
-            </div>
+        <!-- About Us (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-about"
+          >
+            <span class="font-medium">About Us</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-about"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#our-story"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Our Story</a
+            >
+            <a
+              href="#our-promise"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Our Promise</a
+            >
+            <a
+              href="#media"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Media</a
+            >
+            <a
+              href="#career"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Career</a
+            >
+            <a
+              href="#contact"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Contact</a
+            >
+          </div>
+        </div>
 
-            <!-- FAQ (mobile - no dropdown) -->
-            <div class="border-b border-gray-200 pb-2">
-                <a href="#faq" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">FAQ</a>
-            </div>
+        <!-- FAQ (mobile - no dropdown) -->
+        <div class="border-b border-gray-200 pb-2">
+          <a
+            href="#faq"
+            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium"
+            >FAQ</a
+          >
+        </div>
 
-            <!-- Compliance & Privacy (mobile) -->
-            <div class="border-b border-gray-200 pb-2">
-                <button
-                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-                    data-target="mobile-compliance">
-                    <span class="font-medium">Compliance & Privacy</span>
-                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="mobile-compliance" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-                    <a href="#privacy-policy" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Privacy Policy</a>
-                    <a href="#terms" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Terms &
-                        Conditions</a>
-                    <a href="#compliance" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Compliance</a>
-                </div>
-            </div>
-        </nav>
+        <!-- Compliance & Privacy (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-compliance"
+          >
+            <span class="font-medium">Compliance & Privacy</span>
+            <svg
+              class="dropdown-arrow h-5 w-5 transition-transform"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile-compliance"
+            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
+          >
+            <a
+              href="#pdpa-security"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >PDPA Security</a
+            >
+            <a
+              href="#partner-disclosure"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >Partner Disclosure</a
+            >
+            <a
+              href="#terms-conditions"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem"
+              >T&C</a
+            >
+          </div>
+        </div>
+      </nav>
     </div>
+
 
     <!-- Hero Section -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
