@@ -20,6 +20,7 @@
       },
     };
   </script>
+  <script src="animations.js"></script>
   <title>MoneyBee</title>
 </head>
 
@@ -47,7 +48,7 @@
               aria-haspopup="menu"
               aria-expanded="false"
             >
-              <a href="ourServices.html">Our Services</a>
+              <span>Our Services</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -84,7 +85,7 @@
               </li>
               <li role="none">
                 <a
-                  href="#product-three"
+                  href="resourses.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
                   role="menuitem"
                   >Product Three</a
@@ -92,7 +93,7 @@
               </li>
               <li role="none">
                 <a
-                  href="#product-four"
+                  href="financial.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
                   role="menuitem"
                   >Product Four</a
@@ -742,13 +743,13 @@
       <!-- Left Column: Text Content -->
       <div
         class="w-full md:max-w-7xl text-center md:text-left md:w-1/2 flex flex-col gap-6 items-center md:items-start">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight md:w-[70rem]">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight md:w-[70rem] animate-on-scroll fade-in-up">
           <div class="flex flex-col gap-6 ">
             <p>Finance Your Business Growth</p>
             <p>with Smart SMEs Loans</p>
           </div>
         </h1>
-        <p class="text-base md:text-lg text-blue-200 mb-8 leading-relaxed">
+        <p class="text-base md:text-lg text-blue-200 mb-8 leading-relaxed animate-on-scroll fade-in-up delay-100">
           Unlock capital for expansion, working capital or equipment — matched via AI, verified by human experts, and
           backed by Case Managers to guide you.
         </p>
@@ -815,10 +816,10 @@
     </div>
     <div class="max-w-screen-2xl mx-auto px-4 bg-white/10 backdrop-blur-md">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 animate-on-scroll fade-in-up">
           Target Customer Groups
         </h2>
-        <p class="text-lg text-gray-600 max-w-5xl mx-auto mb-12 pb-16">
+        <p class="text-lg text-gray-600 max-w-5xl mx-auto mb-12 pb-16 animate-on-scroll fade-in-up delay-100">
           Our SME Loan is built for Malaysian businesses that are ready to grow, stabilize, or optimize
           operations—especially those who may have difficulty getting traditional loans easily. These include
         </p>
@@ -826,7 +827,7 @@
 
       <!-- Grid Layout for Customer Groups -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[8rem] items-center justify-center">
-        <div class="transition duration-300 border border-white/20">
+        <div class="transition duration-300 border border-white/20 animate-on-scroll fade-in-up delay-100">
           <div class="flex justify-center mb-4">
             <img src="assets/images/financial/icons/micro-small.png" alt="Micro, Small & Medium Enterprises (MSMEs)"
               class="w-16 h-16 object-contain" />
@@ -840,7 +841,7 @@
         </div>
 
         <!-- Startups -->
-        <div class="transition duration-300 border border-white/20">
+        <div class="animate-on-scroll fade-in-up delay-200 transition duration-300 border border-white/20">
           <div class="flex justify-center mb-4">
             <img src="assets/images/financial/icons/startups.png" alt="Startups" class="w-16 h-16 object-contain" />
           </div>
@@ -853,7 +854,7 @@
         </div>
 
         <!-- Businesses wanting to scale -->
-        <div class="transition duration-300 border border-white/20">
+        <div class="animate-on-scroll fade-in-up delay-300 transition duration-300 border border-white/20">
           <div class="flex justify-center mb-4">
             <img src="assets/images/financial/icons/business.png" alt="Businesses wanting to scale"
               class="w-16 h-16 object-contain" />
@@ -867,7 +868,7 @@
         </div>
 
         <!-- Underserved SMEs -->
-        <div class="transition duration-300 border border-white/20">
+        <div class="animate-on-scroll fade-in-up delay-400 transition duration-300 border border-white/20">
           <div class="flex justify-center mb-4">
             <img src="assets/images/financial/icons/underserved.png" alt="Underserved SMEs"
               class="w-16 h-16 object-contain" />
@@ -881,7 +882,7 @@
         </div>
 
         <!-- Existing SMEs aiming for modernization -->
-        <div class="transition duration-300 border border-white/20">
+        <div class="animate-on-scroll fade-in-up delay-500 transition duration-300 border border-white/20">
           <div class="flex justify-center mb-4">
             <img src="assets/images/financial/icons/existing-sme.png" alt="Existing SMEs aiming for modernization"
               class="w-16 h-16 object-contain" />
@@ -895,7 +896,7 @@
         </div>
 
         <!-- Bumiputera -->
-        <div class="transition duration-300 border border-white/20">
+        <div class="animate-on-scroll fade-in-up delay-600 transition duration-300 border border-white/20">
           <div class="flex justify-center mb-4">
             <img src="assets/images/financial/icons/bumiputera.png" alt="Bumiputera" class="w-16 h-16 object-contain" />
           </div>
@@ -914,7 +915,7 @@
   <section class="py-16 md:py-20 lg:py-24 relative">
     <div class="max-w-screen-2xl mx-auto px-4">
       <!-- Section Header -->
-      <div class="text-center mb-12">
+      <div class="text-center mb-12 animate-on-scroll fade-in-up">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">
           Our Promise
         </h2>
@@ -927,7 +928,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Tailored Matching -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-100 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
           <!-- Blue glow effects -->
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
@@ -955,7 +956,7 @@
 
         <!-- Human Review for Edge Cases -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-8 md:px-6 lg:py-10 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-200 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-8 md:px-6 lg:py-10 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
           <!-- Blue glow effects -->
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
@@ -984,7 +985,7 @@
 
         <!-- Transparent Terms & Costs -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-300 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
           <!-- Blue glow effects -->
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
@@ -1012,7 +1013,7 @@
 
         <!-- Post-Disbursement Support -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-400 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden">
           <!-- Blue glow effects -->
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
@@ -1040,7 +1041,7 @@
 
         <!-- Compliance & Safety -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-500 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <!-- Blue glow effects -->
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
@@ -1069,7 +1070,7 @@
 
         <!-- Access to Government or Guarantee Schemes -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-600 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <!-- Blue glow effects -->
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
@@ -1107,7 +1108,7 @@
     <div class="max-w-screen-2xl mx-auto px-4">
       <!-- Section Header -->
       <div class="text-center mb-12">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 animate-on-scroll fade-in-up">
           Service Providers
         </h2>
         <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
@@ -1120,7 +1121,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center ">
         <!-- Local Banks & Islamic Banks with SME -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-100 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
           </div>
@@ -1146,7 +1147,7 @@
 
         <!-- SME-focused banks & development institutions -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-200 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
           </div>
@@ -1174,7 +1175,7 @@
 
         <!-- Digital SME -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
+          class="animate-on-scroll fade-in-up delay-300 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
           </div>
@@ -1200,7 +1201,7 @@
 
         <!-- Government-backed funds -->
         <div
-          class="relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden lg:col-start-2">
+          class="animate-on-scroll fade-in-up delay-400 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden lg:col-start-2">
           <div
             class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
           </div>
@@ -1227,7 +1228,7 @@
     </div>
     </div>
 
-    <p class="text-base md:text-lg text-gray-600 max-w-5xl mx-auto mt-8 text-center">
+    <p class="text-base md:text-md text-gray-600 max-w-5xl mx-auto mt-8 text-center">
       Each lender is fully licensed and regulated, ensuring you are always protected and have access to the best SME
       financing options in Malaysia.
     </p>
@@ -1268,10 +1269,10 @@
         <!-- Right Column: Text Content -->
         <div class="text-center lg:text-left flex flex-col justify-between h-full bg-white/10 backdrop-blur-[20px]">
           <div>
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 animate-on-scroll fade-in-up">
         Repayment Calculator
           </h2>
-          <p class="text-lg text-gray-600 mb-16">
+          <p class="text-lg text-gray-600 mb-16 animate-on-scroll fade-in-up delay-100">
             Estimate Your Monthly Commitment
 
           </p>
@@ -1287,7 +1288,7 @@
               </span>
               <span class="font-bold">Enter loan amount, tenure, and effective interest / profit rate.</span>
             </li>
-            <li class="flex items-center mb-2">
+            <li class="flex items-center mb-2 animate-on-scroll fade-in-left delay-300">
               <span class="mr-3 p-4 rounded-xl" style="background-color: rgba(249, 209, 87, 1)">
                 <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1297,7 +1298,7 @@
               </span>
               <span class="font-bold">See monthly instalments and total cost.</span>
             </li>
-            <li class="flex items-center mb-4">
+            <li class="flex items-center mb-4 animate-on-scroll fade-in-left delay-400">
               <span class="mr-3 p-4 rounded-xl" style="background-color: rgba(249, 209, 87, 1)">
                 <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1324,247 +1325,310 @@
         </div>
       </div>
     </div>
-  <!-- Eligibility  Section -->
-
-    <div class="max-w-screen-2xl mx-auto py-2 px-4 pt-[12rem] bg-white/10 backdrop-blur-[20px]  ">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:items-start">
-        <!-- Right Column (Text Content) - Appears first on mobile, second on large screens -->
-        <div class="lg:text-left flex flex-col justify-between h-full lg:order-1">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-start">
+  </section>
+  <!-- Eligibility  Section -->   
+  <section class="py-16 md:py-20 lg:py-24">
+      <div class="max-w-screen-2xl mx-auto px-4">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:items-start"
+        >
+          <!-- Right Column (Text Content) - Appears first on mobile, second on large screens -->
+          <div
+            class="lg:text-left flex flex-col justify-between h-full lg:order-1"
+          >
+            <h2
+              class="animate-on-scroll fade-in-up text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-start"
+            >
               Eligibility
             </h2>
-            <p class="text-lg text-gray-600 mb-8 md:mb-12 text-start">
-              Typical criteria in Malaysia’s SME lending market </p>
-          </div>
-          <div class="text-lg text-gray-600 mb-8 md:mb-12 text-center md:text-start">
+            <p
+              class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 mb-8 md:mb-12 text-start"
+            >
+                  General requirements for debt consolidation in Malaysia
+            </p>
             <div
-              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                <svg width="25" height="25" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M23.52 9.80899L24.2152 9.11383C25.367 7.96206 27.2344 7.96206 28.3862 9.11383C29.5379 10.2656 29.5379 12.133 28.3862 13.2848L27.691 13.98M23.52 9.80899C23.52 9.80899 23.6069 11.2862 24.9104 12.5896C26.2138 13.8931 27.691 13.98 27.691 13.98M23.52 9.80899L17.1291 16.1999C16.6962 16.6328 16.4798 16.8492 16.2937 17.0879C16.0741 17.3694 15.8859 17.674 15.7323 17.9963C15.602 18.2695 15.5053 18.5599 15.3117 19.1406L14.4914 21.6016M27.691 13.98L21.3001 20.3709C20.8672 20.8038 20.6508 21.0202 20.4121 21.2063C20.1306 21.4259 19.826 21.6141 19.5037 21.7677C19.2305 21.8979 18.9401 21.9947 18.3594 22.1883L15.8984 23.0086M15.8984 23.0086L15.2969 23.2092C15.0111 23.3044 14.696 23.23 14.483 23.017C14.27 22.804 14.1956 22.4889 14.2908 22.2031L14.4914 21.6016M15.8984 23.0086L14.4914 21.6016M8.25 17.25H12M8.25 11.25H18M8.25 23.25H10.5M25.9926 2.50736C24.2353 0.75 21.4069 0.75 15.75 0.75H12.75C7.09315 0.75 4.26472 0.75 2.50736 2.50736C0.75 4.26472 0.75 7.09315 0.75 12.75V18.75C0.75 24.4069 0.75 27.2353 2.50736 28.9926C4.26472 30.75 7.09315 30.75 12.75 30.75H15.75C21.4069 30.75 24.2353 30.75 25.9926 28.9926C27.4073 27.578 27.6832 25.4693 27.737 21.75"
-                    stroke="#323B47" stroke-width="1.5" stroke-linecap="round" />
-                </svg>
-
-              </span>
-              <div>
-                <p class="font-bold">Business registration</p>
-                <ul class="list-disc list-inside text-sm">
-                  <li>Registered with SSM (or relevant authority), valid license.</li>
-                </ul>
+              class="text-lg text-gray-600 mb-8 md:mb-12 text-center md:text-start"
+            >
+              <div
+                class="animate-on-scroll fade-in-left delay-200 flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4"
+              >
+                <span
+                  class="mr-3 p-4 rounded-xl flex-shrink-0"
+                  style="background-color: rgba(249, 209, 87, 1)"
+                >
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27 13.4999C27.4142 13.4999 27.75 13.1641 27.75 12.7499C27.75 12.3357 27.4142 11.9999 27 11.9999V12.7499V13.4999ZM21 11.9999C20.5858 11.9999 20.25 12.3357 20.25 12.7499C20.25 13.1641 20.5858 13.4999 21 13.4999V12.7499V11.9999ZM27 22.4999C27.4142 22.4999 27.75 22.1641 27.75 21.7499C27.75 21.3357 27.4142 20.9999 27 20.9999V21.7499V22.4999ZM21 20.9999C20.5858 20.9999 20.25 21.3357 20.25 21.7499C20.25 22.1641 20.5858 22.4999 21 22.4999V21.7499V20.9999ZM27 26.9999C27.4142 26.9999 27.75 26.6641 27.75 26.2499C27.75 25.8357 27.4142 25.4999 27 25.4999V26.2499V26.9999ZM21 25.4999C20.5858 25.4999 20.25 25.8357 20.25 26.2499C20.25 26.6641 20.5858 26.9999 21 26.9999V26.2499V25.4999ZM15 13.5C15.4142 13.5 15.75 13.1642 15.75 12.75C15.75 12.3357 15.4142 12 15 12V12.75V13.5ZM9 12C8.58579 12 8.25 12.3357 8.25 12.75C8.25 13.1642 8.58579 13.5 9 13.5V12.75V12ZM12.75 9.74993C12.75 9.33572 12.4142 8.99993 12 8.99993C11.5858 8.99993 11.25 9.33571 11.25 9.74993H12H12.75ZM11.25 15.7499C11.25 16.1641 11.5858 16.4999 12 16.4999C12.4142 16.4999 12.75 16.1641 12.75 15.7499H12H11.25ZM14.7803 22.2803C15.0732 21.9874 15.0732 21.5125 14.7803 21.2197C14.4874 20.9268 14.0126 20.9268 13.7197 21.2197L14.25 21.75L14.7803 22.2803ZM9.21969 25.7196C8.9268 26.0125 8.9268 26.4874 9.21969 26.7803C9.51258 27.0732 9.98746 27.0732 10.2803 26.7803L9.75002 26.25L9.21969 25.7196ZM10.2803 21.2196C9.98744 20.9267 9.51256 20.9267 9.21967 21.2196C8.92678 21.5125 8.92678 21.9874 9.21967 22.2803L9.75 21.75L10.2803 21.2196ZM13.7197 26.7803C14.0125 27.0732 14.4874 27.0732 14.7803 26.7803C15.0732 26.4874 15.0732 26.0125 14.7803 25.7196L14.25 26.2499L13.7197 26.7803ZM18 33V32.25C14.4433 32.25 11.8512 32.2484 9.8704 31.9821C7.91121 31.7187 6.6628 31.2087 5.72703 30.273L5.1967 30.8033L4.66637 31.3336C5.9273 32.5946 7.545 33.183 9.67053 33.4687C11.7745 33.7516 14.4857 33.75 18 33.75V33ZM3 18H2.25C2.25 21.5143 2.24841 24.2255 2.53128 26.3295C2.81704 28.455 3.40544 30.0727 4.66637 31.3336L5.1967 30.8033L5.72703 30.273C4.79126 29.3372 4.28131 28.0888 4.0179 26.1296C3.75159 24.1488 3.75 21.5567 3.75 18H3ZM33 18H32.25C32.25 21.5567 32.2484 24.1488 31.9821 26.1296C31.7187 28.0888 31.2087 29.3372 30.273 30.273L30.8033 30.8033L31.3336 31.3336C32.5946 30.0727 33.183 28.455 33.4687 26.3295C33.7516 24.2255 33.75 21.5143 33.75 18H33ZM18 33V33.75C21.5143 33.75 24.2255 33.7516 26.3295 33.4687C28.455 33.183 30.0727 32.5946 31.3336 31.3336L30.8033 30.8033L30.273 30.273C29.3372 31.2087 28.0888 31.7187 26.1296 31.9821C24.1488 32.2484 21.5567 32.25 18 32.25V33ZM18 3V3.75C21.5567 3.75 24.1488 3.75159 26.1296 4.0179C28.0888 4.28131 29.3372 4.79126 30.273 5.72703L30.8033 5.1967L31.3336 4.66637C30.0727 3.40544 28.455 2.81704 26.3295 2.53128C24.2255 2.24841 21.5143 2.25 18 2.25V3ZM33 18H33.75C33.75 14.4857 33.7516 11.7745 33.4687 9.67053C33.183 7.545 32.5946 5.9273 31.3336 4.66637L30.8033 5.1967L30.273 5.72703C31.2087 6.6628 31.7187 7.91121 31.9821 9.8704C32.2484 11.8512 32.25 14.4433 32.25 18H33ZM18 3V2.25C14.4857 2.25 11.7745 2.24841 9.67053 2.53128C7.545 2.81704 5.9273 3.40544 4.66637 4.66637L5.1967 5.1967L5.72703 5.72703C6.6628 4.79126 7.91121 4.28131 9.8704 4.0179C11.8512 3.75159 14.4433 3.75 18 3.75V3ZM3 18H3.75C3.75 14.4433 3.75159 11.8512 4.0179 9.8704C4.28131 7.91121 4.79126 6.6628 5.72703 5.72703L5.1967 5.1967L4.66637 4.66637C3.40544 5.9273 2.81704 7.545 2.53128 9.67053C2.24841 11.7745 2.25 14.4857 2.25 18H3ZM27 12.7499V11.9999H21V12.7499V13.4999H27V12.7499ZM27 21.7499V20.9999H21V21.7499V22.4999H27V21.7499ZM27 26.2499V25.4999H21V26.2499V26.9999H27V26.2499ZM15 12.75V12H12V12.75V13.5H15V12.75ZM12 12.75V12H9V12.75V13.5L12 13.5V12.75ZM12 9.74993H11.25L11.25 12.75H12L12.75 12.75L12.75 9.74993H12ZM12 12.75H11.25V15.7499H12H12.75V12.75H12ZM14.25 21.75L13.7197 21.2197L11.4697 23.4696L12 24L12.5303 24.5303L14.7803 22.2803L14.25 21.75ZM12 24L11.4697 23.4696L9.21969 25.7196L9.75002 26.25L10.2803 26.7803L12.5303 24.5303L12 24ZM9.75 21.75L9.21967 22.2803L11.4697 24.5303L12 24L12.5303 23.4696L10.2803 21.2196L9.75 21.75ZM12 24L11.4697 24.5303L13.7197 26.7803L14.25 26.2499L14.7803 25.7196L12.5303 23.4696L12 24Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <p class="font-bold">Age:</p>
+                  <ul class="list-disc list-inside text-sm">
+                    <li>21 – 60 years old.</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div
-              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                <svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M30.75 30.75H15.75C8.67893 30.75 5.1434 30.75 2.9467 28.5533C0.75 26.3566 0.75 22.8211 0.75 15.75V0.75M26.2503 8.25L21.5732 14.1396C20.8568 15.0418 20.4986 15.4928 20.0874 15.7127C19.4551 16.0507 18.6995 16.0671 18.0531 15.7569C17.6327 15.5552 17.2552 15.1201 16.5002 14.25C15.7453 13.3798 15.3678 12.9448 14.9474 12.743C14.301 12.4328 13.5454 12.4493 12.9131 12.7873C12.5019 13.0071 12.1437 13.4582 11.4273 14.3603L6.75 20.25"
-                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
-                </svg>
-
-              </span>
-              <div>
-                <p class="font-bold">Business operating period</p>
-
-                <ul class="list-disc list-inside text-sm">
-                  <li>Usually at least 1 year, sometimes 2–3 years (some banks require 3 years)</li>
-                </ul>
+              <div
+                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-300"
+              >
+                <span
+                  class="mr-3 p-4 rounded-xl flex-shrink-0"
+                  style="background-color: rgba(249, 209, 87, 1)"
+                >
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M33 33H18C10.9289 33 7.3934 33 5.1967 30.8033C3 28.6066 3 25.0711 3 18V3M28.5003 10.5L23.8232 16.3896C23.1068 17.2918 22.7486 17.7428 22.3374 17.9627C21.7051 18.3007 20.9495 18.3171 20.3031 18.0069C19.8827 17.8052 19.5052 17.3701 18.7502 16.5C17.9953 15.6298 17.6178 15.1948 17.1974 14.993C16.551 14.6828 15.7954 14.6993 15.1631 15.0373C14.7519 15.2571 14.3937 15.7082 13.6773 16.6103L9 22.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <p class="font-bold">Income:</p>
+                  <ul class="list-disc list-inside text-sm">
+                    <li>From RM2,000/month (varies by lender).</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div
-              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                <svg width="25" height="25" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.5 32.25C4.08579 32.25 3.75 32.5858 3.75 33C3.75 33.4142 4.08579 33.75 4.5 33.75V33V32.25ZM31.5 33.75C31.9142 33.75 32.25 33.4142 32.25 33C32.25 32.5858 31.9142 32.25 31.5 32.25V33V33.75ZM4.5 33V33.75H31.5V33V32.25H4.5V33ZM10.5 16.5H9.75V25.5H10.5H11.25V16.5H10.5ZM4.5 25.5H5.25V16.5H4.5H3.75V25.5H4.5ZM7.5 28.5V27.75C6.77169 27.75 6.30091 27.7484 5.95403 27.7018C5.62872 27.658 5.52676 27.5874 5.46967 27.5303L4.93934 28.0607L4.40901 28.591C4.79126 28.9732 5.26252 29.1223 5.75416 29.1884C6.22422 29.2516 6.8141 29.25 7.5 29.25V28.5ZM4.5 25.5H3.75C3.75 26.1859 3.74841 26.7758 3.81161 27.2458C3.8777 27.7375 4.02676 28.2087 4.40901 28.591L4.93934 28.0607L5.46967 27.5303C5.41258 27.4732 5.34197 27.3713 5.29823 27.046C5.25159 26.6991 5.25 26.2283 5.25 25.5H4.5ZM10.5 25.5H9.75C9.75 26.2283 9.74841 26.6991 9.70177 27.046C9.65803 27.3713 9.58742 27.4732 9.53033 27.5303L10.0607 28.0607L10.591 28.591C10.9732 28.2087 11.1223 27.7375 11.1884 27.2458C11.2516 26.7758 11.25 26.1859 11.25 25.5H10.5ZM7.5 28.5V29.25C8.1859 29.25 8.77578 29.2516 9.24584 29.1884C9.73748 29.1223 10.2087 28.9732 10.591 28.591L10.0607 28.0607L9.53033 27.5303C9.47324 27.5874 9.37128 27.658 9.04597 27.7018C8.69909 27.7484 8.22831 27.75 7.5 27.75V28.5ZM7.5 13.5V14.25C8.22831 14.25 8.69909 14.2516 9.04597 14.2982C9.37128 14.342 9.47324 14.4126 9.53033 14.4697L10.0607 13.9393L10.591 13.409C10.2087 13.0268 9.73748 12.8777 9.24584 12.8116C8.77578 12.7484 8.1859 12.75 7.5 12.75V13.5ZM10.5 16.5H11.25C11.25 15.8141 11.2516 15.2242 11.1884 14.7542C11.1223 14.2625 10.9732 13.7913 10.591 13.409L10.0607 13.9393L9.53033 14.4697C9.58742 14.5268 9.65803 14.6287 9.70177 14.954C9.74841 15.3009 9.75 15.7717 9.75 16.5H10.5ZM7.5 13.5V12.75C6.8141 12.75 6.22422 12.7484 5.75416 12.8116C5.26252 12.8777 4.79126 13.0268 4.40901 13.409L4.93934 13.9393L5.46967 14.4697C5.52676 14.4126 5.62872 14.342 5.95403 14.2982C6.30091 14.2516 6.77169 14.25 7.5 14.25V13.5ZM4.5 16.5H5.25C5.25 15.7717 5.25159 15.3009 5.29823 14.954C5.34197 14.6287 5.41258 14.5268 5.46967 14.4697L4.93934 13.9393L4.40901 13.409C4.02676 13.7913 3.8777 14.2625 3.81161 14.7542C3.74841 15.2242 3.75 15.8141 3.75 16.5H4.5ZM21 10.5H20.25V25.5H21H21.75V10.5H21ZM15 25.5H15.75V10.5H15H14.25V25.5H15ZM18 28.5V27.75C17.2717 27.75 16.8009 27.7484 16.454 27.7018C16.1287 27.658 16.0268 27.5874 15.9697 27.5303L15.4393 28.0607L14.909 28.591C15.2913 28.9732 15.7625 29.1223 16.2542 29.1884C16.7242 29.2516 17.3141 29.25 18 29.25V28.5ZM15 25.5H14.25C14.25 26.1859 14.2484 26.7758 14.3116 27.2458C14.3777 27.7375 14.5268 28.2087 14.909 28.591L15.4393 28.0607L15.9697 27.5303C15.9126 27.4732 15.842 27.3713 15.7982 27.046C15.7516 26.6991 15.75 26.2283 15.75 25.5H15ZM21 25.5H20.25C20.25 26.2283 20.2484 26.6991 20.2018 27.046C20.158 27.3713 20.0874 27.4732 20.0303 27.5303L20.5607 28.0607L21.091 28.591C21.4732 28.2087 21.6223 27.7375 21.6884 27.2458C21.7516 26.7758 21.75 26.1859 21.75 25.5H21ZM18 28.5V29.25C18.6859 29.25 19.2758 29.2516 19.7458 29.1884C20.2375 29.1223 20.7087 28.9732 21.091 28.591L20.5607 28.0607L20.0303 27.5303C19.9732 27.5874 19.8713 27.658 19.546 27.7018C19.1991 27.7484 18.7283 27.75 18 27.75V28.5ZM18 7.5V8.25C18.7283 8.25 19.1991 8.25159 19.546 8.29823C19.8713 8.34197 19.9732 8.41258 20.0303 8.46967L20.5607 7.93934L21.091 7.40901C20.7087 7.02676 20.2375 6.8777 19.7458 6.81161C19.2758 6.74841 18.6859 6.75 18 6.75V7.5ZM21 10.5H21.75C21.75 9.8141 21.7516 9.22422 21.6884 8.75416C21.6223 8.26252 21.4732 7.79126 21.091 7.40901L20.5607 7.93934L20.0303 8.46967C20.0874 8.52676 20.158 8.62872 20.2018 8.95403C20.2484 9.30091 20.25 9.77169 20.25 10.5H21ZM18 7.5V6.75C17.3141 6.75 16.7242 6.74841 16.2542 6.81161C15.7625 6.8777 15.2913 7.02676 14.909 7.40901L15.4393 7.93934L15.9697 8.46967C16.0268 8.41258 16.1287 8.34197 16.454 8.29823C16.8009 8.25159 17.2717 8.25 18 8.25V7.5ZM15 10.5H15.75C15.75 9.77169 15.7516 9.30091 15.7982 8.95403C15.842 8.62872 15.9126 8.52676 15.9697 8.46967L15.4393 7.93934L14.909 7.40901C14.5268 7.79126 14.3777 8.26252 14.3116 8.75416C14.2484 9.22422 14.25 9.8141 14.25 10.5H15ZM31.5 6H30.75V25.5H31.5H32.25V6H31.5ZM25.5 25.5H26.25V6H25.5H24.75V25.5H25.5ZM28.5 28.5V27.75C27.7717 27.75 27.3009 27.7484 26.954 27.7018C26.6287 27.658 26.5268 27.5874 26.4697 27.5303L25.9393 28.0607L25.409 28.591C25.7913 28.9732 26.2625 29.1223 26.7542 29.1884C27.2242 29.2516 27.8141 29.25 28.5 29.25V28.5ZM25.5 25.5H24.75C24.75 26.1859 24.7484 26.7758 24.8116 27.2458C24.8777 27.7375 25.0268 28.2087 25.409 28.591L25.9393 28.0607L26.4697 27.5303C26.4126 27.4732 26.342 27.3713 26.2982 27.046C26.2516 26.6991 26.25 26.2283 26.25 25.5H25.5ZM31.5 25.5H30.75C30.75 26.2283 30.7484 26.6991 30.7018 27.046C30.658 27.3713 30.5874 27.4732 30.5303 27.5303L31.0607 28.0607L31.591 28.591C31.9732 28.2087 32.1223 27.7375 32.1884 27.2458C32.2516 26.7758 32.25 26.1859 32.25 25.5H31.5ZM28.5 28.5V29.25C29.1859 29.25 29.7758 29.2516 30.2458 29.1884C30.7375 29.1223 31.2087 28.9732 31.591 28.591L31.0607 28.0607L30.5303 27.5303C30.4732 27.5874 30.3713 27.658 30.046 27.7018C29.6991 27.7484 29.2283 27.75 28.5 27.75V28.5ZM28.5 3V3.75C29.2283 3.75 29.6991 3.75159 30.046 3.79823C30.3713 3.84197 30.4732 3.91258 30.5303 3.96967L31.0607 3.43934L31.591 2.90901C31.2087 2.52676 30.7375 2.3777 30.2458 2.31161C29.7758 2.24841 29.1859 2.25 28.5 2.25V3ZM31.5 6H32.25C32.25 5.3141 32.2516 4.72422 32.1884 4.25416C32.1223 3.76252 31.9732 3.29126 31.591 2.90901L31.0607 3.43934L30.5303 3.96967C30.5874 4.02676 30.658 4.12872 30.7018 4.45403C30.7484 4.80091 30.75 5.27169 30.75 6H31.5ZM28.5 3V2.25C27.8141 2.25 27.2242 2.24841 26.7542 2.31161C26.2625 2.3777 25.7913 2.52676 25.409 2.90901L25.9393 3.43934L26.4697 3.96967C26.5268 3.91258 26.6287 3.84197 26.954 3.79823C27.3009 3.75159 27.7717 3.75 28.5 3.75V3ZM25.5 6H26.25C26.25 5.27169 26.2516 4.80091 26.2982 4.45403C26.342 4.12872 26.4126 4.02676 26.4697 3.96967L25.9393 3.43934L25.409 2.90901C25.0268 3.29126 24.8777 3.76252 24.8116 4.25416C24.7484 4.72422 24.75 5.3141 24.75 6H25.5Z"
-                    fill="#323B47" />
-                </svg>
-
-              </span>
-              <div>
-                <p class="font-bold">Revenue threshold</p>
-                <ul class="list-disc list-inside text-sm">
-                  <li>
-                    Depends on lender; e.g. for smaller SME loans, minimal revenue acceptable.
-                  </li>
-                </ul>
+              <div
+                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-400"
+              >
+                <span
+                  class="mr-3 p-4 rounded-xl flex-shrink-0"
+                  style="background-color: rgba(249, 209, 87, 1)"
+                >
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.5 18.75C28.9142 18.75 29.25 18.4142 29.25 18C29.25 17.5858 28.9142 17.25 28.5 17.25V18V18.75ZM22.5 17.25C22.0858 17.25 21.75 17.5858 21.75 18C21.75 18.4142 22.0858 18.75 22.5 18.75V18V17.25ZM28.5 14.25C28.9142 14.25 29.25 13.9142 29.25 13.5C29.25 13.0858 28.9142 12.75 28.5 12.75V13.5V14.25ZM21 12.75C20.5858 12.75 20.25 13.0858 20.25 13.5C20.25 13.9142 20.5858 14.25 21 14.25V13.5V12.75ZM28.5 23.25C28.9142 23.25 29.25 22.9142 29.25 22.5C29.25 22.0858 28.9142 21.75 28.5 21.75V22.5V23.25ZM24 21.75C23.5858 21.75 23.25 22.0858 23.25 22.5C23.25 22.9142 23.5858 23.25 24 23.25V22.5V21.75ZM16.5 13.5H15.75C15.75 14.7426 14.7426 15.75 13.5 15.75V16.5V17.25C15.5711 17.25 17.25 15.5711 17.25 13.5H16.5ZM13.5 16.5V15.75C12.2574 15.75 11.25 14.7426 11.25 13.5H10.5H9.75C9.75 15.5711 11.4289 17.25 13.5 17.25V16.5ZM10.5 13.5H11.25C11.25 12.2574 12.2574 11.25 13.5 11.25V10.5V9.75C11.4289 9.75 9.75 11.4289 9.75 13.5H10.5ZM13.5 10.5V11.25C14.7426 11.25 15.75 12.2574 15.75 13.5H16.5H17.25C17.25 11.4289 15.5711 9.75 13.5 9.75V10.5ZM19.5 22.5H18.75C18.75 23.3806 18.7115 23.7233 18.3102 24.0138C18.0632 24.1926 17.6244 24.3842 16.8359 24.5261C16.0532 24.6669 14.9772 24.75 13.5 24.75V25.5V26.25C15.0228 26.25 16.1968 26.1652 17.1016 26.0024C18.0006 25.8406 18.6868 25.5929 19.1898 25.2289C20.2885 24.4335 20.25 23.2762 20.25 22.5H19.5ZM13.5 25.5V24.75C12.0228 24.75 10.9468 24.6669 10.1641 24.5261C9.3756 24.3842 8.93682 24.1926 8.68977 24.0138C8.28849 23.7233 8.25 23.3806 8.25 22.5H7.5H6.75C6.75 23.2762 6.71151 24.4335 7.81023 25.2289C8.31318 25.5929 8.9994 25.8406 9.89844 26.0024C10.8032 26.1652 11.9772 26.25 13.5 26.25V25.5ZM7.5 22.5H8.25C8.25 22.1087 8.58671 21.5525 9.59277 21.0495C10.554 20.5689 11.9343 20.25 13.5 20.25V19.5V18.75C11.752 18.75 10.1323 19.1027 8.92195 19.7079C7.75643 20.2906 6.75 21.2345 6.75 22.5H7.5ZM13.5 19.5V20.25C15.0657 20.25 16.446 20.5689 17.4072 21.0495C18.4133 21.5525 18.75 22.1087 18.75 22.5H19.5H20.25C20.25 21.2345 19.2436 20.2906 18.0781 19.7079C16.8677 19.1027 15.248 18.75 13.5 18.75V19.5ZM15 6V6.75H21V6V5.25H15V6ZM21 30V29.25H15V30V30.75H21V30ZM15 30V29.25C12.1504 29.25 10.0886 29.2484 8.5163 29.037C6.96559 28.8285 6.00379 28.4284 5.28769 27.7123L4.75736 28.2426L4.22703 28.773C5.26829 29.8142 6.59938 30.2928 8.31643 30.5236C10.0119 30.7516 12.1928 30.75 15 30.75V30ZM3 18H2.25C2.25 20.8072 2.24841 22.9881 2.47636 24.6836C2.70721 26.4006 3.18577 27.7317 4.22703 28.773L4.75736 28.2426L5.28769 27.7123C4.57159 26.9962 4.17147 26.0344 3.96298 24.4837C3.75159 22.9114 3.75 20.8496 3.75 18H3ZM33 18H32.25C32.25 20.8496 32.2484 22.9114 32.037 24.4837C31.8285 26.0344 31.4284 26.9962 30.7123 27.7123L31.2426 28.2426L31.773 28.773C32.8142 27.7317 33.2928 26.4006 33.5236 24.6836C33.7516 22.9881 33.75 20.8072 33.75 18H33ZM21 30V30.75C23.8072 30.75 25.9881 30.7516 27.6836 30.5236C29.4006 30.2928 30.7317 29.8142 31.773 28.773L31.2426 28.2426L30.7123 27.7123C29.9962 28.4284 29.0344 28.8285 27.4837 29.037C25.9114 29.2484 23.8496 29.25 21 29.25V30ZM21 6V6.75C23.8496 6.75 25.9114 6.75159 27.4837 6.96298C29.0344 7.17147 29.9962 7.57159 30.7123 8.28769L31.2426 7.75736L31.773 7.22703C30.7317 6.18577 29.4006 5.70721 27.6836 5.47636C25.9881 5.24841 23.8072 5.25 21 5.25V6ZM33 18H33.75C33.75 15.1928 33.7516 13.0119 33.5236 11.3164C33.2928 9.59938 32.8142 8.26829 31.773 7.22703L31.2426 7.75736L30.7123 8.28769C31.4284 9.00379 31.8285 9.96559 32.037 11.5163C32.2484 13.0886 32.25 15.1504 32.25 18H33ZM15 6V5.25C12.1928 5.25 10.0119 5.24841 8.31643 5.47636C6.59938 5.70721 5.26829 6.18577 4.22703 7.22703L4.75736 7.75736L5.28769 8.28769C6.00379 7.57159 6.96559 7.17147 8.5163 6.96298C10.0886 6.75159 12.1504 6.75 15 6.75V6ZM3 18H3.75C3.75 15.1504 3.75159 13.0886 3.96298 11.5163C4.17147 9.96559 4.57159 9.00379 5.28769 8.28769L4.75736 7.75736L4.22703 7.22703C3.18577 8.26829 2.70721 9.59938 2.47636 11.3164C2.24841 13.0119 2.25 15.1928 2.25 18H3ZM28.5 18V17.25H22.5V18V18.75H28.5V18ZM28.5 13.5V12.75H21V13.5V14.25H28.5V13.5ZM28.5 22.5V21.75H24V22.5V23.25H28.5V22.5Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <p class="font-bold">Employment:</p>
+                  <ul class="list-disc list-inside text-sm">
+                    <li>
+                      Civil servants, private employees, self-employed, or gig
+                      workers.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div
-              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                <svg width="25" height="25" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M30.75 0.75L19.6805 11.752C18.184 13.2394 17.4358 13.9831 16.5077 13.983C15.5795 13.9829 14.8315 13.239 13.3353 11.7513L12.9763 11.3943C11.4788 9.90523 10.7301 9.16071 9.80133 9.16105C8.87259 9.16139 8.12439 9.90646 6.628 11.3966L0.75 17.25M30.75 0.75V9.06875M30.75 0.75H22.3768"
-                    stroke="#323B47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+              <div
+                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-500"
+              >
+                <span
+                  class="mr-3 p-4 rounded-xl flex-shrink-0"
+                  style="background-color: rgba(249, 209, 87, 1)"
+                >
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.75 7.50003C6.75 7.08582 6.41421 6.75003 6 6.75003C5.58579 6.75003 5.25 7.08582 5.25 7.50003H6H6.75ZM27 9.00003V9.75003H27.75V9.00003H27ZM23.5757 3.48921L23.4697 2.74675L23.5757 3.48921ZM7.37939 5.80297L7.27333 5.06051L7.37939 5.80297ZM12 17.25C11.5858 17.25 11.25 17.5858 11.25 18C11.25 18.4142 11.5858 18.75 12 18.75V18V17.25ZM24 18.75C24.4142 18.75 24.75 18.4142 24.75 18C24.75 17.5858 24.4142 17.25 24 17.25V18V18.75ZM12 22.5C11.5858 22.5 11.25 22.8358 11.25 23.25C11.25 23.6642 11.5858 24 12 24V23.25V22.5ZM20.25 24C20.6642 24 21 23.6642 21 23.25C21 22.8358 20.6642 22.5 20.25 22.5V23.25V24ZM30 13.5H29.25V28.5H30H30.75V13.5H30ZM25.5 33V32.25H10.5V33V33.75H25.5V33ZM6 28.5H6.75V9.00003H6H5.25V28.5H6ZM6 9.00003H6.75V7.50003H6H5.25V9.00003H6ZM6 9.00003V9.75003H25.5V9.00003V8.25003H6V9.00003ZM10.5 33V32.25C8.42893 32.25 6.75 30.5711 6.75 28.5H6H5.25C5.25 31.3995 7.60051 33.75 10.5 33.75V33ZM30 28.5H29.25C29.25 30.5711 27.5711 32.25 25.5 32.25V33V33.75C28.3995 33.75 30.75 31.3995 30.75 28.5H30ZM30 13.5H30.75C30.75 10.6005 28.3995 8.25003 25.5 8.25003V9.00003V9.75003C27.5711 9.75003 29.25 11.429 29.25 13.5H30ZM7.6066 9.00003V9.75003H27V9.00003V8.25003H7.6066V9.00003ZM27 9.00003H27.75V6.45906H27H26.25V9.00003H27ZM23.5757 3.48921L23.4697 2.74675L7.27333 5.06051L7.37939 5.80297L7.48546 6.54544L23.6818 4.23167L23.5757 3.48921ZM7.37939 5.80297L7.27333 5.06051C6.11235 5.22637 5.25 6.22067 5.25 7.39343H6H6.75C6.75 6.96714 7.06346 6.60572 7.48546 6.54544L7.37939 5.80297ZM27 6.45906H27.75C27.75 4.177 25.7288 2.42402 23.4697 2.74675L23.5757 3.48921L23.6818 4.23167C25.0373 4.03803 26.25 5.08982 26.25 6.45906H27ZM7.6066 9.00003V8.25003C7.13351 8.25003 6.75 7.86652 6.75 7.39343H6H5.25C5.25 8.69494 6.30509 9.75003 7.6066 9.75003V9.00003ZM12 18V18.75H24V18V17.25H12V18ZM12 23.25V24H20.25V23.25V22.5H12V23.25Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
 
-              </span>
-
-              <div>
-                <p class="font-bold">Profitability</p>
-                <ul class="list-disc list-inside text-sm">
-                  <li>Financial statements / bank statements to show viability.</li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                <svg width="25" height="25" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.75 6C6.33579 6 6 6.33579 6 6.75C6 7.16421 6.33579 7.5 6.75 7.5V6.75V6ZM12.75 7.5C13.1642 7.5 13.5 7.16421 13.5 6.75C13.5 6.33579 13.1642 6 12.75 6V6.75V7.5ZM29.2403 17.2468L29.2858 17.9954H29.2858L29.2403 17.2468ZM30.7465 15.8481L31.4947 15.9009V15.9009L30.7465 15.8481ZM29.2403 8.25321L29.1947 9.00183L29.2403 8.25321ZM30.7465 9.6519L31.4947 9.59909V9.59909L30.7465 9.6519ZM27.4926 22.9926L28.023 23.523L27.4926 22.9926ZM27.4926 2.50736L28.023 1.97703V1.97703L27.4926 2.50736ZM2.50736 2.50736L1.97703 1.97703L2.50736 2.50736ZM2.50736 22.9926L3.03769 22.4623L2.50736 22.9926ZM24.7369 12C24.3227 12 23.9869 12.3358 23.9869 12.75C23.9869 13.1642 24.3227 13.5 24.7369 13.5V12.75V12ZM24.7504 13.5C25.1646 13.5 25.5004 13.1642 25.5004 12.75C25.5004 12.3358 25.1646 12 24.7504 12V12.75V13.5ZM6.75 6.75V7.5H12.75V6.75V6H6.75V6.75ZM25.0962 8.25V9H29V8.25V7.5H25.0962V8.25ZM29 17.25V16.5H25.0962V17.25V18H29V17.25ZM30.75 9.875H30V15.625H30.75H31.5V9.875H30.75ZM25.0962 17.25V16.5C22.7806 16.5 21 14.7697 21 12.75H20.25H19.5C19.5 15.7009 22.0588 18 25.0962 18V17.25ZM29 17.25V18C29.1139 18 29.2046 18.0004 29.2858 17.9954L29.2403 17.2468L29.1947 16.4982C29.1704 16.4997 29.1361 16.5 29 16.5V17.25ZM30.75 15.625H30C30 15.7539 29.9995 15.7793 29.9984 15.7953L30.7465 15.8481L31.4947 15.9009C31.5005 15.8189 31.5 15.7283 31.5 15.625H30.75ZM29.2403 17.2468L29.2858 17.9954C30.4268 17.926 31.4122 17.0693 31.4947 15.9009L30.7465 15.8481L29.9984 15.7953C29.9748 16.1292 29.6715 16.4692 29.1947 16.4982L29.2403 17.2468ZM29 8.25V9C29.136 9 29.1704 9.00035 29.1947 9.00183L29.2403 8.25321L29.2858 7.5046C29.2046 7.49965 29.114 7.5 29 7.5V8.25ZM30.75 9.875H31.5C31.5 9.77172 31.5005 9.68111 31.4947 9.59909L30.7465 9.6519L29.9984 9.7047C29.9995 9.72069 30 9.74615 30 9.875H30.75ZM29.2403 8.25321L29.1947 9.00183C29.6715 9.03085 29.9748 9.3708 29.9984 9.7047L30.7465 9.6519L31.4947 9.59909C31.4122 8.43072 30.4268 7.57404 29.2858 7.5046L29.2403 8.25321ZM25.0962 8.25V7.5C22.0588 7.5 19.5 9.79913 19.5 12.75H20.25H21C21 10.7303 22.7806 9 25.0962 9V8.25ZM12.75 0.75V1.5H17.25V0.75V0H12.75V0.75ZM17.25 24.75V24H12.75V24.75V25.5H17.25V24.75ZM17.25 24.75V25.5C20.0572 25.5 22.2381 25.5016 23.9336 25.2736C25.6506 25.0428 26.9817 24.5642 28.023 23.523L27.4926 22.9926L26.9623 22.4623C26.2462 23.1784 25.2844 23.5785 23.7337 23.787C22.1614 23.9984 20.0996 24 17.25 24V24.75ZM17.25 0.75V1.5C20.0996 1.5 22.1614 1.50159 23.7337 1.71298C25.2844 1.92147 26.2462 2.32159 26.9623 3.03769L27.4926 2.50736L28.023 1.97703C26.9817 0.935773 25.6506 0.457209 23.9336 0.226358C22.2381 -0.00159281 20.0572 0 17.25 0V0.75ZM0.75 12.75H1.5C1.5 9.90037 1.50159 7.8386 1.71298 6.26631C1.92147 4.71559 2.32159 3.75379 3.03769 3.03769L2.50736 2.50736L1.97703 1.97703C0.935773 3.01829 0.457209 4.34938 0.226358 6.06643C-0.00159281 7.76191 0 9.94278 0 12.75H0.75ZM12.75 0.75V0C9.94277 0 7.76191 -0.00159281 6.06643 0.226358C4.34938 0.457209 3.01829 0.935773 1.97703 1.97703L2.50736 2.50736L3.03769 3.03769C3.75379 2.32159 4.71559 1.92147 6.2663 1.71298C7.8386 1.50159 9.90037 1.5 12.75 1.5V0.75ZM0.75 12.75H0C0 15.5572 -0.00159281 17.7381 0.226358 19.4336C0.457209 21.1506 0.935773 22.4817 1.97703 23.523L2.50736 22.9926L3.03769 22.4623C2.32159 21.7462 1.92147 20.7844 1.71298 19.2337C1.50159 17.6614 1.5 15.5996 1.5 12.75H0.75ZM12.75 24.75V24C9.90037 24 7.8386 23.9984 6.2663 23.787C4.71559 23.5785 3.75379 23.1784 3.03769 22.4623L2.50736 22.9926L1.97703 23.523C3.01829 24.5642 4.34938 25.0428 6.06643 25.2736C7.76191 25.5016 9.94277 25.5 12.75 25.5V24.75ZM29.1976 8.25L29.9469 8.21888C29.8299 5.40128 29.4559 3.40996 28.023 1.97703L27.4926 2.50736L26.9623 3.03769C27.9539 4.02928 28.3319 5.48181 28.4482 8.28112L29.1976 8.25ZM29.1976 17.25L28.4482 17.2189C28.3319 20.0182 27.9539 21.4707 26.9623 22.4623L27.4926 22.9926L28.023 23.523C29.4559 22.09 29.8299 20.0987 29.9469 17.2811L29.1976 17.25ZM24.7369 12.75V13.5H24.7504V12.75V12H24.7369V12.75Z"
-                    fill="#323B47" />
-                </svg>
-
-
-              </span>
-
-              <div>
-                <p class="font-bold">Credit </p>
-                <ul class="list-disc list-inside text-sm">
-                  <li>Business and/or owner’s credit history (CTOS, CCRIS) will be considered.</li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                <svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.0828 18.5326L17.5618 17.9555L17.0369 17.5199L16.5535 18.0012L17.0828 18.5326ZM12.8944 14.3614L13.4237 14.8928L13.8481 14.4701L13.5297 13.9627L12.8944 14.3614ZM1.43161 25.7774L0.902365 25.246H0.902364L1.43161 25.7774ZM1.43161 28.8509L0.902365 29.3823H0.902365L1.43161 28.8509ZM15.7601 19.8499L15.2308 19.3185L15.7601 19.8499ZM15.9805 21.8257L15.3103 22.1622C15.3279 22.1973 15.3482 22.2309 15.3711 22.2628L15.9805 21.8257ZM15.9805 24.8992L16.5796 25.3504C16.5831 25.3458 16.5866 25.3411 16.59 25.3363L15.9805 24.8992ZM11.3513 24.8992L11.8806 24.3678L11.3513 23.8407L10.8221 24.3678L11.3513 24.8992ZM11.1309 28.4118L11.73 28.863C11.7335 28.8584 11.7369 28.8537 11.7403 28.849L11.1309 28.4118ZM7.16297 28.6314L7.69221 28.1L7.16297 27.5729L6.63372 28.1L7.16297 28.6314ZM10.9104 25.3383L10.3812 24.8069L9.88707 25.299L10.342 25.8275L10.9104 25.3383ZM2.75424 30.1681L2.225 30.6996L2.2454 30.7199L2.26729 30.7386L2.75424 30.1681ZM5.61989 30.1681L5.09065 29.6367L5.61989 30.1681ZM30.75 10.1902H30C30 14.9867 26.0948 18.8803 21.2711 18.8803V19.6303V20.3803C26.9175 20.3803 31.5 15.8209 31.5 10.1902H30.75ZM11.7922 10.1902H12.5422C12.5422 5.39361 16.4474 1.5 21.2711 1.5V0.75V0C15.6248 0 11.0422 4.5594 11.0422 10.1902H11.7922ZM21.2711 0.75V1.5C26.0948 1.5 30 5.39361 30 10.1902H30.75H31.5C31.5 4.55939 26.9175 0 21.2711 0V0.75ZM21.2711 19.6303V18.8803C20.8387 18.8803 20.1075 18.8295 19.3676 18.6763C18.6055 18.5186 17.9459 18.2743 17.5618 17.9555L17.0828 18.5326L16.6038 19.1097C17.2778 19.6691 18.2348 19.9736 19.0635 20.1452C19.9144 20.3213 20.7483 20.3803 21.2711 20.3803V19.6303ZM11.7922 10.1902H11.0422C11.0422 11.5097 11.3428 12.6427 11.6404 13.4428C11.7896 13.8441 11.9396 14.1658 12.0542 14.3903C12.1116 14.5026 12.1603 14.591 12.1959 14.6533C12.2137 14.6845 12.2282 14.7091 12.239 14.727C12.2443 14.7359 12.2487 14.7432 12.2521 14.7487C12.2538 14.7514 12.2553 14.7538 12.2564 14.7557C12.257 14.7566 12.2575 14.7575 12.258 14.7582C12.2582 14.7586 12.2584 14.7589 12.2586 14.7592C12.2587 14.7594 12.2589 14.7596 12.2589 14.7596C12.259 14.7599 12.2592 14.7601 12.8944 14.3614C13.5297 13.9627 13.5298 13.9629 13.5299 13.9631C13.53 13.9631 13.5301 13.9633 13.5301 13.9634C13.5303 13.9636 13.5304 13.9638 13.5305 13.9639C13.5307 13.9642 13.5308 13.9644 13.5308 13.9645C13.531 13.9647 13.5308 13.9645 13.5304 13.9639C13.5296 13.9626 13.5279 13.9597 13.5252 13.9552C13.5197 13.9461 13.5106 13.9307 13.4983 13.9091C13.4736 13.8659 13.4362 13.7982 13.3902 13.7082C13.2981 13.5279 13.1726 13.2595 13.0463 12.9199C12.7928 12.2382 12.5422 11.2855 12.5422 10.1902H11.7922ZM12.8944 14.3614L12.3652 13.83L0.902365 25.246L1.43161 25.7774L1.96085 26.3088L13.4237 14.8928L12.8944 14.3614ZM1.43161 25.7774L0.902364 25.246C0.560219 25.5867 0.156544 26.1845 0.0356254 26.9242C-0.0929804 27.711 0.111818 28.595 0.902365 29.3823L1.43161 28.8509L1.96085 28.3195C1.51694 27.8774 1.46456 27.4808 1.51598 27.1662C1.57509 26.8046 1.78864 26.4803 1.96085 26.3088L1.43161 25.7774ZM17.0828 18.5326L16.5535 18.0012L15.2308 19.3185L15.7601 19.8499L16.2893 20.3813L17.612 19.064L17.0828 18.5326ZM15.7601 19.8499L15.2308 19.3185C14.9373 19.6109 14.6928 19.9072 14.5687 20.2261C14.4173 20.6149 14.4655 20.9785 14.6367 21.2855C14.7601 21.5067 14.9695 21.7164 15.0493 21.8045C15.1615 21.9283 15.2456 22.0335 15.3103 22.1622L15.9805 21.8257L16.6508 21.4892C16.495 21.1788 16.3036 20.9547 16.1609 20.7973C16.0793 20.7072 16.0412 20.6683 15.9935 20.6132C15.9524 20.5658 15.9444 20.5507 15.9467 20.5547C15.9524 20.565 15.9719 20.6049 15.9768 20.6653C15.9817 20.7263 15.9683 20.7656 15.9665 20.7703C15.9662 20.771 15.9694 20.7626 15.9802 20.7442C15.991 20.7259 16.0079 20.6999 16.0339 20.6655C16.0867 20.5955 16.1677 20.5025 16.2893 20.3813L15.7601 19.8499ZM15.9805 24.8992L15.3814 24.448C15.132 24.7793 14.6535 25.1717 14.0717 25.282C13.5441 25.3821 12.7936 25.2771 11.8806 24.3678L11.3513 24.8992L10.8221 25.4306C12.0252 26.6289 13.2587 26.963 14.3513 26.7557C15.3897 26.5587 16.1678 25.8973 16.5796 25.3504L15.9805 24.8992ZM15.9805 21.8257C15.3711 22.2628 15.3709 22.2625 15.3707 22.2623C15.3706 22.2622 15.3704 22.2619 15.3703 22.2617C15.3701 22.2614 15.3699 22.2611 15.3696 22.2608C15.3692 22.2602 15.3689 22.2597 15.3686 22.2593C15.368 22.2585 15.3677 22.2581 15.3676 22.2579C15.3675 22.2577 15.3682 22.2588 15.3698 22.2612C15.3731 22.266 15.3796 22.2759 15.3888 22.2907C15.4071 22.3202 15.4355 22.3682 15.468 22.4318C15.5339 22.5605 15.6126 22.7439 15.6644 22.9606C15.7654 23.3832 15.7644 23.9137 15.3711 24.4621L15.9805 24.8992L16.59 25.3363C17.2989 24.3479 17.2978 23.3418 17.1233 22.6118C17.0373 22.2522 16.9093 21.9554 16.803 21.7479C16.7495 21.6433 16.7003 21.5593 16.6627 21.4988C16.6439 21.4685 16.6278 21.4439 16.6154 21.4255C16.6092 21.4162 16.604 21.4085 16.5997 21.4023C16.5975 21.3993 16.5957 21.3966 16.594 21.3943C16.5932 21.3931 16.5925 21.3921 16.5918 21.3911C16.5915 21.3907 16.5911 21.3902 16.5908 21.3898C16.5907 21.3896 16.5905 21.3893 16.5904 21.3892C16.5902 21.3889 16.59 21.3886 15.9805 21.8257ZM11.1309 28.4118L10.5318 27.9607C10.3034 28.2638 9.85499 28.5913 9.3365 28.6906C8.86334 28.7812 8.28773 28.6931 7.69221 28.1L7.16297 28.6314L6.63372 29.1628C7.58128 30.1065 8.65896 30.3476 9.61865 30.1638C10.533 29.9887 11.297 29.438 11.73 28.863L11.1309 28.4118ZM10.9104 25.3383C10.342 25.8275 10.3418 25.8273 10.3416 25.8271C10.3415 25.827 10.3413 25.8268 10.3412 25.8266C10.3409 25.8263 10.3407 25.826 10.3405 25.8258C10.3401 25.8253 10.3397 25.8249 10.3394 25.8246C10.3389 25.8239 10.3386 25.8236 10.3387 25.8237C10.3387 25.8238 10.3399 25.8252 10.3421 25.8279C10.3466 25.8334 10.355 25.844 10.3667 25.8594C10.3901 25.8904 10.4256 25.9397 10.4668 26.0046C10.5504 26.1362 10.6505 26.321 10.7228 26.5368C10.8633 26.9569 10.8931 27.4565 10.5214 27.9747L11.1309 28.4118L11.7403 28.849C12.4709 27.8304 12.3904 26.7933 12.1452 26.0607C12.0246 25.7003 11.8629 25.4048 11.7329 25.2003C11.6674 25.0971 11.6082 25.0144 11.5635 24.9552C11.5412 24.9256 11.5223 24.9017 11.5079 24.884C11.5007 24.8751 11.4946 24.8677 11.4897 24.8618C11.4873 24.8589 11.4851 24.8564 11.4833 24.8543C11.4824 24.8532 11.4816 24.8522 11.4809 24.8514C11.4805 24.8509 11.4801 24.8505 11.4798 24.8501C11.4796 24.8499 11.4794 24.8497 11.4793 24.8496C11.4791 24.8493 11.4789 24.8491 10.9104 25.3383ZM10.9104 25.3383L11.4397 25.8697L11.8806 25.4306L11.3513 24.8992L10.8221 24.3678L10.3812 24.8069L10.9104 25.3383ZM1.43161 28.8509L0.902365 29.3823L2.225 30.6996L2.75424 30.1681L3.28349 29.6367L1.96085 28.3195L1.43161 28.8509ZM2.75424 30.1681L2.26729 30.7386C2.60771 31.0292 3.18612 31.3683 3.87349 31.4699C4.59817 31.577 5.43227 31.4135 6.14914 30.6996L5.61989 30.1681L5.09065 29.6367C4.74941 29.9766 4.40785 30.0326 4.09282 29.986C3.74047 29.934 3.41512 29.7462 3.24119 29.5977L2.75424 30.1681ZM5.61989 30.1681L6.14914 30.6996L7.69221 29.1628L7.16297 28.6314L6.63372 28.1L5.09065 29.6367L5.61989 30.1681ZM24.5776 10.1903H23.8276C23.8276 11.5919 22.6859 12.7334 21.2711 12.7334V13.4834V14.2334C23.5086 14.2334 25.3276 12.4261 25.3276 10.1903H24.5776ZM21.2711 13.4834V12.7334C19.8562 12.7334 18.7145 11.5919 18.7145 10.1903H17.9645H17.2145C17.2145 12.4261 19.0336 14.2334 21.2711 14.2334V13.4834ZM17.9645 10.1903H18.7145C18.7145 8.78868 19.8562 7.64722 21.2711 7.64722V6.89722V6.14722C19.0336 6.14722 17.2145 7.95447 17.2145 10.1903H17.9645ZM21.2711 6.89722V7.64722C22.6859 7.64722 23.8276 8.78868 23.8276 10.1903H24.5776H25.3276C25.3276 7.95447 23.5086 6.14722 21.2711 6.14722V6.89722Z"
-                    fill="#323B47" />
-                </svg>
-
-
-              </span>
-
-              <div>
-                <p class="font-bold">Ownership</p>
-                <ul class="list-disc list-inside text-sm">
-                  <li>Malaysia-based, majority Malaysian ownership in many schemes. </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                <svg width="25" height="25" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M23.8713 11.8713L24.4017 12.4016L23.8713 11.8713ZM18.75 12.75V13.5V12.75ZM18.75 0.75V1.5V0.75ZM23.8713 1.62868L24.4016 1.09835V1.09835L23.8713 1.62868ZM7.62868 1.62868L7.09835 1.09835L7.62868 1.62868ZM12.75 0.75V2.38419e-07V0.75ZM7.62868 11.8713L7.09835 12.4016L7.62868 11.8713ZM12.75 12.75V12V12.75ZM5.25 26.0826C4.83579 26.0826 4.5 26.4184 4.5 26.8326C4.5 27.2468 4.83579 27.5826 5.25 27.5826V26.8326V26.0826ZM26.5569 18.6649L26.1049 18.0664L26.5569 18.6649ZM23.8461 20.7126L23.3941 20.1142L23.8461 20.7126ZM19.9186 18.4138L19.5344 19.058L19.9186 18.4138ZM20.5928 18.9647L20.0327 19.4634L20.5928 18.9647ZM20.2809 22.4549L20.1627 21.7142L20.2809 22.4549ZM19.6002 22.5437L19.5236 21.7977H19.5236L19.6002 22.5437ZM16.9482 21.8023C16.5358 21.7633 16.1699 22.0661 16.131 22.4784C16.092 22.8908 16.3948 23.2567 16.8071 23.2956L16.8776 22.5489L16.9482 21.8023ZM24.8962 26.3798L25.2222 27.0552L24.8962 26.3798ZM28.0799 24.3689L28.5895 24.9191L28.0799 24.3689ZM30.4664 21.2561L29.8301 20.8591V20.8591L30.4664 21.2561ZM20.4041 22.1662L20.8973 22.7313L20.8973 22.7313L20.4041 22.1662ZM29.8868 18.6646L30.3387 18.066V18.066L29.8868 18.6646ZM21.1604 27.4706L21.0406 26.7303L21.1604 27.4706ZM13.1645 27.2946L13.3158 26.56H13.3158L13.1645 27.2946ZM12.75 0.75V1.5L18.75 1.5V0.75V0L12.75 2.38419e-07V0.75ZM18.75 12.75V12H12.75V12.75V13.5H18.75V12.75ZM24.75 6.75L24 6.75C24 8.18542 23.9984 9.18653 23.8969 9.94188C23.7982 10.6757 23.6178 11.0642 23.341 11.341L23.8713 11.8713L24.4017 12.4016C25.0036 11.7997 25.2625 11.0419 25.3835 10.1418C25.5016 9.26322 25.5 8.14301 25.5 6.75H24.75ZM18.75 12.75V13.5C20.143 13.5 21.2632 13.5016 22.1418 13.3835C23.0419 13.2625 23.7997 13.0036 24.4017 12.4016L23.8713 11.8713L23.341 11.341C23.0642 11.6178 22.6757 11.7982 21.9419 11.8969C21.1865 11.9984 20.1854 12 18.75 12V12.75ZM23.8713 11.8713L23.341 11.341H23.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.3409 11.341 23.3409 11.3411C23.3411 11.3409 23.3411 11.3409 23.3412 11.3408C23.3411 11.3409 23.341 11.341 23.341 11.341C24.4017 12.4016 24.402 12.4013 24.4023 12.401C24.4014 12.4019 24.4015 12.4018 24.4017 12.4016C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4016 12.4017 24.4016 12.4017C24.4017 12.4016 24.4016 12.4017 24.4016 12.4017C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4016 12.4017 24.4016 12.4017 24.4016 12.4017C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016V12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4015 12.4018 24.4014 12.4019 24.4013 12.402C24.402 12.4013 24.4017 12.4016 23.341 11.341C23.341 11.341 23.3411 11.3409 23.3412 11.3408C23.3411 11.3409 23.3411 11.3409 23.3411 11.3409C23.3409 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341L23.8713 11.8713L24.4017 12.4016V12.4016C24.4017 12.4016 24.4016 12.4017 24.4016 12.4017C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016V12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4016 12.4017C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4016 12.4017 24.4015 12.4018 24.4014 12.4019C24.4015 12.4018 24.4017 12.4016 24.4017 12.4016C23.341 11.341 23.3407 11.3413 23.3403 11.3417C23.3413 11.3407 23.3411 11.3409 23.341 11.341C23.3411 11.3409 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341H23.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.341 11.341 23.341 11.341C23.341 11.341 23.3411 11.3409 23.341 11.341C23.3411 11.3409 23.3413 11.3407 23.3413 11.3407C23.3407 11.3413 23.341 11.341 24.4017 12.4016C24.4017 12.4016 24.4015 12.4018 24.4014 12.4019C24.4015 12.4018 24.4016 12.4017 24.4015 12.4018C24.4017 12.4016 24.4016 12.4017 24.4017 12.4016C24.4017 12.4016 24.4016 12.4017 24.4017 12.4016C24.4016 12.4017 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016C24.4017 12.4016 24.4017 12.4016 24.4017 12.4016L23.8713 11.8713ZM18.75 0.75V1.5C20.1854 1.5 21.1865 1.50159 21.9419 1.60315C22.6757 1.7018 23.0642 1.88225 23.341 2.15901L23.8713 1.62868L24.4016 1.09835C23.7997 0.496433 23.0419 0.237539 22.1418 0.116523C21.2632 -0.00159293 20.143 -5.96046e-08 18.75 0V0.75ZM24.75 6.75H25.5C25.5 5.35699 25.5016 4.23678 25.3835 3.35825C25.2625 2.45814 25.0036 1.70027 24.4016 1.09835L23.8713 1.62868L23.341 2.15901C23.6178 2.43577 23.7982 2.82434 23.8969 3.55812C23.9984 4.31347 24 5.31458 24 6.75L24.75 6.75ZM23.8713 1.62868L23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.159 23.341 2.15902 23.341 2.15903C23.341 2.159 23.341 2.15901 23.341 2.159C23.341 2.15902 23.341 2.15905 23.341 2.15903C24.4022 2.15846 24.4017 1.09844 24.4022 1.09885C24.4015 1.0982 24.4016 1.09827 24.4016 1.09832C24.4016 1.09833 24.4017 1.09836 24.4017 1.09838C24.4017 1.09838 24.4017 1.09835 24.4017 1.09837C24.4016 1.09831 24.4016 1.09833 24.4016 1.09833C24.4017 1.09836 24.4017 1.09837 24.4016 1.09834C24.4016 1.09835 24.4017 1.09836 24.4017 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4017 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4017 1.09835 24.4017 1.09835C24.4016 1.09834 24.4016 1.09835 24.4016 1.09835C24.4016 1.09834 24.4017 1.09835 24.4017 1.09836C24.4016 1.09834 24.4016 1.09834 24.4016 1.09834C24.4017 1.09837 24.4017 1.09836 24.4016 1.09833C24.4016 1.09833 24.4016 1.09831 24.4016 1.09828C24.4017 1.09835 24.4017 1.09838 24.4017 1.09838C24.4017 1.09836 24.4016 1.09833 24.4016 1.09832C24.4016 1.09827 24.4015 1.09819 24.4015 1.09818C24.4018 1.09846 24.4021 2.15853 23.3417 2.15969C23.3412 2.15923 23.341 2.15898 23.3412 2.15919C23.3411 2.15913 23.3411 2.15907 23.3411 2.15908C23.3409 2.15896 23.3411 2.15911 23.3411 2.15914C23.3409 2.15893 23.3409 2.15895 23.341 2.159C23.341 2.159 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901L23.8713 1.62868L24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4017 1.09835 24.4017 1.09836C24.4017 1.09841 24.4017 1.09842 24.4017 1.09839C24.4016 1.09825 24.4017 1.0984 24.4018 1.09852C24.4016 1.09829 24.4015 1.09823 24.4015 1.09817C24.4017 1.09838 24.4014 1.09813 24.401 1.09767C23.3405 1.09883 23.3409 2.1589 23.3405 2.1585C23.3411 2.15916 23.3411 2.15909 23.341 2.15903C23.341 2.15902 23.341 2.159 23.341 2.15898C23.341 2.15898 23.341 2.15901 23.341 2.15899C23.341 2.15905 23.341 2.15903 23.341 2.15903C23.341 2.159 23.341 2.15899 23.341 2.15902C23.341 2.15901 23.341 2.15902 23.341 2.15902C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15902C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15901 23.341 2.15901 23.341 2.15901C23.341 2.15899 23.341 2.15901 23.341 2.15902C23.341 2.15899 23.341 2.15899 23.341 2.15903C23.341 2.15903 23.341 2.15905 23.3411 2.15908C23.341 2.15901 23.341 2.15898 23.341 2.15898C23.341 2.159 23.341 2.15902 23.341 2.15903C23.3411 2.15909 23.3411 2.15916 23.3412 2.15918C23.3409 2.15892 23.3404 1.0989 24.4009 1.09759C24.4016 1.09831 24.4016 1.09834 24.4017 1.09835C24.4016 1.09835 24.4017 1.09836 24.4017 1.09836C24.4016 1.09834 24.4017 1.09836 24.4017 1.09837C24.4016 1.09835 24.4016 1.09835 24.4017 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835C24.4016 1.09835 24.4016 1.09835 24.4016 1.09835L23.8713 1.62868ZM6.75 6.75H7.5C7.5 5.31458 7.50159 4.31347 7.60315 3.55812C7.7018 2.82435 7.88225 2.43577 8.15901 2.15901L7.62868 1.62868L7.09835 1.09835C6.49643 1.70027 6.23754 2.45814 6.11652 3.35825C5.99841 4.23678 6 5.35699 6 6.75H6.75ZM12.75 0.75V2.38419e-07C11.357 2.98023e-07 10.2368 -0.00159234 9.35825 0.116523C8.45814 0.23754 7.70027 0.496434 7.09835 1.09835L7.62868 1.62868L8.15901 2.15901C8.43577 1.88225 8.82434 1.7018 9.55812 1.60315C10.3135 1.50159 11.3146 1.5 12.75 1.5V0.75ZM7.62868 1.62868L8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15902 2.159 8.15901 2.15901 8.15901 2.15901C8.15902 2.159 8.15904 2.15898 8.15905 2.15897C8.159 2.15902 8.15903 2.15899 8.15901 2.15901C7.09843 2.15909 7.09827 1.09843 7.09835 1.09835C7.09837 1.09833 7.09838 1.09832 7.09837 1.09833C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835V1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09834 1.09836 7.09834 1.09836C7.09838 1.09832 7.09837 1.09833 7.09835 1.09835C7.09827 1.09843 7.09839 2.15905 8.15892 2.1591C8.15899 2.15903 8.15905 2.15897 8.159 2.15902C8.15901 2.15901 8.15902 2.159 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901L7.62868 1.62868L7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09834 1.09836 7.09835 1.09835 7.09835 1.09835C7.09831 1.09839 7.09837 1.09833 7.09839 1.09831C8.15897 1.09831 8.15909 2.15893 8.15901 2.15901C8.15899 2.15903 8.15898 2.15904 8.15899 2.15903C8.15902 2.159 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15901 2.15901C8.15901 2.15901 8.15901 2.15901 8.15902 2.159C8.15898 2.15904 8.15899 2.15903 8.15901 2.15901C8.15909 2.15893 8.15893 1.09827 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09834 1.09836C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835C7.09835 1.09835 7.09835 1.09835 7.09835 1.09835L7.62868 1.62868ZM6.75 6.75H6C6 8.14301 5.99841 9.26322 6.11652 10.1418C6.23754 11.0419 6.49643 11.7997 7.09835 12.4016L7.62868 11.8713L8.15901 11.341C7.88225 11.0642 7.7018 10.6757 7.60315 9.94188C7.50159 9.18653 7.5 8.18542 7.5 6.75H6.75ZM12.75 12.75V12C11.3146 12 10.3135 11.9984 9.55812 11.8969C8.82434 11.7982 8.43577 11.6178 8.15901 11.341L7.62868 11.8713L7.09835 12.4016C7.70027 13.0036 8.45814 13.2625 9.35825 13.3835C10.2368 13.5016 11.357 13.5 12.75 13.5V12.75ZM7.62868 11.8713L7.09835 12.4016C7.09835 12.4017 7.09835 12.4016 7.09835 12.4016C7.09835 12.4017 7.09835 12.4016 7.09835 12.4016C7.09835 12.4016 7.09835 12.4017 7.09839 12.4017C7.09832 12.4016 7.09836 12.4017 7.09841 12.4017C7.09833 12.4016 7.09842 12.4017 7.09835 12.4016C7.09891 11.3404 8.15923 11.3412 8.15901 11.341C8.15887 11.3409 8.159 11.341 8.15908 11.3411C8.15903 11.341 8.15892 11.3409 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15903 11.341C8.159 11.341 8.15901 11.341 8.15902 11.341C8.15901 11.341 8.159 11.341 8.159 11.341C8.15901 11.341 8.15901 11.341 8.15902 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15897 11.3409 8.15902 11.341 8.15905 11.341C8.15896 11.3409 8.15887 11.3409 8.15884 11.3408C8.15932 11.3413 7.09891 11.3404 7.09767 12.401C7.09836 12.4017 7.09834 12.4016 7.09833 12.4016C7.09835 12.4016 7.09836 12.4017 7.09835 12.4016C7.09835 12.4017 7.09835 12.4017 7.09835 12.4017C7.09835 12.4017 7.09835 12.4016 7.09835 12.4016C7.09835 12.4017 7.09835 12.4017 7.09835 12.4016C7.09835 12.4016 7.09835 12.4017 7.09835 12.4016C7.09835 12.4016 7.09835 12.4017 7.09835 12.4016L7.62868 11.8713L8.15901 11.341V11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341C8.159 11.341 8.15901 11.341 8.15902 11.341C8.15901 11.341 8.159 11.341 8.15901 11.341C8.15845 12.4022 7.09804 12.4013 7.09818 12.4015C7.09849 12.4018 7.0984 12.4017 7.09835 12.4016C7.09834 12.4016 7.09839 12.4017 7.09835 12.4016C7.09835 12.4017 7.09835 12.4017 7.09835 12.4017C7.09834 12.4016 7.09835 12.4016 7.09835 12.4016C7.09835 12.4016 7.09835 12.4017 7.09835 12.4017C7.09835 12.4016 7.09835 12.4016 7.09835 12.4016C7.09835 12.4016 7.09835 12.4017 7.09835 12.4016C7.09835 12.4017 7.09835 12.4017 7.09835 12.4017C7.09835 12.4017 7.09835 12.4017 7.09835 12.4016C7.09835 12.4017 7.09835 12.4016 7.09834 12.4016C7.09835 12.4017 7.09837 12.4017 7.09837 12.4017C7.09834 12.4016 7.09835 12.4017 7.09837 12.4017C7.09836 12.4017 7.09831 12.4016 7.09835 12.4016C7.09843 12.4017 7.09833 12.4016 7.09831 12.4016C7.09836 12.4017 7.09849 12.4018 7.09852 12.4018C7.09813 12.4014 8.15845 12.4022 8.15969 11.3417C8.15901 11.341 8.159 11.341 8.159 11.341C8.15901 11.341 8.15901 11.341 8.15902 11.341C8.15901 11.341 8.159 11.341 8.15901 11.341C8.15901 11.341 8.15901 11.341 8.15901 11.341H8.15901L7.62868 11.8713ZM17.25 6.75H16.5C16.5 7.16421 16.1642 7.5 15.75 7.5V8.25V9C16.9926 9 18 7.99264 18 6.75H17.25ZM15.75 8.25V7.5C15.3358 7.5 15 7.16421 15 6.75H14.25H13.5C13.5 7.99264 14.5074 9 15.75 9V8.25ZM14.25 6.75H15C15 6.33579 15.3358 6 15.75 6V5.25V4.5C14.5074 4.5 13.5 5.50736 13.5 6.75H14.25ZM15.75 5.25V6C16.1642 6 16.5 6.33579 16.5 6.75H17.25H18C18 5.50736 16.9926 4.5 15.75 4.5V5.25ZM24.75 5.25V4.5C22.6789 4.5 21 2.82107 21 0.75H20.25H19.5C19.5 3.64949 21.8505 6 24.75 6V5.25ZM24.75 8.25V7.5C21.8505 7.5 19.5 9.8505 19.5 12.75H20.25H21C21 10.6789 22.6789 9 24.75 9V8.25ZM6.75 5.25V6C9.64949 6 12 3.64949 12 0.75H11.25H10.5C10.5 2.82107 8.82107 4.5 6.75 4.5V5.25ZM6.75 8.25V9C8.82107 9 10.5 10.6789 10.5 12.75H11.25H12C12 9.8505 9.64949 7.5 6.75 7.5V8.25ZM5.25 26.8326V27.5826H8.6399V26.8326V26.0826H5.25V26.8326ZM26.5569 18.6649L26.1049 18.0664L23.3941 20.1142L23.8461 20.7126L24.2982 21.3111L27.009 19.2633L26.5569 18.6649ZM19.9186 18.4138L19.5344 19.058C19.7286 19.1738 19.8946 19.3083 20.0327 19.4634L20.5928 18.9647L21.153 18.466C20.9026 18.1847 20.614 17.9554 20.3028 17.7697L19.9186 18.4138ZM20.2809 22.4549L20.1627 21.7142C20.0089 21.7388 19.8472 21.7612 19.6782 21.7808L19.7645 22.5258L19.8509 23.2708C20.0413 23.2487 20.2241 23.2234 20.399 23.1955L20.2809 22.4549ZM19.7645 22.5258L19.6782 21.7808C19.6273 21.7867 19.5758 21.7923 19.5236 21.7977L19.6002 22.5437L19.6768 23.2898C19.7355 23.2838 19.7935 23.2775 19.8509 23.2708L19.7645 22.5258ZM19.6002 22.5437L19.5236 21.7977C18.7844 21.8736 17.9153 21.8936 16.9482 21.8023L16.8776 22.5489L16.8071 23.2956C17.8782 23.3968 18.846 23.3751 19.6768 23.2898L19.6002 22.5437ZM24.8962 26.3798L25.2222 27.0552C26.2798 26.5448 27.6441 25.7948 28.5895 24.9191L28.0799 24.3689L27.5703 23.8186C26.7967 24.5351 25.6018 25.2064 24.5702 25.7044L24.8962 26.3798ZM28.0799 24.3689L28.5895 24.9191C29.5274 24.0504 30.4659 22.6738 31.1027 21.6531L30.4664 21.2561L29.8301 20.8591C29.198 21.8722 28.3489 23.0975 27.5703 23.8186L28.0799 24.3689ZM20.4041 22.1662L19.911 21.6012C19.752 21.74 19.6488 21.7836 19.6074 21.7924L19.7645 22.5258L19.9217 23.2591C20.3177 23.1743 20.6488 22.9482 20.8973 22.7313L20.4041 22.1662ZM19.7645 22.5258L19.6074 21.7924C19.6 21.794 19.5979 21.7937 19.6002 21.7937V22.5437V23.2937C19.712 23.2937 19.8196 23.281 19.9217 23.2591L19.7645 22.5258ZM20.5928 18.9647L20.0327 19.4634C20.6009 20.1017 20.552 21.0417 19.911 21.6012L20.4041 22.1662L20.8973 22.7313C22.1858 21.6066 22.259 19.7083 21.153 18.466L20.5928 18.9647ZM19.9186 18.4138L20.3028 17.7697C17.9873 16.3886 15.0962 16.2578 12.3472 16.7904C9.58867 17.3248 6.87186 18.5447 4.81614 20.0026L5.25 20.6144L5.68386 21.2262C7.57226 19.8869 10.0918 18.7553 12.6325 18.263C15.1827 17.7689 17.6539 17.9364 19.5344 19.058L19.9186 18.4138ZM23.8461 20.7126L23.3941 20.1142C22.3645 20.8919 21.3398 21.5265 20.1627 21.7142L20.2809 22.4549L20.399 23.1955C21.9561 22.9471 23.2266 22.1206 24.2982 21.3111L23.8461 20.7126ZM29.8868 18.6646L30.3387 18.066C29.1154 17.1423 27.328 17.1425 26.1049 18.0664L26.5569 18.6649L27.009 19.2633C27.6972 18.7435 28.7465 18.7434 29.4349 19.2631L29.8868 18.6646ZM29.8868 18.6646L29.4349 19.2631C30.0331 19.7148 30.1383 20.365 29.8301 20.8591L30.4664 21.2561L31.1027 21.6531C31.8825 20.4032 31.4615 18.9138 30.3387 18.066L29.8868 18.6646ZM21.1604 27.4706L21.2803 28.211C22.6185 27.9944 23.975 27.6572 25.2222 27.0552L24.8962 26.3798L24.5702 25.7044C23.5031 26.2194 22.3029 26.5259 21.0406 26.7303L21.1604 27.4706ZM13.1645 27.2946L13.0132 28.0291C15.7117 28.5851 18.552 28.6526 21.2803 28.211L21.1604 27.4706L21.0406 26.7303C18.4945 27.1424 15.838 27.0796 13.3158 26.56L13.1645 27.2946ZM8.6399 26.8326V27.5826C10.1049 27.5826 11.5869 27.7353 13.0132 28.0291L13.1645 27.2946L13.3158 26.56C11.7907 26.2458 10.2074 26.0826 8.6399 26.0826V26.8326ZM5.25 19.5H4.5V27H5.25H6V19.5H5.25ZM0.75 27H1.5V19.5H0.75H0V27H0.75ZM3 29.25V28.5C2.17157 28.5 1.5 27.8284 1.5 27H0.75H0C0 28.6569 1.34315 30 3 30V29.25ZM5.25 27H4.5C4.5 27.8284 3.82843 28.5 3 28.5V29.25V30C4.65685 30 6 28.6569 6 27H5.25ZM3 17.25V18C3.82843 18 4.5 18.6716 4.5 19.5H5.25H6C6 17.8431 4.65685 16.5 3 16.5V17.25ZM3 17.25V16.5C1.34315 16.5 0 17.8431 0 19.5H0.75H1.5C1.5 18.6716 2.17157 18 3 18V17.25Z"
-                    fill="#323B47" />
-                </svg>
-
-
-              </span>
-
-              <div>
-                <p class="font-bold">Collateral</p>
-                <ul class="list-disc list-inside text-sm">
-                  <li>Required for certain amounts (e.g. property, equipment) depending on lender.</li>
-                </ul>
+                <div>
+                  <p class="font-bold">Documents required:</p>
+                  <ul class="list-disc list-inside text-sm">
+                    <li>MyKad (NRIC)</li>
+                    <li>3 months salary slips</li>
+                    <li>3–6 months bank statements</li>
+                    <li>EPF statement / employment letter</li>
+                    <li>Statements of existing debts (credit cards, loans)</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Left Column: Calculator Image - Appears second on mobile, first on large screens -->
-        <div class="flex justify-center lg:order-2">
-           <img src="assets/images/ourservices/objects/pen-paper.png" alt="Eligibility Requirements"
+          <!-- Left Column: Calculator Image - Appears second on mobile, first on large screens -->
+          <div
+            class="animate-on-scroll scale-in flex justify-center lg:order-2"
+          >
+            <img src="assets/images/ourservices/objects/pen-paper.png" alt="Eligibility Requirements"
             class="w-full h-auto object-contain max-w-sm lg:max-w-full" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
   <!-- New Loan Process Section -->
   <section class="py-16 relative">
-    <div class="absolute top-4 left-0 z-[-1]">
-      <img src="assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[250px] object-contain" />
+    <div class="absolute top-4 right-0 z-[-1]">
+      <img
+        src="assets/images/icon/RM-right.png"
+        alt="RM Currency"
+        class="w-full h-[250px] object-contain"
+      />
     </div>
     <div class="max-w-screen-2xl mx-auto px-4">
       <div class="flex flex-col items-center mb-12 text-center">
-        <h2 class="text-5xl font-bold text-black mb-4">How to Apply</h2>
+        <h2
+          class="animate-on-scroll fade-in-up text-3xl font-bold text-black mb-4"
+        >
+          Simple, Transparent, and Always Here for You
+        </h2>
+        <p
+          class="animate-on-scroll fade-in-up delay-100 text-gray-600 text-base mb-6"
+        >
+          Getting a personal loan with us is simple and transparent:
+        </p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
         <!-- Left Column -->
         <div class="h-full">
-          <img src="./assets/images/person/hijab-women-laptop.png" alt="Woman working on laptop"
-            class="w-full rounded-lg shadow-lg object-contain" />
+          <img
+            src="./assets/images/person/hijab-lady.png"
+            alt="Woman working on laptop"
+            class="animate-on-scroll scale-in w-full  object-contain"
+          />
         </div>
         <!-- Right Column -->
         <div class="p-8 rounded-lg h-full">
-          <ol class="flex flex-col gap-4 justify-between h-full">
+          <ol class="flex flex-col h-full">
             <li
-              class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
-              <div class="flex items-start gap-2">
+              class="animate-on-scroll fade-in-right delay-100 transition-colors duration-300 rounded-lg flex flex-col group hover:bg-yellow-100 text-2xl p-4"
+            >
+              <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold text-xl group-hover:bg-yellow-400">1</span>
-                <span class="text-gray-700 font-semibold group-hover:text-black text-2xl ">Start your enquiry via our
-                  online form or WhatsApp / AI chatbot.</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                  >1</span
+                >
+                <span
+                  class="text-gray-700 font-semibold group-hover:text-black"
+                  >Start Your Enquiry</span
+                >
               </div>
-              <div class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300">
-                Fill in our enquiry form or chat with us via WhatsApp/AI chatbot.
+              <div
+                class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300"
+              >
+                Fill in our simple online enquiry form — or click the WhatsApp
+                button to chat directly with our staff or AI chatbot.
               </div>
             </li>
             <li
-              class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
-              <div class="flex items-start gap-2">
+              class="animate-on-scroll fade-in-right delay-200 rounded-lg flex flex-col group hover:bg-yellow-100 text-2xl p-4 transition-colors duration-300"
+            >
+              <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold text-xl group-hover:bg-yellow-400">2</span>
-                <span class="text-gray-700 font-semibold group-hover:text-black text-2xl">AI Matching</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                  >2</span
+                >
+                <span
+                  class="text-gray-700 font-semibold group-hover:text-black"
+                  >Smart Matching</span
+                >
               </div>
-              <div class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300">
+              <div
+                class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300"
+              >
                 Our AI analyzes your profile and matches you with the best
                 loan options from multiple lenders.
               </div>
             </li>
             <li
-              class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
-              <div class="flex items-start gap-2">
+              class="rounded-lg flex flex-col group hover:bg-yellow-100 text-2xl transition-colors duration-300 animate-on-scroll fade-in-right delay-300 rounded-lg flex flex-col group hover:bg-yellow-100 text-2xl p-4 transition-colors duration-300"
+            >
+              <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold text-xl group-hover:bg-yellow-400">3</span>
-                <span class="text-gray-700 font-semibold group-hover:text-black text-2xl">Human Review</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                  >3</span
+                >
+                <span
+                  class="text-gray-700 font-semibold group-hover:text-black"
+                  >Confirm Your Choice</span
+                >
               </div>
-              <div class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300">
+              <div
+                class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300"
+              >
                 Review the loan terms, compare options, and select the one
                 that fits your needs.
               </div>
             </li>
             <li
-              class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
-              <div class="flex items-start gap-2">
+              class="animate-on-scroll fade-in-right delay-300 rounded-lg flex flex-col group hover:bg-yellow-100 text-2xl p-4 transition-colors duration-300"
+            >
+              <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold text-xl group-hover:bg-yellow-400">4</span>
-                <span class="text-gray-700 font-semibold group-hover:text-black text-2xl">Choose Option & Submit
-                  Documents</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                  >4</span
+                >
+                <span
+                  class="text-gray-700 font-semibold group-hover:text-black"
+                  >Approval & Drawdown</span
+                >
               </div>
-              <div class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300">
+              <div
+                class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300"
+              >
                 Once approved, funds are transferred directly to your account
                 within 1-3 business days.
               </div>
             </li>
             <li
-              class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
-              <div class="flex items-start gap-2">
+              class="animate-on-scroll fade-in-right delay-400 rounded-lg flex flex-col group hover:bg-yellow-100 text-2xl p-4 transition-colors duration-300"
+            >
+              <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold text-xl group-hover:bg-yellow-400">5</span>
-                <span class="text-gray-700 font-semibold group-hover:text-black text-2xl">Approval & Disbursement</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                  >5</span
+                >
+                <span
+                  class="text-gray-700 font-semibold group-hover:text-black"
+                  >Funds Disbursed</span
+                >
               </div>
-              <div class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300">
+              <div
+                class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300"
+              >
                 Money is now in your account, ready to use for your financial
                 needs.
               </div>
             </li>
             <li
-              class="bg-gray-200 p-3 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
-              <div class="flex items-start gap-2">
+              class="animate-on-scroll fade-in-right delay-500 rounded-lg flex flex-col group hover:bg-yellow-100 text-2xl p-4 transition-colors duration-300"
+            >
+              <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-xl w-8 h-8 flex items-center justify-center mr-2 font-bold text-xl group-hover:bg-yellow-400">6</span>
-                <span class="text-gray-700 font-semibold group-hover:text-black text-2xl">Ongoing Case Manager
-                  Support</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400"
+                  >6</span
+                >
+                <span
+                  class="text-gray-700 font-semibold group-hover:text-black"
+                  >Ongoing Support With Case Manager</span
+                >
               </div>
-              <div class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300">
+              <div
+                class="hidden group-hover:block mt-2 text-gray-700 text-sm transition-opacity duration-300"
+              >
                 Your dedicated case manager provides continuous support
                 throughout your loan journey.
               </div>
@@ -1863,7 +1927,7 @@
       <div class="bg-gray-100 rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
         <!-- Header with Title and Navigation -->
         <div class="flex justify-between items-center mb-6 md:mb-8">
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black animate-on-scroll fade-in-up">
             Blog
           </h2>
           <div class="flex space-x-2">
@@ -1889,7 +1953,7 @@
           <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 px-2 pb-4">
             <!-- Blog Card 1 -->
             <div
-              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm">
+              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll fade-in-up delay-100">
               <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
                 alt="Person preparing/serving food" class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
               <div class="p-3 sm:p-4">
@@ -1906,7 +1970,7 @@
 
             <!-- Blog Card 2 -->
             <div
-              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm">
+              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll fade-in-up delay-200">
               <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
                 alt="Malaysian Ringgit banknotes" class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
               <div class="p-3 sm:p-4">
@@ -1922,7 +1986,7 @@
 
             <!-- Blog Card 3 -->
             <div
-              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm">
+              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll fade-in-up delay-300">
               <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
                 alt="Diverse group of people smiling" class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
               <div class="p-3 sm:p-4">
@@ -1938,7 +2002,7 @@
 
             <!-- Blog Card 4 -->
             <div
-              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm">
+              class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden bg-white shadow-sm animate-on-scroll fade-in-up delay-400">
               <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
                 alt="Malaysian flag with silhouettes of people"
                 class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
@@ -1983,13 +2047,13 @@
       class="w-full h-48 md:h-full object-cover md:absolute md:inset-0" />
     <div class="relative z-10 max-w-screen-2xl px-4 md:ml-[30%] h-full">
       <div
-        class="bg-white bg-opacity-5 rounded-lg p-4 md:p-8 shadow-2xl h-full flex flex-col justify-center md:justify-center"
+        class="bg-white bg-opacity-5 rounded-lg p-4 md:p-8 shadow-2xl h-full flex flex-col justify-center md:justify-center min-h-[60vh]"
         style="backdrop-filter: blur(51px)">
-        <h2 class="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 animate-on-scroll fade-in-up">
           Frequently Asked Questions
         </h2>
         <div class="space-y-8 md:space-y-12">
-          <div class="faq-item">
+          <div class="faq-item animate-on-scroll fade-in-left delay-100">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-2xl font-bold text-black">
                 What types of SME loans are available?
@@ -2005,7 +2069,7 @@
               options. Many banks also offer guarantee or government-backed schemes.
             </p>
           </div>
-          <div class="faq-item">
+          <div class="faq-item animate-on-scroll fade-in-left delay-200">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-2xl font-bold text-black">
                 How long does approval take?
@@ -2020,7 +2084,7 @@
               Please contact our support team for more information.
             </p>
           </div>
-          <div class="faq-item">
+          <div class="faq-item animate-on-scroll fade-in-left delay-300">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-2xl font-bold text-black">
                 Can a newer business (less than 1 year) apply?
@@ -2035,7 +2099,7 @@
               Please contact our support team for more information.
             </p>
           </div>
-          <div class="faq-item">
+          <div class="faq-item animate-on-scroll fade-in-left delay-400">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-2xl font-bold text-black">
                 Is collateral always needed?
@@ -2050,7 +2114,7 @@
               Please contact our support team for more information.
             </p>
           </div>
-          <div class="faq-item">
+          <div class="faq-item animate-on-scroll fade-in-left delay-500">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-2xl font-bold text-black">
                 What about guarantee schemes / government support?
@@ -2076,18 +2140,18 @@
     <img src="./assets/images/person/young-businessman.png" alt="Person sitting at a desk"
       class="w-full h-full object-cover absolute inset-0 blur-sm rounded-xl" />
     <div class="relative z-10 max-w-screen-2xl h-full flex flex-col justify-center items-center">
-      <div class="rounded-lg h-[60%] w-[60%] flex flex-col justify-center items-center animate-fade-in mx-auto" style="
+      <div class="rounded-lg h-[60%] w-[60%] flex flex-col justify-center items-center animate-on-scroll fade-in-up mx-auto" style="
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(10px);
           ">
-        <h2 class="text-2xl md:text-5xl font-bold text-white mb-4">
+        <h2 class="text-2xl md:text-5xl font-bold text-white mb-4 animate-on-scroll fade-in-up delay-100">
           Terms & Conditions
         </h2>
-        <p class="text-sm md:text-xl text-white mb-6">
+        <p class="text-sm md:text-xl text-white mb-6 animate-on-scroll fade-in-up delay-200">
           Effective Date: 01 Oct 2025
         </p>
         <button
-          class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2">
+          class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2 animate-on-scroll fade-in-up delay-300">
           <span>Read More</span>
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_7_7462" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
@@ -2110,7 +2174,7 @@
     <div class="max-w-screen-2xl mx-auto px-4">
       <div class="flex flex-col md:flex-row md:justify-between gap-8">
         <!-- Left Column: Company Info -->
-        <div class="md:w-1/2 lg:w-2/5">
+        <div class="md:w-1/2 lg:w-2/5 animate-on-scroll fade-in-up">
           <a href="#" class="inline-flex items-center gap-2 mb-8">
             <img src="assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
           </a>
@@ -2141,7 +2205,7 @@
           </div>
         </div>
         <!-- Right Column: Menu and Features -->
-        <div class="md:w-1/2 lg:w-1/3 flex flex-col md:flex-row gap-8">
+        <div class="md:w-1/2 lg:w-1/3 flex flex-col md:flex-row gap-8 animate-on-scroll fade-in-up delay-100">
           <!-- Middle Column: Menu -->
           <div>
             <h3 class="text-lg font-semibold mb-4">Menu</h3>
@@ -2178,13 +2242,13 @@
         </div>
       </div>
       <!-- Bottom Bar -->
-      <div class="border-t border-gray-700 mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+      <div class="border-t border-gray-700 mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center animate-on-scroll fade-in-up delay-200">
         <div class="flex space-x-6 justify-center md:justify-start mb-4 md:mb-0">
           <a href="#" class="text-gray-300 hover:text-white transition">Terms</a>
           <a href="#" class="text-gray-300 hover:text-white transition">Privacy</a>
           <a href="#" class="text-gray-300 hover:text-white transition">Cookies</a>
         </div>
-        <div class="text-gray-400 text-center">© 2023 Moneybee Sdn. Bhd.</div>
+        <div class="text-gray-400 text-center">© 2025 Moneybee Sdn. Bhd.</div>
         <div class="flex justify-center md:justify-end space-x-4">
           <a href="#" class="hover:opacity-80 transition">
             <svg width="32" height="32" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2221,165 +2285,8 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById("mobileMenuButton");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const iconHamburger = document.getElementById("iconHamburger");
-    const iconClose = document.getElementById("iconClose");
+    <script src="script.js"></script>
 
-    mobileMenuButton.addEventListener("click", () => {
-      const isExpanded =
-        mobileMenuButton.getAttribute("aria-expanded") === "true";
-
-      mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
-      mobileMenu.classList.toggle("hidden");
-      iconHamburger.classList.toggle("hidden");
-      iconClose.classList.toggle("hidden");
-    });
-
-    // Mobile dropdown functionality
-    const dropdownButtons = document.querySelectorAll(".mobile-dropdown-btn");
-
-    dropdownButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const targetId = button.getAttribute("data-target");
-        const targetContent = document.getElementById(targetId);
-        const arrow = button.querySelector(".dropdown-arrow");
-
-        // Toggle the specific dropdown
-        targetContent.classList.toggle("hidden");
-        arrow.classList.toggle("rotate-180");
-      });
-    });
-
-    // Desktop dropdown functionality
-    const dropdownGroups = document.querySelectorAll(".dropdown-group");
-    dropdownGroups.forEach((group) => {
-      const ul = group.querySelector("ul");
-      group.addEventListener("mouseenter", () => {
-        ul.classList.remove("invisible", "opacity-0", "translate-y-2");
-        ul.classList.add("visible", "opacity-100", "translate-y-0");
-      });
-      group.addEventListener("mouseleave", () => {
-        ul.classList.remove("visible", "opacity-100", "translate-y-0");
-        ul.classList.add("invisible", "opacity-0", "translate-y-2");
-      });
-    });
-
-    // Testimonial Carousel
-    let currentSlide = 0;
-    const carousel = document.getElementById("testimonial-carousel");
-    const dots = document.querySelectorAll(".dot");
-    const prevBtn = document.getElementById("prev-btn");
-    const nextBtn = document.getElementById("next-btn");
-    const totalSlides = 3;
-
-    function showSlide(index) {
-      currentSlide = index;
-      if (currentSlide >= totalSlides) currentSlide = 0;
-      if (currentSlide < 0) currentSlide = totalSlides - 1;
-
-      carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-      // Update dots
-      dots.forEach((dot, i) => {
-        dot.classList.toggle("bg-blue-500", i === currentSlide);
-        dot.classList.toggle("bg-gray-300", i !== currentSlide);
-      });
-    }
-
-    function nextSlide() {
-      showSlide(currentSlide + 1);
-    }
-
-    function prevSlide() {
-      showSlide(currentSlide - 1);
-    }
-
-    // Event listeners
-    if (prevBtn) prevBtn.addEventListener("click", prevSlide);
-    if (nextBtn) nextBtn.addEventListener("click", nextSlide);
-
-    dots.forEach((dot, index) => {
-      dot.addEventListener("click", () => showSlide(index));
-    });
-
-    // Auto slide (optional)
-    // setInterval(nextSlide, 5000);
-
-    // Blog Carousel
-    let blogCurrentPosition = 0;
-    const blogCarousel = document.getElementById("blog-carousel");
-    const blogPrevBtn = document.getElementById("blog-prev-btn");
-    const blogNextBtn = document.getElementById("blog-next-btn");
-    const cardWidth = 320; // w-[280px] = 320px
-    const gap = 24; // space-x-6 = 24px
-    const scrollAmount = cardWidth + gap;
-    const totalCards = 4;
-    let visibleCards = window.innerWidth >= 1024 ? 3 : 1; // Show 3 on desktop, 1 on mobile
-    let maxPosition = (totalCards - visibleCards) * scrollAmount;
-
-    function updateBlogCarousel() {
-      blogCarousel.style.transform = `translateX(-${blogCurrentPosition}px)`;
-
-      // Disable buttons at limits
-      blogPrevBtn.style.opacity = blogCurrentPosition <= 0 ? "0.5" : "1";
-      blogNextBtn.style.opacity =
-        blogCurrentPosition >= maxPosition ? "0.5" : "1";
-    }
-
-    function blogNext() {
-      if (blogCurrentPosition < maxPosition) {
-        blogCurrentPosition += scrollAmount;
-        updateBlogCarousel();
-      }
-    }
-
-    function blogPrev() {
-      if (blogCurrentPosition > 0) {
-        blogCurrentPosition -= scrollAmount;
-        updateBlogCarousel();
-      }
-    }
-
-    // Event listeners for blog carousel
-    blogNextBtn.addEventListener("click", blogNext);
-    blogPrevBtn.addEventListener("click", blogPrev);
-
-    // Update on window resize
-    window.addEventListener("resize", () => {
-      const newVisibleCards = window.innerWidth >= 1024 ? 3 : 1;
-      if (newVisibleCards !== visibleCards) {
-        visibleCards = newVisibleCards;
-        maxPosition = (totalCards - visibleCards) * scrollAmount;
-        blogCurrentPosition = 0;
-        updateBlogCarousel();
-      }
-    });
-
-    // FAQ Toggle
-    function toggleFAQ(element) {
-      const answer = element.nextElementSibling;
-      const icon = element.querySelector("svg path");
-      answer.classList.toggle("hidden");
-      if (answer.classList.contains("hidden")) {
-        // collapsed, plus
-        icon.setAttribute(
-          "d",
-          "M18 14V26M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-        );
-        icon.setAttribute("stroke", "#7D7D7D");
-      } else {
-        // expanded, minus
-        icon.setAttribute(
-          "d",
-          "M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-        );
-        icon.setAttribute("stroke", "#323232");
-      }
-    }
-  </script>
 </body>
 
 </html>

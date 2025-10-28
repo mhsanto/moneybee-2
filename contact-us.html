@@ -22,10 +22,11 @@
         },
       };
     </script>
+    <script src="animations.js"></script>
     <title>MoneyBee</title>
   </head>
   <body class="bg-gray-100 min-h-screen font-manrope">
-     <div class="mx-auto max-w-screen-2xl px-4 px-2 sm:px-0">
+    <div class="mx-auto max-w-screen-2xl px-4 px-2 sm:px-0">
       <div class="flex h-16 items-center justify-between">
         <!-- Left: Logo -->
         <a href="index.html" class="inline-flex items-center gap-2">
@@ -48,7 +49,7 @@
               aria-haspopup="menu"
               aria-expanded="false"
             >
-              <a href="ourServices.html">Our Services</a>
+              <span>Our Services</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -85,7 +86,7 @@
               </li>
               <li role="none">
                 <a
-                  href="#product-three"
+                  href="resourses.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
                   role="menuitem"
                   >Product Three</a
@@ -93,7 +94,7 @@
               </li>
               <li role="none">
                 <a
-                  href="#product-four"
+                  href="financial.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
                   role="menuitem"
                   >Product Four</a
@@ -738,14 +739,14 @@
     <div class="container mx-auto px-4 py-12 lg:py-24">
       <div class="flex flex-col lg:flex-row justify-center items-center gap-16">
         <div class="w-full max-w-lg">
-          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 animate-on-scroll fade-in-up">
             Contact us
           </h1>
-          <p class="text-gray-600 mb-8">
+          <p class="text-gray-600 mb-8 animate-on-scroll fade-in-up delay-200">
             Our friendly team would love to hear from you.
           </p>
 
-          <form action="#" method="POST" class="space-y-6">
+          <form action="#" method="POST" class="space-y-6 animate-on-scroll fade-in-up delay-300">
             <div class="flex flex-col sm:flex-row gap-6">
               <div class="w-full">
                 <label
@@ -865,319 +866,294 @@
           <img
             src="./assets/images/ourservices/objects/map.png"
             alt="Map showing office location"
-            class="rounded-2xl shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 ease-in-out"
+            class="rounded-2xl shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 ease-in-out animate-on-scroll fade-in-up delay-500"
           />
         </div>
       </div>
     </div>
-      <!-- Terms & Conditions Section -->
-  <section class="min-h-[60vh] h-[60vh] relative bg-transparent w-full mb-16 max-w-screen-2xl mx-auto">
-    <img src="./assets/images/person/young-businessman.png" alt="Person sitting at a desk"
-      class="w-full h-full object-cover absolute inset-0 blur-sm rounded-xl" />
-    <div class="relative z-10 max-w-screen-2xl h-full flex flex-col justify-center items-center">
-      <div class="rounded-lg h-[60%] w-[60%] flex flex-col justify-center items-center animate-fade-in mx-auto" style="
+    <!-- Terms & Conditions Section -->
+    <section
+      class="min-h-[60vh] h-[60vh] relative bg-transparent w-full mb-16 max-w-screen-2xl mx-auto"
+    >
+      <img
+        src="./assets/images/person/young-businessman.png"
+        alt="Person sitting at a desk"
+        class="w-full h-full object-cover absolute inset-0 blur-sm rounded-xl"
+      />
+      <div
+        class="relative z-10 max-w-screen-2xl h-full flex flex-col justify-center items-center"
+      >
+        <div
+          class="rounded-lg h-[60%] w-[60%] flex flex-col justify-center items-center animate-on-scroll fade-in-up mx-auto"
+          style="
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(10px);
-          ">
-        <h2 class="text-2xl md:text-5xl font-bold text-white mb-4">
-          Terms & Conditions
-        </h2>
-        <p class="text-sm md:text-xl text-white mb-6">
-          Effective Date: 01 Oct 2025
-        </p>
-        <button
-          class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2">
-          <span>Read More</span>
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <mask id="mask0_7_7462" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
-              height="25">
-              <rect width="25" height="25" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_7_7462)">
-              <path
-                d="M6.66659 18.7497L5.20825 17.2913L15.2083 7.29134H6.24992V5.20801H18.7499V17.708H16.6666V8.74967L6.66659 18.7497Z"
-                fill="black" fill-opacity="0.9" />
-            </g>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer style="background: linear-gradient(180deg, #235286 0%, #081420 100%)" class="text-white py-8 md:py-12">
-    <div class="max-w-screen-2xl mx-auto px-4">
-      <div class="flex flex-col md:flex-row md:justify-between gap-8">
-        <!-- Left Column: Company Info -->
-        <div class="md:w-1/2 lg:w-2/5">
-          <a href="#" class="inline-flex items-center gap-2 mb-8">
-            <img src="assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
-          </a>
-          <p class="text-gray-300 mb-16">
-            See Your Whole Financial Picture In One Place, Alongside A Smarter
-            Approach To Investing And Real Human.
+          "
+        >
+          <h2 class="text-2xl md:text-5xl font-bold text-white mb-4 animate-on-scroll fade-in-up delay-200">
+            Terms & Conditions
+          </h2>
+          <p class="text-sm md:text-xl text-white mb-6 animate-on-scroll fade-in-up delay-300">
+            Effective Date: 01 Oct 2025
           </p>
-          <div class="text-gray-400 flex flex-col lg:flex-row gap-2 items-start mb-2">
-            <div class="flex items-start gap-4">
-              <img src="./assets//images/icon/location.png" alt="location"
-                class="w-8 h-8 md:w-8 md:h-8 flex-shrink-0 object-contain" />
-              <p class="text-sm break-all md:break-words">
-                12/F, Menara Symphony, No. 5 Jalan Prof. Khoo Kay, Seksyen 13,
-                Petaling, 46200, Selangor, Malaysia
-              </p>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <svg class="w-8 h-8 md:w-8 md:h-8 flex-shrink-0" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2 animate-on-scroll fade-in-up delay-500"
+          >
+            <span>Read More</span>
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_7_7462"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="25"
+                height="25"
+              >
+                <rect width="25" height="25" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_7_7462)">
                 <path
-                  d="M8.00081 10.6663L10.8808 13.0663C13.3341 15.1063 14.5608 16.133 16.0008 16.133C17.4408 16.133 18.6675 15.1063 21.1208 13.0663L24.0008 10.6663M13.3341 26.6663H18.6675C23.6941 26.6663 26.2141 26.6663 27.7741 25.1063C29.3341 23.5463 29.3341 21.0263 29.3341 15.9997C29.3341 10.973 29.3341 8.45301 27.7741 6.89301C26.2141 5.33301 23.6941 5.33301 18.6675 5.33301H13.3341C8.30748 5.33301 5.78748 5.33301 4.22748 6.89301C2.66748 8.45301 2.66748 10.973 2.66748 15.9997C2.66748 21.0263 2.66748 23.5463 4.22748 25.1063C5.78748 26.6663 8.30748 26.6663 13.3341 26.6663Z"
-                  stroke="white" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
+                  d="M6.66659 18.7497L5.20825 17.2913L15.2083 7.29134H6.24992V5.20801H18.7499V17.708H16.6666V8.74967L6.66659 18.7497Z"
+                  fill="black"
+                  fill-opacity="0.9"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
 
-              <p>support@moneybee.com.my</p>
+    <!-- Footer Section -->
+    <footer
+      style="background: linear-gradient(180deg, #235286 0%, #081420 100%)"
+      class="text-white py-8 md:py-12"
+    >
+      <div class="max-w-screen-2xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:justify-between gap-8">
+          <!-- Left Column: Company Info -->
+          <div class="md:w-1/2 lg:w-2/5 animate-on-scroll fade-in-up">
+            <a href="#" class="inline-flex items-center gap-2 mb-8">
+              <img
+                src="assets/images/header/logo.png"
+                alt="logo"
+                class="h-[40px] w-auto"
+              />
+            </a>
+            <p class="text-gray-300 mb-16">
+              See Your Whole Financial Picture In One Place, Alongside A Smarter
+              Approach To Investing And Real Human.
+            </p>
+            <div
+              class="text-gray-400 flex flex-col lg:flex-row gap-2 items-start mb-2"
+            >
+              <div class="flex items-start gap-4">
+                <img
+                  src="./assets//images/icon/location.png"
+                  alt="location"
+                  class="w-8 h-8 md:w-8 md:h-8 flex-shrink-0 object-contain"
+                />
+                <p class="text-sm break-all md:break-words">
+                  12/F, Menara Symphony, No. 5 Jalan Prof. Khoo Kay, Seksyen 13,
+                  Petaling, 46200, Selangor, Malaysia
+                </p>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <svg
+                  class="w-8 h-8 md:w-8 md:h-8 flex-shrink-0"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00081 10.6663L10.8808 13.0663C13.3341 15.1063 14.5608 16.133 16.0008 16.133C17.4408 16.133 18.6675 15.1063 21.1208 13.0663L24.0008 10.6663M13.3341 26.6663H18.6675C23.6941 26.6663 26.2141 26.6663 27.7741 25.1063C29.3341 23.5463 29.3341 21.0263 29.3341 15.9997C29.3341 10.973 29.3341 8.45301 27.7741 6.89301C26.2141 5.33301 23.6941 5.33301 18.6675 5.33301H13.3341C8.30748 5.33301 5.78748 5.33301 4.22748 6.89301C2.66748 8.45301 2.66748 10.973 2.66748 15.9997C2.66748 21.0263 2.66748 23.5463 4.22748 25.1063C5.78748 26.6663 8.30748 26.6663 13.3341 26.6663Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+
+                <p>support@moneybee.com.my</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Menu and Features -->
+          <div class="md:w-1/2 lg:w-1/3 flex flex-col md:flex-row gap-8">
+            <!-- Middle Column: Menu -->
+            <div class="animate-on-scroll fade-in-up delay-200">
+              <h3 class="text-lg font-semibold mb-4">Menu</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >Our Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >Financial Health Hub</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Right Column: Features -->
+            <div class="animate-on-scroll fade-in-up delay-300">
+              <h3 class="text-lg font-semibold mb-4">Features</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >For Lenders</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >Compliance And Privacy</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- Right Column: Menu and Features -->
-        <div class="md:w-1/2 lg:w-1/3 flex flex-col md:flex-row gap-8">
-          <!-- Middle Column: Menu -->
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Menu</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white transition">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white transition">Our Services</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white transition">Financial Health Hub</a>
-              </li>
-            </ul>
+        <!-- Bottom Bar -->
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center animate-on-scroll fade-in-up delay-500"
+        >
+          <div
+            class="flex space-x-6 justify-center md:justify-start mb-4 md:mb-0"
+          >
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              >Terms</a
+            >
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              >Privacy</a
+            >
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              >Cookies</a
+            >
           </div>
-          <!-- Right Column: Features -->
-          <div>
-            <h3 class="text-lg font-semibold mb-4">Features</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white transition">For Lenders</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white transition">FAQ</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-300 hover:text-white transition">Compliance And Privacy</a>
-              </li>
-            </ul>
+          <div class="text-gray-400 text-center">© 2025 Moneybee Sdn. Bhd.</div>
+          <div class="flex justify-center md:justify-end space-x-4">
+            <a href="#" class="hover:opacity-80 transition">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 66 66"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="66"
+                  height="66"
+                  rx="33"
+                  fill="white"
+                  fill-opacity="0.05"
+                />
+                <rect
+                  x="0.6875"
+                  y="0.6875"
+                  width="64.625"
+                  height="64.625"
+                  rx="32.3125"
+                  stroke="white"
+                  stroke-opacity="0.5"
+                  stroke-width="1.375"
+                />
+                <path
+                  d="M42.625 20.625C43.3543 20.625 44.0538 20.9147 44.5695 20.4305C45.0853 21.9462 45.375 22.6457 45.375 23.375V42.625C45.375 43.3543 45.0853 44.0538 44.5695 44.5695C44.0538 45.0853 43.3543 45.375 42.625 45.375H23.375C22.6457 45.375 21.9462 45.0853 21.4305 44.5695C20.9147 44.0538 20.625 43.3543 20.625 42.625V23.375C20.625 22.6457 20.9147 21.9462 21.4305 21.4305C21.9462 20.9147 22.6457 20.625 23.375 20.625H42.625ZM41.9375 41.9375V34.65C41.9375 33.4612 41.4652 32.321 40.6246 31.4804C39.784 30.6398 38.6438 30.1675 37.455 30.1675C36.2863 30.1675 34.925 30.8825 34.265 31.955V30.4288H30.4288V41.9375H34.265V35.1587C34.265 34.1 35.1175 33.2338 36.1763 33.2338C36.6868 33.2338 37.1764 33.4366 37.5374 33.7976C37.8984 34.1586 38.1012 34.6482 38.1012 35.1587V41.9375H41.9375ZM25.96 28.27C26.5727 28.27 27.1602 28.0266 27.5934 27.5934C28.0266 27.1602 28.27 26.5727 28.27 25.96C28.27 24.6813 27.2387 23.6363 25.96 23.6363C25.3437 23.6363 24.7526 23.8811 24.3169 24.3169C23.8811 24.7526 23.6363 25.3437 23.6363 25.96C23.6363 27.2387 24.6813 28.27 25.96 28.27ZM27.8713 41.9375V30.4288H24.0625V41.9375H27.8713Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#" class="hover:opacity-80 transition">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 66 66"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="66"
+                  height="66"
+                  rx="33"
+                  fill="white"
+                  fill-opacity="0.05"
+                />
+                <rect
+                  x="0.6875"
+                  y="0.6875"
+                  width="64.625"
+                  height="64.625"
+                  rx="32.3125"
+                  stroke="white"
+                  stroke-opacity="0.5"
+                  stroke-width="1.375"
+                />
+                <path
+                  d="M34.4143 19.2517C35.4177 19.2478 36.4211 19.2579 37.4242 19.2819L37.6909 19.2916C37.9989 19.3026 38.3028 19.3163 38.6699 19.3328C40.1329 19.4016 41.1312 19.6326 42.007 19.9722C42.9145 20.3214 43.679 20.7944 44.4435 21.5589C45.1426 22.2459 45.6836 23.0769 46.0289 23.9941C46.3685 24.8699 46.5995 25.8696 46.6683 27.3326C46.6848 27.6983 46.6985 28.0036 46.7095 28.3116L46.7178 28.5783C46.7422 29.581 46.7528 30.5839 46.7494 31.5868L46.7508 32.6126V34.4138C46.7542 35.4172 46.7436 36.4206 46.7192 37.4237L46.7109 37.6904C46.6999 37.9984 46.6862 38.3023 46.6697 38.6694C46.6009 40.1324 46.3672 41.1307 46.0289 42.0066C45.6847 42.9247 45.1436 43.7564 44.4435 44.4431C43.756 45.142 42.9246 45.683 42.007 46.0284C41.1312 46.3681 40.1329 46.5991 38.6699 46.6678C38.3028 46.6843 37.9989 46.6981 37.6909 46.7091L37.4242 46.7173C36.4211 46.7418 35.4177 46.7523 34.4143 46.7489L33.3885 46.7503H31.5887C30.5853 46.7537 29.5819 46.7432 28.5788 46.7187L28.312 46.7104C27.9856 46.6986 27.6593 46.6849 27.333 46.6692C25.87 46.6004 24.8718 46.3667 23.9945 46.0284C23.077 45.6838 22.2459 45.1427 21.5594 44.4431C20.8596 43.756 20.3181 42.9245 19.9727 42.0066C19.633 41.1307 19.402 40.1324 19.3333 38.6694C19.318 38.3432 19.3042 38.0168 19.292 37.6904L19.2852 37.4237C19.2598 36.4206 19.2484 35.4172 19.2508 34.4138V31.5868C19.247 30.5839 19.257 29.581 19.281 28.5783L19.2907 28.3116C19.3017 28.0036 19.3154 27.6983 19.3319 27.3326C19.4007 25.8682 19.6317 24.8713 19.9713 23.9941C20.3169 23.0764 20.8595 22.2457 21.5608 21.5603C22.2468 20.8601 23.0774 20.3181 23.9945 19.9722C24.8718 19.6326 25.8687 19.4016 27.333 19.3328L28.312 19.2916L28.5788 19.2847C29.5814 19.2594 30.5843 19.2479 31.5873 19.2503L34.4143 19.2517ZM33.0008 26.1267C32.0899 26.1138 31.1855 26.2821 30.3401 26.6218C29.4948 26.9615 28.7254 27.4658 28.0767 28.1054C27.428 28.745 26.9128 29.5072 26.5612 30.3476C26.2096 31.1881 26.0286 32.09 26.0286 33.001C26.0286 33.912 26.2096 34.814 26.5612 35.6544C26.9128 36.4948 27.428 37.257 28.0767 37.8966C28.7254 38.5362 29.4948 39.0405 30.3401 39.3802C31.1855 39.7199 32.0899 39.8882 33.0008 39.8753C34.8242 39.8753 36.5728 39.151 37.8622 37.8617C39.1515 36.5724 39.8758 34.8237 39.8758 33.0003C39.8758 31.177 39.1515 29.4283 37.8622 28.139C36.5728 26.8496 34.8242 26.1267 33.0008 26.1267ZM33.0008 28.8767C33.5487 28.8666 34.0932 28.9658 34.6024 29.1685C35.1116 29.3712 35.5753 29.6733 35.9664 30.0572C36.3575 30.4411 36.6682 30.8991 36.8803 31.4044C37.0924 31.9097 37.2017 32.4523 37.2018 33.0003C37.2019 33.5483 37.0928 34.0909 36.8808 34.5963C36.6689 35.1017 36.3583 35.5598 35.9673 35.9438C35.5764 36.3279 35.1128 36.6301 34.6037 36.833C34.0946 37.0359 33.5501 37.1352 33.0022 37.1253C31.9082 37.1253 30.8589 36.6907 30.0854 35.9171C29.3118 35.1435 28.8772 34.0943 28.8772 33.0003C28.8772 31.9063 29.3118 30.8571 30.0854 30.0835C30.8589 29.3099 31.9082 28.8753 33.0022 28.8753L33.0008 28.8767ZM40.2195 24.0642C39.776 24.0819 39.3564 24.2706 39.0489 24.5908C38.7413 24.9109 38.5695 25.3376 38.5695 25.7816C38.5695 26.2255 38.7413 26.6522 39.0489 26.9724C39.3564 27.2925 39.776 27.4812 40.2195 27.4989C40.6754 27.4989 41.1126 27.3179 41.4349 26.9955C41.7572 26.6732 41.9383 26.236 41.9383 25.7802C41.9383 25.3244 41.7572 24.8872 41.4349 24.5649C41.1126 24.2425 40.6754 24.0614 40.2195 24.0614V24.0642Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#" class="hover:opacity-80 transition">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 66 66"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="66"
+                  height="66"
+                  rx="33"
+                  fill="white"
+                  fill-opacity="0.05"
+                />
+                <rect
+                  x="0.6875"
+                  y="0.6875"
+                  width="64.625"
+                  height="64.625"
+                  rx="32.3125"
+                  stroke="white"
+                  stroke-opacity="0.5"
+                  stroke-width="1.375"
+                />
+                <path
+                  d="M46.75 38.7613C46.75 43.7663 43.7663 46.75 38.7613 46.75H37.125C36.3688 46.75 35.75 46.1313 35.75 45.375V37.4413C35.75 37.07 36.0525 36.7538 36.4237 36.7538L38.8438 36.7125C39.0363 36.6988 39.2013 36.5613 39.2425 36.3688L39.7238 33.7425C39.765 33.495 39.5725 33.2613 39.3112 33.2613L36.3825 33.3025C35.9975 33.3025 35.695 33 35.6813 32.6288L35.6263 29.26C35.6263 29.04 35.805 28.8475 36.0387 28.8475L39.3387 28.7925C39.5725 28.7925 39.7513 28.6138 39.7513 28.38L39.6962 25.08C39.6962 24.8462 39.5175 24.6675 39.2838 24.6675L35.5712 24.7225C33.2887 24.7638 31.4738 26.6337 31.515 28.9162L31.5838 32.6975C31.5975 33.0825 31.295 33.385 30.91 33.3988L29.26 33.4262C29.0262 33.4262 28.8475 33.605 28.8475 33.8387L28.8888 36.4513C28.8888 36.685 29.0675 36.8637 29.3012 36.8637L30.9513 36.8363C31.3363 36.8363 31.6387 37.1388 31.6525 37.51L31.7762 45.3475C31.79 46.1175 31.1712 46.75 30.4012 46.75H27.2387C22.2337 46.75 19.25 43.7662 19.25 38.7475V27.2387C19.25 22.2337 22.2337 19.25 27.2387 19.25H38.7613C43.7663 19.25 46.75 22.2337 46.75 27.2387V38.7613Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-      <!-- Bottom Bar -->
-      <div class="border-t border-gray-700 mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-        <div class="flex space-x-6 justify-center md:justify-start mb-4 md:mb-0">
-          <a href="#" class="text-gray-300 hover:text-white transition">Terms</a>
-          <a href="#" class="text-gray-300 hover:text-white transition">Privacy</a>
-          <a href="#" class="text-gray-300 hover:text-white transition">Cookies</a>
-        </div>
-        <div class="text-gray-400 text-center">© 2023 Moneybee Sdn. Bhd.</div>
-        <div class="flex justify-center md:justify-end space-x-4">
-          <a href="#" class="hover:opacity-80 transition">
-            <svg width="32" height="32" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="66" height="66" rx="33" fill="white" fill-opacity="0.05" />
-              <rect x="0.6875" y="0.6875" width="64.625" height="64.625" rx="32.3125" stroke="white"
-                stroke-opacity="0.5" stroke-width="1.375" />
-              <path
-                d="M42.625 20.625C43.3543 20.625 44.0538 20.9147 44.5695 20.4305C45.0853 21.9462 45.375 22.6457 45.375 23.375V42.625C45.375 43.3543 45.0853 44.0538 44.5695 44.5695C44.0538 45.0853 43.3543 45.375 42.625 45.375H23.375C22.6457 45.375 21.9462 45.0853 21.4305 44.5695C20.9147 44.0538 20.625 43.3543 20.625 42.625V23.375C20.625 22.6457 20.9147 21.9462 21.4305 21.4305C21.9462 20.9147 22.6457 20.625 23.375 20.625H42.625ZM41.9375 41.9375V34.65C41.9375 33.4612 41.4652 32.321 40.6246 31.4804C39.784 30.6398 38.6438 30.1675 37.455 30.1675C36.2863 30.1675 34.925 30.8825 34.265 31.955V30.4288H30.4288V41.9375H34.265V35.1587C34.265 34.1 35.1175 33.2338 36.1763 33.2338C36.6868 33.2338 37.1764 33.4366 37.5374 33.7976C37.8984 34.1586 38.1012 34.6482 38.1012 35.1587V41.9375H41.9375ZM25.96 28.27C26.5727 28.27 27.1602 28.0266 27.5934 27.5934C28.0266 27.1602 28.27 26.5727 28.27 25.96C28.27 24.6813 27.2387 23.6363 25.96 23.6363C25.3437 23.6363 24.7526 23.8811 24.3169 24.3169C23.8811 24.7526 23.6363 25.3437 23.6363 25.96C23.6363 27.2387 24.6813 28.27 25.96 28.27ZM27.8713 41.9375V30.4288H24.0625V41.9375H27.8713Z"
-                fill="white" />
-            </svg>
-          </a>
-          <a href="#" class="hover:opacity-80 transition">
-            <svg width="32" height="32" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="66" height="66" rx="33" fill="white" fill-opacity="0.05" />
-              <rect x="0.6875" y="0.6875" width="64.625" height="64.625" rx="32.3125" stroke="white"
-                stroke-opacity="0.5" stroke-width="1.375" />
-              <path
-                d="M34.4143 19.2517C35.4177 19.2478 36.4211 19.2579 37.4242 19.2819L37.6909 19.2916C37.9989 19.3026 38.3028 19.3163 38.6699 19.3328C40.1329 19.4016 41.1312 19.6326 42.007 19.9722C42.9145 20.3214 43.679 20.7944 44.4435 21.5589C45.1426 22.2459 45.6836 23.0769 46.0289 23.9941C46.3685 24.8699 46.5995 25.8696 46.6683 27.3326C46.6848 27.6983 46.6985 28.0036 46.7095 28.3116L46.7178 28.5783C46.7422 29.581 46.7528 30.5839 46.7494 31.5868L46.7508 32.6126V34.4138C46.7542 35.4172 46.7436 36.4206 46.7192 37.4237L46.7109 37.6904C46.6999 37.9984 46.6862 38.3023 46.6697 38.6694C46.6009 40.1324 46.3672 41.1307 46.0289 42.0066C45.6847 42.9247 45.1436 43.7564 44.4435 44.4431C43.756 45.142 42.9246 45.683 42.007 46.0284C41.1312 46.3681 40.1329 46.5991 38.6699 46.6678C38.3028 46.6843 37.9989 46.6981 37.6909 46.7091L37.4242 46.7173C36.4211 46.7418 35.4177 46.7523 34.4143 46.7489L33.3885 46.7503H31.5887C30.5853 46.7537 29.5819 46.7432 28.5788 46.7187L28.312 46.7104C27.9856 46.6986 27.6593 46.6849 27.333 46.6692C25.87 46.6004 24.8718 46.3667 23.9945 46.0284C23.077 45.6838 22.2459 45.1427 21.5594 44.4431C20.8596 43.756 20.3181 42.9245 19.9727 42.0066C19.633 41.1307 19.402 40.1324 19.3333 38.6694C19.318 38.3432 19.3042 38.0168 19.292 37.6904L19.2852 37.4237C19.2598 36.4206 19.2484 35.4172 19.2508 34.4138V31.5868C19.247 30.5839 19.257 29.581 19.281 28.5783L19.2907 28.3116C19.3017 28.0036 19.3154 27.6983 19.3319 27.3326C19.4007 25.8682 19.6317 24.8713 19.9713 23.9941C20.3169 23.0764 20.8595 22.2457 21.5608 21.5603C22.2468 20.8601 23.0774 20.3181 23.9945 19.9722C24.8718 19.6326 25.8687 19.4016 27.333 19.3328L28.312 19.2916L28.5788 19.2847C29.5814 19.2594 30.5843 19.2479 31.5873 19.2503L34.4143 19.2517ZM33.0008 26.1267C32.0899 26.1138 31.1855 26.2821 30.3401 26.6218C29.4948 26.9615 28.7254 27.4658 28.0767 28.1054C27.428 28.745 26.9128 29.5072 26.5612 30.3476C26.2096 31.1881 26.0286 32.09 26.0286 33.001C26.0286 33.912 26.2096 34.814 26.5612 35.6544C26.9128 36.4948 27.428 37.257 28.0767 37.8966C28.7254 38.5362 29.4948 39.0405 30.3401 39.3802C31.1855 39.7199 32.0899 39.8882 33.0008 39.8753C34.8242 39.8753 36.5728 39.151 37.8622 37.8617C39.1515 36.5724 39.8758 34.8237 39.8758 33.0003C39.8758 31.177 39.1515 29.4283 37.8622 28.139C36.5728 26.8496 34.8242 26.1267 33.0008 26.1267ZM33.0008 28.8767C33.5487 28.8666 34.0932 28.9658 34.6024 29.1685C35.1116 29.3712 35.5753 29.6733 35.9664 30.0572C36.3575 30.4411 36.6682 30.8991 36.8803 31.4044C37.0924 31.9097 37.2017 32.4523 37.2018 33.0003C37.2019 33.5483 37.0928 34.0909 36.8808 34.5963C36.6689 35.1017 36.3583 35.5598 35.9673 35.9438C35.5764 36.3279 35.1128 36.6301 34.6037 36.833C34.0946 37.0359 33.5501 37.1352 33.0022 37.1253C31.9082 37.1253 30.8589 36.6907 30.0854 35.9171C29.3118 35.1435 28.8772 34.0943 28.8772 33.0003C28.8772 31.9063 29.3118 30.8571 30.0854 30.0835C30.8589 29.3099 31.9082 28.8753 33.0022 28.8753L33.0008 28.8767ZM40.2195 24.0642C39.776 24.0819 39.3564 24.2706 39.0489 24.5908C38.7413 24.9109 38.5695 25.3376 38.5695 25.7816C38.5695 26.2255 38.7413 26.6522 39.0489 26.9724C39.3564 27.2925 39.776 27.4812 40.2195 27.4989C40.6754 27.4989 41.1126 27.3179 41.4349 26.9955C41.7572 26.6732 41.9383 26.236 41.9383 25.7802C41.9383 25.3244 41.7572 24.8872 41.4349 24.5649C41.1126 24.2425 40.6754 24.0614 40.2195 24.0614V24.0642Z"
-                fill="white" />
-            </svg>
-          </a>
-          <a href="#" class="hover:opacity-80 transition">
-            <svg width="32" height="32" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="66" height="66" rx="33" fill="white" fill-opacity="0.05" />
-              <rect x="0.6875" y="0.6875" width="64.625" height="64.625" rx="32.3125" stroke="white"
-                stroke-opacity="0.5" stroke-width="1.375" />
-              <path
-                d="M46.75 38.7613C46.75 43.7663 43.7663 46.75 38.7613 46.75H37.125C36.3688 46.75 35.75 46.1313 35.75 45.375V37.4413C35.75 37.07 36.0525 36.7538 36.4237 36.7538L38.8438 36.7125C39.0363 36.6988 39.2013 36.5613 39.2425 36.3688L39.7238 33.7425C39.765 33.495 39.5725 33.2613 39.3112 33.2613L36.3825 33.3025C35.9975 33.3025 35.695 33 35.6813 32.6288L35.6263 29.26C35.6263 29.04 35.805 28.8475 36.0387 28.8475L39.3387 28.7925C39.5725 28.7925 39.7513 28.6138 39.7513 28.38L39.6962 25.08C39.6962 24.8462 39.5175 24.6675 39.2838 24.6675L35.5712 24.7225C33.2887 24.7638 31.4738 26.6337 31.515 28.9162L31.5838 32.6975C31.5975 33.0825 31.295 33.385 30.91 33.3988L29.26 33.4262C29.0262 33.4262 28.8475 33.605 28.8475 33.8387L28.8888 36.4513C28.8888 36.685 29.0675 36.8637 29.3012 36.8637L30.9513 36.8363C31.3363 36.8363 31.6387 37.1388 31.6525 37.51L31.7762 45.3475C31.79 46.1175 31.1712 46.75 30.4012 46.75H27.2387C22.2337 46.75 19.25 43.7662 19.25 38.7475V27.2387C19.25 22.2337 22.2337 19.25 27.2387 19.25H38.7613C43.7663 19.25 46.75 22.2337 46.75 27.2387V38.7613Z"
-                fill="white" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-    <script>
-      // Mobile menu toggle
-      const mobileMenuButton = document.getElementById("mobileMenuButton");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const iconHamburger = document.getElementById("iconHamburger");
-      const iconClose = document.getElementById("iconClose");
-
-      mobileMenuButton.addEventListener("click", () => {
-        const isExpanded =
-          mobileMenuButton.getAttribute("aria-expanded") === "true";
-
-        mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
-        mobileMenu.classList.toggle("hidden");
-        iconHamburger.classList.toggle("hidden");
-        iconClose.classList.toggle("hidden");
-      });
-
-      // Mobile dropdown functionality
-      const dropdownButtons = document.querySelectorAll(".mobile-dropdown-btn");
-
-      dropdownButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const targetId = button.getAttribute("data-target");
-          const targetContent = document.getElementById(targetId);
-          const arrow = button.querySelector(".dropdown-arrow");
-
-          // Toggle the specific dropdown
-          targetContent.classList.toggle("hidden");
-          arrow.classList.toggle("rotate-180");
-        });
-      });
-
-      // Desktop dropdown functionality
-      const dropdownGroups = document.querySelectorAll(".dropdown-group");
-      dropdownGroups.forEach((group) => {
-        const ul = group.querySelector("ul");
-        group.addEventListener("mouseenter", () => {
-          ul.classList.remove("invisible", "opacity-0", "translate-y-2");
-          ul.classList.add("visible", "opacity-100", "translate-y-0");
-        });
-        group.addEventListener("mouseleave", () => {
-          ul.classList.remove("visible", "opacity-100", "translate-y-0");
-          ul.classList.add("invisible", "opacity-0", "translate-y-2");
-        });
-      });
-
-      // Testimonial Carousel
-      let currentSlide = 0;
-      const carousel = document.getElementById("testimonial-carousel");
-      const dots = document.querySelectorAll(".dot");
-      const prevBtn = document.getElementById("prev-btn");
-      const nextBtn = document.getElementById("next-btn");
-      const totalSlides = 3;
-
-      function showSlide(index) {
-        currentSlide = index;
-        if (currentSlide >= totalSlides) currentSlide = 0;
-        if (currentSlide < 0) currentSlide = totalSlides - 1;
-
-        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-        // Update dots
-        dots.forEach((dot, i) => {
-          dot.classList.toggle("bg-blue-500", i === currentSlide);
-          dot.classList.toggle("bg-gray-300", i !== currentSlide);
-        });
-      }
-
-      function nextSlide() {
-        showSlide(currentSlide + 1);
-      }
-
-      function prevSlide() {
-        showSlide(currentSlide - 1);
-      }
-
-      // Event listeners
-      if (prevBtn) prevBtn.addEventListener("click", prevSlide);
-      if (nextBtn) nextBtn.addEventListener("click", nextSlide);
-
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => showSlide(index));
-      });
-
-      // Auto slide (optional)
-      // setInterval(nextSlide, 5000);
-
-      // Blog Carousel
-      let blogCurrentPosition = 0;
-      const blogCarousel = document.getElementById("blog-carousel");
-      const blogPrevBtn = document.getElementById("blog-prev-btn");
-      const blogNextBtn = document.getElementById("blog-next-btn");
-      const cardWidth = 320; // w-[280px] = 320px
-      const gap = 24; // space-x-6 = 24px
-      const scrollAmount = cardWidth + gap;
-      const totalCards = 4;
-      let visibleCards = window.innerWidth >= 1024 ? 3 : 1; // Show 3 on desktop, 1 on mobile
-      let maxPosition = (totalCards - visibleCards) * scrollAmount;
-
-      function updateBlogCarousel() {
-        blogCarousel.style.transform = `translateX(-${blogCurrentPosition}px)`;
-
-        // Disable buttons at limits
-        blogPrevBtn.style.opacity = blogCurrentPosition <= 0 ? "0.5" : "1";
-        blogNextBtn.style.opacity =
-          blogCurrentPosition >= maxPosition ? "0.5" : "1";
-      }
-
-      function blogNext() {
-        if (blogCurrentPosition < maxPosition) {
-          blogCurrentPosition += scrollAmount;
-          updateBlogCarousel();
-        }
-      }
-
-      function blogPrev() {
-        if (blogCurrentPosition > 0) {
-          blogCurrentPosition -= scrollAmount;
-          updateBlogCarousel();
-        }
-      }
-
-      // Event listeners for blog carousel
-      blogNextBtn.addEventListener("click", blogNext);
-      blogPrevBtn.addEventListener("click", blogPrev);
-
-      // Update on window resize
-      window.addEventListener("resize", () => {
-        const newVisibleCards = window.innerWidth >= 1024 ? 3 : 1;
-        if (newVisibleCards !== visibleCards) {
-          visibleCards = newVisibleCards;
-          maxPosition = (totalCards - visibleCards) * scrollAmount;
-          blogCurrentPosition = 0;
-          updateBlogCarousel();
-        }
-      });
-
-      // FAQ Toggle
-      function toggleFAQ(element) {
-        const answer = element.nextElementSibling;
-        const icon = element.querySelector("svg path");
-        answer.classList.toggle("hidden");
-        if (answer.classList.contains("hidden")) {
-          // collapsed, plus
-          icon.setAttribute(
-            "d",
-            "M18 14V26M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-          );
-          icon.setAttribute("stroke", "#7D7D7D");
-        } else {
-          // expanded, minus
-          icon.setAttribute(
-            "d",
-            "M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-          );
-          icon.setAttribute("stroke", "#323232");
-        }
-      }
-    </script>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

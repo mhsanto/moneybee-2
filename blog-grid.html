@@ -22,6 +22,8 @@
         },
       };
     </script>
+    <script src="animations.js"></script>
+
     <title>MoneyBee</title>
   </head>
   <body class="bg-gray-100 min-h-screen font-manrope">
@@ -48,7 +50,7 @@
               aria-haspopup="menu"
               aria-expanded="false"
             >
-              <a href="ourServices.html">Our Services</a>
+              <span>Our Services</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -85,7 +87,7 @@
               </li>
               <li role="none">
                 <a
-                  href="#product-three"
+                  href="resourses.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
                   role="menuitem"
                   >Product Three</a
@@ -93,7 +95,7 @@
               </li>
               <li role="none">
                 <a
-                  href="#product-four"
+                  href="financial.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
                   role="menuitem"
                   >Product Four</a
@@ -788,19 +790,21 @@
     </div>
 
     <section
-      class="py-16 lg:py-24 relative container mx-auto px-4 sm:px-6 lg:px-8 z-10 "
+      class="py-16 lg:py-24 relative container mx-auto px-4 sm:px-6 lg:px-8 z-10"
     >
       <div
         class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
       >
         <div class="max-w-3xl">
           <h1
-            class="text-4xl lg:text-5xl font-bold text-gray-900 leading-loose"
+            class="text-4xl lg:text-5xl font-bold text-gray-900 leading-loose animate-on-scroll fade-in-up"
           >
             BNPL and Youth in Malaysia: Building Financial Health Before It's
             Too Late
           </h1>
-          <p class="mt-6 text-base text-gray-600">
+          <p
+            class="mt-6 text-base text-gray-600 animate-on-scroll fade-in-up delay-100"
+          >
             In recent years, Buy Now, Pay Later (BNPL) has become a buzzword in
             Malaysia’s financial landscape. For young Malaysians, BNPL offers
             quick gratification — the ability to buy now and worry about
@@ -818,260 +822,123 @@
         </div>
       </div>
     </section>
-<div class="absolute top-[100%] right-0 overflow-hidden z-[-1]">
-        <svg
-          width="498"
-          height="1160"
-          viewBox="0 0 498 1160"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_f_72_542)">
-            <ellipse
-              cx="587.5"
-              cy="580"
-              rx="256.5"
-              ry="249"
-              fill="#2B90FF"
-              fill-opacity="0.5"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_72_542"
-              x="0"
-              y="0"
-              width="1175"
-              height="1160"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="165.5"
-                result="effect1_foregroundBlur_72_542"
-              />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-    <section
-      class="py-16 lg:py-24 relative  mx-auto px-4 sm:px-6 lg:px-8"
-    >
-      
-      <div
-        class="mb-12 flex justify-between w-full px-12 sm:px-0 max-w-7xl mx-auto"
+    <div class="absolute top-[100%] right-0 overflow-hidden z-[-1]">
+      <svg
+        width="498"
+        height="1160"
+        viewBox="0 0 498 1160"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <p
-          class="text-sm font-semibold text-gray-500 tracking-widest uppercase"
-        >
-          ALL BLOGS
-        </p>
-        <h2 class="mt-2 text-3xl lg:text-4xl font-bold text-gray-900">
-          Financial Insights & Highlights
-        </h2>
-      </div>
-
-      <div class="py-8 md:py-12 relative">
-        <div class="w-full mx-auto px-4 sm:px-6">
-          <div class="rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
-            <!-- Header with Title and Navigation -->
-            <div class="flex justify-between items-center mb-6 md:mb-8"></div>
-
-            <!-- Carousel Container -->
-            <div class="overflow-hidden -mx-2">
-              <div
-                id="blog-carousel"
-                class="flex gap-3 sm:gap-4 lg:gap-6 px-2 pb-4"
+        <g filter="url(#filter0_f_72_542)">
+          <ellipse
+            cx="587.5"
+            cy="580"
+            rx="256.5"
+            ry="249"
+            fill="#2B90FF"
+            fill-opacity="0.5"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_72_542"
+            x="0"
+            y="0"
+            width="1175"
+            height="1160"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="165.5"
+              result="effect1_foregroundBlur_72_542"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <section class="py-8 md:pb-12 lg:pb-16">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
+          <!-- Header with Title and Navigation -->
+          <div class="flex justify-between items-center mb-6 md:mb-8">
+            <div class="flex flex-col md:flex-row justify-between w-full">
+              <p
+                class="text-sm font-semibold text-gray-500 tracking-widest uppercase animate-on-scroll fade-in-up"
               >
-                <!-- Blog Card 1 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
-                    alt="Person preparing/serving food"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Explore expert tips, real stories, and the latest insights
-                      to improve your financial health and make better money
-                      decisions..
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog Card 2 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
-                    alt="Malaysian Ringgit banknotes"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Discover practical strategies for budgeting, saving, and
-                      investing to achieve your financial goals faster.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog Card 3 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
-                    alt="Diverse group of people smiling"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Read inspiring stories from people who transformed their
-                      financial situations and learn from their experiences.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog Card 4 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden shadow-sm"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
-                    alt="Malaysian flag with silhouettes of people"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Stay informed about market trends, economic updates, and
-                      how they impact your personal finances.
-                    </p>
-                  </div>
-                </div>
-              </div>
+                ALL BLOGS
+              </p>
+              <h2
+                class="mt-2 text-2xl sm:text-3xl md:text-4xl font-bold text-black animate-on-scroll fade-in-up delay-100"
+              >
+                Financial Insights & Highlights
+              </h2>
             </div>
-            <div class="overflow-hidden -mx-2">
-              <div
-                id="blog-carousel"
-                class="flex gap-3 sm:gap-4 lg:gap-6 px-2 overflow-x-auto pb-4"
+            <div class="flex space-x-2 lg:hidden">
+              <button
+                id="blog-prev-btn"
+                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                aria-label="Previous blog"
               >
-                <!-- Blog Card 1 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
+                <svg
+                  class="w-4 h-4 sm:w-5 sm:h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  <img
-                    src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
-                    alt="Person preparing/serving food"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Explore expert tips, real stories, and the latest insights
-                      to improve your financial health and make better money
-                      decisions..
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog Card 2 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                id="blog-next-btn"
+                class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
+                aria-label="Next blog"
+              >
+                <svg
+                  class="w-4 h-4 sm:w-5 sm:h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  <img
-                    src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
-                    alt="Malaysian Ringgit banknotes"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Discover practical strategies for budgeting, saving, and
-                      investing to achieve your financial goals faster.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog Card 3 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
-                    alt="Diverse group of people smiling"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Read inspiring stories from people who transformed their
-                      financial situations and learn from their experiences.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Blog Card 4 -->
-                <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
-                    alt="Malaysian flag with silhouettes of people"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
-                  />
-                  <div class="p-3 sm:p-4">
-                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                      Stay Smart, Stay Financially Fit
-                    </h3>
-                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                      Stay informed about market trends, economic updates, and
-                      how they impact your personal finances.
-                    </p>
-                  </div>
-                </div>
-              </div>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <div class="overflow-hidden -mx-2">
-              <div
-                id="blog-carousel"
-                class="flex gap-3 sm:gap-4 lg:gap-6 px-2 overflow-x-auto pb-4"
+          </div>
+
+          <!-- Carousel Container -->
+          <div class="overflow-hidden">
+            <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 pb-4">
+              <!-- Blog Card 1 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-200 block"
               >
-                <!-- Blog Card 1 -->
                 <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
                     alt="Person preparing/serving food"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
                   />
                   <div class="p-3 sm:p-4">
                     <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
@@ -1084,15 +951,20 @@
                     </p>
                   </div>
                 </div>
+              </a>
 
-                <!-- Blog Card 2 -->
+              <!-- Blog Card 2 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-300 block"
+              >
                 <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
                     alt="Malaysian Ringgit banknotes"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
                   />
                   <div class="p-3 sm:p-4">
                     <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
@@ -1104,15 +976,20 @@
                     </p>
                   </div>
                 </div>
+              </a>
 
-                <!-- Blog Card 3 -->
+              <!-- Blog Card 3 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-400 block"
+              >
                 <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
                     alt="Diverse group of people smiling"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
                   />
                   <div class="p-3 sm:p-4">
                     <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
@@ -1124,15 +1001,20 @@
                     </p>
                   </div>
                 </div>
+              </a>
 
-                <!-- Blog Card 4 -->
+              <!-- Blog Card 4 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-500 block"
+              >
                 <div
-                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:flex-1 rounded-lg overflow-hidden  shadow-sm"
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
                     alt="Malaysian flag with silhouettes of people"
-                    class="w-full h-48 sm:h-56 md:h-64 lg:h-64 object-cover"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
                   />
                   <div class="p-3 sm:p-4">
                     <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
@@ -1144,7 +1026,217 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </a>
+            </div>
+          </div>
+              <!-- Carousel Container -->
+          <div class="overflow-hidden">
+            <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 pb-4">
+              <!-- Blog Card 1 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-200 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
+                    alt="Person preparing/serving food"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Explore expert tips, real stories, and the latest insights
+                      to improve your financial health and make better money
+                      decisions..
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Blog Card 2 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-300 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
+                    alt="Malaysian Ringgit banknotes"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Discover practical strategies for budgeting, saving, and
+                      investing to achieve your financial goals faster.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Blog Card 3 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-400 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
+                    alt="Diverse group of people smiling"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Read inspiring stories from people who transformed their
+                      financial situations and learn from their experiences.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Blog Card 4 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-500 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
+                    alt="Malaysian flag with silhouettes of people"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Stay informed about market trends, economic updates, and
+                      how they impact your personal finances.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+              <!-- Carousel Container -->
+          <div class="overflow-hidden">
+            <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 pb-4">
+              <!-- Blog Card 1 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-200 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=320&fit=crop"
+                    alt="Person preparing/serving food"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Explore expert tips, real stories, and the latest insights
+                      to improve your financial health and make better money
+                      decisions..
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Blog Card 2 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-300 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&h=320&fit=crop"
+                    alt="Malaysian Ringgit banknotes"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Discover practical strategies for budgeting, saving, and
+                      investing to achieve your financial goals faster.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Blog Card 3 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-400 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=320&fit=crop"
+                    alt="Diverse group of people smiling"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Read inspiring stories from people who transformed their
+                      financial situations and learn from their experiences.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Blog Card 4 -->
+              <a
+                href="single-blog.html"
+                class="animate-on-scroll fade-in-up delay-500 block"
+              >
+                <div
+                  class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=320&fit=crop"
+                    alt="Malaysian flag with silhouettes of people"
+                    class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div class="p-3 sm:p-4">
+                    <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
+                      Stay Smart, Stay Financially Fit
+                    </h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      Stay informed about market trends, economic updates, and
+                      how they impact your personal finances.
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -1276,7 +1368,7 @@
               >Cookies</a
             >
           </div>
-          <div class="text-gray-400 text-center">© 2023 Moneybee Sdn. Bhd.</div>
+          <div class="text-gray-400 text-center">© 2025 Moneybee Sdn. Bhd.</div>
           <div class="flex justify-center md:justify-end space-x-4">
             <a href="#" class="hover:opacity-80 transition">
               <svg
@@ -1375,165 +1467,7 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      // Mobile menu toggle
-      const mobileMenuButton = document.getElementById("mobileMenuButton");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const iconHamburger = document.getElementById("iconHamburger");
-      const iconClose = document.getElementById("iconClose");
-
-      mobileMenuButton.addEventListener("click", () => {
-        const isExpanded =
-          mobileMenuButton.getAttribute("aria-expanded") === "true";
-
-        mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
-        mobileMenu.classList.toggle("hidden");
-        iconHamburger.classList.toggle("hidden");
-        iconClose.classList.toggle("hidden");
-      });
-
-      // Mobile dropdown functionality
-      const dropdownButtons = document.querySelectorAll(".mobile-dropdown-btn");
-
-      dropdownButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const targetId = button.getAttribute("data-target");
-          const targetContent = document.getElementById(targetId);
-          const arrow = button.querySelector(".dropdown-arrow");
-
-          // Toggle the specific dropdown
-          targetContent.classList.toggle("hidden");
-          arrow.classList.toggle("rotate-180");
-        });
-      });
-
-      // Desktop dropdown functionality
-      const dropdownGroups = document.querySelectorAll(".dropdown-group");
-      dropdownGroups.forEach((group) => {
-        const ul = group.querySelector("ul");
-        group.addEventListener("mouseenter", () => {
-          ul.classList.remove("invisible", "opacity-0", "translate-y-2");
-          ul.classList.add("visible", "opacity-100", "translate-y-0");
-        });
-        group.addEventListener("mouseleave", () => {
-          ul.classList.remove("visible", "opacity-100", "translate-y-0");
-          ul.classList.add("invisible", "opacity-0", "translate-y-2");
-        });
-      });
-
-      // Testimonial Carousel
-      let currentSlide = 0;
-      const carousel = document.getElementById("testimonial-carousel");
-      const dots = document.querySelectorAll(".dot");
-      const prevBtn = document.getElementById("prev-btn");
-      const nextBtn = document.getElementById("next-btn");
-      const totalSlides = 3;
-
-      function showSlide(index) {
-        currentSlide = index;
-        if (currentSlide >= totalSlides) currentSlide = 0;
-        if (currentSlide < 0) currentSlide = totalSlides - 1;
-
-        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-        // Update dots
-        dots.forEach((dot, i) => {
-          dot.classList.toggle("bg-blue-500", i === currentSlide);
-          dot.classList.toggle("bg-gray-300", i !== currentSlide);
-        });
-      }
-
-      function nextSlide() {
-        showSlide(currentSlide + 1);
-      }
-
-      function prevSlide() {
-        showSlide(currentSlide - 1);
-      }
-
-      // Event listeners
-      if (prevBtn) prevBtn.addEventListener("click", prevSlide);
-      if (nextBtn) nextBtn.addEventListener("click", nextSlide);
-
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => showSlide(index));
-      });
-
-      // Auto slide (optional)
-      // setInterval(nextSlide, 5000);
-
-      // Blog Carousel
-      let blogCurrentPosition = 0;
-      const blogCarousel = document.getElementById("blog-carousel");
-      const blogPrevBtn = document.getElementById("blog-prev-btn");
-      const blogNextBtn = document.getElementById("blog-next-btn");
-      const cardWidth = 320; // w-[280px] = 320px
-      const gap = 24; // space-x-6 = 24px
-      const scrollAmount = cardWidth + gap;
-      const totalCards = 4;
-      let visibleCards = window.innerWidth >= 1024 ? 3 : 1; // Show 3 on desktop, 1 on mobile
-      let maxPosition = (totalCards - visibleCards) * scrollAmount;
-
-      function updateBlogCarousel() {
-        blogCarousel.style.transform = `translateX(-${blogCurrentPosition}px)`;
-
-        // Disable buttons at limits
-        blogPrevBtn.style.opacity = blogCurrentPosition <= 0 ? "0.5" : "1";
-        blogNextBtn.style.opacity =
-          blogCurrentPosition >= maxPosition ? "0.5" : "1";
-      }
-
-      function blogNext() {
-        if (blogCurrentPosition < maxPosition) {
-          blogCurrentPosition += scrollAmount;
-          updateBlogCarousel();
-        }
-      }
-
-      function blogPrev() {
-        if (blogCurrentPosition > 0) {
-          blogCurrentPosition -= scrollAmount;
-          updateBlogCarousel();
-        }
-      }
-
-      // Event listeners for blog carousel
-      blogNextBtn.addEventListener("click", blogNext);
-      blogPrevBtn.addEventListener("click", blogPrev);
-
-      // Update on window resize
-      window.addEventListener("resize", () => {
-        const newVisibleCards = window.innerWidth >= 1024 ? 3 : 1;
-        if (newVisibleCards !== visibleCards) {
-          visibleCards = newVisibleCards;
-          maxPosition = (totalCards - visibleCards) * scrollAmount;
-          blogCurrentPosition = 0;
-          updateBlogCarousel();
-        }
-      });
-
-      // FAQ Toggle
-      function toggleFAQ(element) {
-        const answer = element.nextElementSibling;
-        const icon = element.querySelector("svg path");
-        answer.classList.toggle("hidden");
-        if (answer.classList.contains("hidden")) {
-          // collapsed, plus
-          icon.setAttribute(
-            "d",
-            "M18 14V26M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-          );
-          icon.setAttribute("stroke", "#7D7D7D");
-        } else {
-          // expanded, minus
-          icon.setAttribute(
-            "d",
-            "M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-          );
-          icon.setAttribute("stroke", "#323232");
-        }
-      }
-    </script>
-  </body>
+    <script src="script.js"></script>
+  </div>
+</body>
 </html>

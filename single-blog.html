@@ -20,718 +20,404 @@
             },
         };
     </script>
+    <script src="animations.js"></script>
     <title>MoneyBee</title>
 </head>
 
 <body class="bg-gray-100 min-h-screen font-manrope">
     <div class="mx-auto max-w-screen-2xl px-4 px-2 sm:px-0">
-      <div class="flex h-16 items-center justify-between">
-        <!-- Left: Logo -->
-        <a href="index.html" class="inline-flex items-center gap-2">
-          <img
-            src="assets/images/header/logo.png"
-            alt="logo"
-            class="h-[40px] w-auto"
-          />
-        </a>
+        <div class="flex h-16 items-center justify-between">
+            <!-- Left: Logo -->
+            <a href="index.html" class="inline-flex items-center gap-2">
+                <img src="assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
+            </a>
 
-        <!-- Middle: Desktop Nav (>=1024px) -->
-        <nav
-          class="hidden lg:flex items-center justify-center gap-2 font-medium"
-        >
-          <!-- Our Services dropdown -->
-          <div class="relative group dropdown-group">
-            <button
-              type="button"
-              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
-              <a href="ourServices.html">Our Services</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <ul
-              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
-              <li role="none">
-                <a
-                  href="ourServices.html"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Product One</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#product-two"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Product Two</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#product-three"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Product Three</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#product-four"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >Product Four</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="relative group dropdown-group">
-            <button
-              type="button"
-              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
-              <a href="resourses.html">Resources</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <ul
-              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
-              <li role="none">
-                <a
-                  href="#blog-youtube"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Blog/Youtube</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#personal-loan-calculator"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Personal Loan Calculator</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#debt-consolidation-calculator"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Debt Consolidation Calculator</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#download-bank-statements"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >How to download bank statements</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Financial Health Hub dropdown -->
-          <div class="relative group dropdown-group">
-            <button
-              type="button"
-              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
-              <a href="financial.html">Financial Health Hub</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <ul
-              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
-              <li role="none">
-                <a
-                  href="#knowledge-sharing"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >Knowledge Sharing</a
-                >
-              </li>
-            </ul>
-          </div>
+            <!-- Middle: Desktop Nav (>=1024px) -->
+            <nav class="hidden lg:flex items-center justify-center gap-2 font-medium">
+                <!-- Our Services dropdown -->
+                <div class="relative group dropdown-group">
+                    <button type="button"
+                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <span>Our Services</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+                        role="menu">
+                        <li role="none">
+                            <a href="ourServices.html"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Product One</a>
+                        </li>
+                        <li role="none">
+                            <a href="#product-two"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Product Two</a>
+                        </li>
+                        <li role="none">
+                            <a href="resourses.html"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Product Three</a>
+                        </li>
+                        <li role="none">
+                            <a href="financial.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                                role="menuitem">Product Four</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative group dropdown-group">
+                    <button type="button"
+                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <a href="resourses.html">Resources</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+                        role="menu">
+                        <li role="none">
+                            <a href="#blog-youtube"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Blog/Youtube</a>
+                        </li>
+                        <li role="none">
+                            <a href="#personal-loan-calculator"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Personal Loan Calculator</a>
+                        </li>
+                        <li role="none">
+                            <a href="#debt-consolidation-calculator"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Debt Consolidation Calculator</a>
+                        </li>
+                        <li role="none">
+                            <a href="#download-bank-statements"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">How to
+                                download bank statements</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Financial Health Hub dropdown -->
+                <div class="relative group dropdown-group">
+                    <button type="button"
+                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <a href="financial.html">Financial Health Hub</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+                        role="menu">
+                        <li role="none">
+                            <a href="#knowledge-sharing" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                                role="menuitem">Knowledge Sharing</a>
+                        </li>
+                    </ul>
+                </div>
 
-          <!-- For Lenders dropdown -->
-          <div class="relative group dropdown-group">
-            <button
-              type="button"
-              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
-              <span>For Lenders</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <ul
-              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
-              <li role="none">
-                <a
-                  href="#why-us"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Why Us?</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#risk-tools"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Risk Tools</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#contact-business-development"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >Contact Business Development Manager</a
-                >
-              </li>
-            </ul>
-          </div>
+                <!-- For Lenders dropdown -->
+                <div class="relative group dropdown-group">
+                    <button type="button"
+                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <span>For Lenders</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+                        role="menu">
+                        <li role="none">
+                            <a href="#why-us"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Why Us?</a>
+                        </li>
+                        <li role="none">
+                            <a href="#risk-tools"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Risk Tools</a>
+                        </li>
+                        <li role="none">
+                            <a href="#contact-business-development"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Contact
+                                Business Development Manager</a>
+                        </li>
+                    </ul>
+                </div>
 
-          <!-- About Us dropdown -->
-          <div class="relative group dropdown-group">
-            <button
-              type="button"
-              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
-              <span>About Us</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <ul
-              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
-              <li role="none">
-                <a
-                  href="#our-story"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Our Story</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#our-promise"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Our Promise</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#media"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Media</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#career"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Career</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#contact"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+                <!-- About Us dropdown -->
+                <div class="relative group dropdown-group">
+                    <button type="button"
+                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <span>About Us</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+                        role="menu">
+                        <li role="none">
+                            <a href="#our-story"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Our Story</a>
+                        </li>
+                        <li role="none">
+                            <a href="#our-promise"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Our Promise</a>
+                        </li>
+                        <li role="none">
+                            <a href="#media"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Media</a>
+                        </li>
+                        <li role="none">
+                            <a href="#career"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Career</a>
+                        </li>
+                        <li role="none">
+                            <a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                                role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
-          <!-- FAQ (no dropdown) -->
-          <a
-            href="#faq"
-            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-            >FAQ</a
-          >
+                <!-- FAQ (no dropdown) -->
+                <a href="#faq" class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">FAQ</a>
 
-          <!-- Compliance & Privacy dropdown -->
-          <div class="relative group dropdown-group">
-            <button
-              type="button"
-              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
-              <span>Compliance & Privacy</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <ul
-              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
-              <li role="none">
-                <a
-                  href="#pdpa-security"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >PDPA Security</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#partner-disclosure"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Partner Disclosure</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  href="#terms-conditions"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >T&C</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+                <!-- Compliance & Privacy dropdown -->
+                <div class="relative group dropdown-group">
+                    <button type="button"
+                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <span>Compliance & Privacy</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+                        role="menu">
+                        <li role="none">
+                            <a href="#pdpa-security"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">PDPA Security</a>
+                        </li>
+                        <li role="none">
+                            <a href="#partner-disclosure"
+                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                                role="menuitem">Partner Disclosure</a>
+                        </li>
+                        <li role="none">
+                            <a href="#terms-conditions" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                                role="menuitem">T&C</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-        <!-- Right: Actions -->
-        <!-- Desktop (>=1024px): Contact Us button -->
-        <div class="hidden lg:flex items-center gap-3">
-          <a
-            href="contact-us.html"
-            style="background-color: #f9d157"
-            class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition"
-            >Contact Us</a
-          >
+            <!-- Right: Actions -->
+            <!-- Desktop (>=1024px): Contact Us button -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="contact-us.html" style="background-color: #f9d157"
+                    class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition">Contact Us</a>
+            </div>
+
+            <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
+            <div class="flex lg:hidden items-center gap-2">
+                <a href="contact-us.html" style="background-color: #f9d157"
+                    class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition">Contact
+                    Us</a>
+                <button id="mobileMenuButton"
+                    class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
+                    aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
+                    <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="h-5 w-5">
+                        <path d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z" />
+                    </svg>
+                    <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="h-5 w-5 hidden">
+                        <path fill-rule="evenodd"
+                            d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
         </div>
-
-        <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
-        <div class="flex lg:hidden items-center gap-2">
-          <a
-            href="contact-us.html"
-            style="background-color: #f9d157"
-            class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition"
-            >Contact Us</a
-          >
-          <button
-            id="mobileMenuButton"
-            class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
-            aria-controls="mobileMenu"
-            aria-expanded="false"
-            aria-label="Toggle menu"
-          >
-            <svg
-              id="iconHamburger"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z"
-              />
-            </svg>
-            <svg
-              id="iconClose"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-5 w-5 hidden"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
-      <nav class="container mx-auto px-4 py-4 space-y-2">
-        <!-- Our Services (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-services"
-          >
-            <span class="font-medium">Our Services</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-services"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#product-one"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Product One</a
-            >
-            <a
-              href="#product-two"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Product Two</a
-            >
-            <a
-              href="#product-three"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Product Three</a
-            >
-            <a
-              href="#product-four"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Product Four</a
-            >
-          </div>
-        </div>
+        <nav class="container mx-auto px-4 py-4 space-y-2">
+            <!-- Our Services (mobile) -->
+            <div class="border-b border-gray-200 pb-2">
+                <button
+                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+                    data-target="mobile-services">
+                    <span class="font-medium">Our Services</span>
+                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="mobile-services" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+                    <a href="#product-one" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Product One</a>
+                    <a href="#product-two" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Product Two</a>
+                    <a href="#product-three" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Product Three</a>
+                    <a href="#product-four" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Product Four</a>
+                </div>
+            </div>
 
-        <!-- Resources (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-resources"
-          >
-            <span class="font-medium">Resources</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-resources"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#blog-youtube"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Blog/Youtube</a
-            >
-            <a
-              href="#personal-loan-calculator"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Personal Loan Calculator</a
-            >
-            <a
-              href="#debt-consolidation-calculator"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Debt Consolidation Calculator</a
-            >
-            <a
-              href="#download-bank-statements"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >How to download bank statements</a
-            >
-          </div>
-        </div>
+            <!-- Resources (mobile) -->
+            <div class="border-b border-gray-200 pb-2">
+                <button
+                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+                    data-target="mobile-resources">
+                    <span class="font-medium">Resources</span>
+                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="mobile-resources" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+                    <a href="#blog-youtube" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Blog/Youtube</a>
+                    <a href="#personal-loan-calculator" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Personal Loan Calculator</a>
+                    <a href="#debt-consolidation-calculator" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Debt Consolidation Calculator</a>
+                    <a href="#download-bank-statements" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">How to download bank statements</a>
+                </div>
+            </div>
 
-        <!-- Financial Health Hub (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-health"
-          >
-            <span class="font-medium">Financial Health Hub</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-health"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#knowledge-sharing"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Knowledge Sharing</a
-            >
-          </div>
-        </div>
+            <!-- Financial Health Hub (mobile) -->
+            <div class="border-b border-gray-200 pb-2">
+                <button
+                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+                    data-target="mobile-health">
+                    <span class="font-medium">Financial Health Hub</span>
+                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="mobile-health" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+                    <a href="#knowledge-sharing" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Knowledge Sharing</a>
+                </div>
+            </div>
 
-        <!-- For Lenders (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-lenders"
-          >
-            <span class="font-medium">For Lenders</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-lenders"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#why-us"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Why Us?</a
-            >
-            <a
-              href="#risk-tools"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Risk Tools</a
-            >
-            <a
-              href="#contact-business-development"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Contact Business Development Manager</a
-            >
-          </div>
-        </div>
+            <!-- For Lenders (mobile) -->
+            <div class="border-b border-gray-200 pb-2">
+                <button
+                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+                    data-target="mobile-lenders">
+                    <span class="font-medium">For Lenders</span>
+                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="mobile-lenders" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+                    <a href="#why-us" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Why
+                        Us?</a>
+                    <a href="#risk-tools" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Risk Tools</a>
+                    <a href="#contact-business-development" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Contact Business Development Manager</a>
+                </div>
+            </div>
 
-        <!-- About Us (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-about"
-          >
-            <span class="font-medium">About Us</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-about"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#our-story"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Our Story</a
-            >
-            <a
-              href="#our-promise"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Our Promise</a
-            >
-            <a
-              href="#media"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Media</a
-            >
-            <a
-              href="#career"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Career</a
-            >
-            <a
-              href="#contact"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Contact</a
-            >
-          </div>
-        </div>
+            <!-- About Us (mobile) -->
+            <div class="border-b border-gray-200 pb-2">
+                <button
+                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+                    data-target="mobile-about">
+                    <span class="font-medium">About Us</span>
+                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="mobile-about" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+                    <a href="#our-story" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Our
+                        Story</a>
+                    <a href="#our-promise" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Our Promise</a>
+                    <a href="#media" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Media</a>
+                    <a href="#career" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Career</a>
+                    <a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Contact</a>
+                </div>
+            </div>
 
-        <!-- FAQ (mobile - no dropdown) -->
-        <div class="border-b border-gray-200 pb-2">
-          <a
-            href="#faq"
-            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium"
-            >FAQ</a
-          >
-        </div>
+            <!-- FAQ (mobile - no dropdown) -->
+            <div class="border-b border-gray-200 pb-2">
+                <a href="#faq" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">FAQ</a>
+            </div>
 
-        <!-- Compliance & Privacy (mobile) -->
-        <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-compliance"
-          >
-            <span class="font-medium">Compliance & Privacy</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-compliance"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="#pdpa-security"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >PDPA Security</a
-            >
-            <a
-              href="#partner-disclosure"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Partner Disclosure</a
-            >
-            <a
-              href="#terms-conditions"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >T&C</a
-            >
-          </div>
-        </div>
-      </nav>
+            <!-- Compliance & Privacy (mobile) -->
+            <div class="border-b border-gray-200 pb-2">
+                <button
+                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+                    data-target="mobile-compliance">
+                    <span class="font-medium">Compliance & Privacy</span>
+                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="mobile-compliance" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+                    <a href="#pdpa-security" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">PDPA Security</a>
+                    <a href="#partner-disclosure" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">Partner Disclosure</a>
+                    <a href="#terms-conditions" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                        role="menuitem">T&C</a>
+                </div>
+            </div>
+        </nav>
     </div>
 
 
@@ -739,13 +425,13 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <main class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
             <aside class="lg:col-span-1 space-y-8">
-                <div class=" text-white rounded-xl p-6 shadow-lg" style="background-color: rgba(0, 70, 162, 1);">
+                <div class=" text-white rounded-xl p-6 shadow-lg animate-on-scroll fade-in-up" style="background-color: rgba(0, 70, 162, 1);">
                     <h2 class="text-xl font-bold mb-6 border-b border-blue-700 pb-4">
                         Latest Post
                     </h2>
                     <div class="space-y-4">
                         <div class="pb-4 border-b border-blue-700">
-                            <a href="#" class="font-semibold hover:underline">Economic Outlook 2025 — How Malaysians Can
+                            <a href="#" class="font-semibold hover:underline animate-on-scroll fade-in-up">Economic Outlook 2025 — How Malaysians Can
                                 Brace with Good
                                 Financial Health</a>
                             <div class="flex items-center text-sm text-blue-300 mt-2">
@@ -758,7 +444,7 @@
                             </div>
                         </div>
                         <div class="py-4 border-b border-blue-700">
-                            <a href="#" class="font-semibold hover:underline">Economic Outlook 2025 — How Malaysians Can
+                            <a href="#" class="font-semibold hover:underline animate-on-scroll fade-in-up delay-100">Economic Outlook 2025 — How Malaysians Can
                                 Brace with Good
                                 Financial Health</a>
                             <div class="flex items-center text-sm text-blue-300 mt-2">
@@ -771,7 +457,7 @@
                             </div>
                         </div>
                         <div class="py-4 border-b border-blue-700">
-                            <a href="#" class="font-semibold hover:underline">Economic Outlook 2025 — How Malaysians Can
+                            <a href="#" class="font-semibold hover:underline animate-on-scroll fade-in-up delay-200">Economic Outlook 2025 — How Malaysians Can
                                 Brace with Good
                                 Financial Health</a>
                             <div class="flex items-center text-sm text-blue-300 mt-2">
@@ -784,7 +470,7 @@
                             </div>
                         </div>
                         <div class="pt-4">
-                            <a href="#" class="font-semibold hover:underline">Economic Outlook 2025 — How Malaysians Can
+                            <a href="#" class="font-semibold hover:underline animate-on-scroll fade-in-up delay-300">Economic Outlook 2025 — How Malaysians Can
                                 Brace with Good
                                 Financial Health</a>
                             <div class="flex items-center text-sm text-blue-300 mt-2">
@@ -799,7 +485,7 @@
                     </div>
                 </div>
 
-                <div class=" rounded-xl ">
+                <div class=" rounded-xl animate-on-scroll fade-in-up delay-200">
                     <h3 class="font-bold text-lg text-gray-800 mb-3">Search</h3>
                     <div class="relative flex items-center">
                         <input type="text" placeholder="Search here"
@@ -819,11 +505,11 @@
 
             <article class="lg:col-span-2 p-8 lg:p-10 rounded-xl ">
                 <header>
-                    <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
+                    <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight animate-on-scroll fade-in-up">
                         BNPL and Youth in Malaysia: Building Financial Health Before It's
                         Too Late
                     </h1>
-                    <div class="flex items-center text-gray-500 text-sm mt-4 mb-6">
+                    <div class="flex items-center text-gray-500 text-sm mt-4 mb-6 animate-on-scroll fade-in-up delay-200">
                         <div class="flex items-center mr-6">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -837,9 +523,9 @@
                 </header>
 
                 <img src="./assets/images/blogs/white-black-boxes.png" alt="Featured    image"
-                    class="w-full h-auto rounded-lg shadow-md mb-8" />
+                    class="w-full h-auto rounded-lg shadow-md mb-8 animate-on-scroll fade-in-up delay-300" />
 
-                <div class="prose max-w-none text-gray-700 leading-relaxed space-y-6">
+                <div class="prose max-w-none text-gray-700 leading-relaxed space-y-6 animate-on-scroll fade-in-up delay-500">
                     <p>
                         In recent years, Buy Now, Pay Later (BNPL) has become a buzzword in Malaysia’s financial
                         landscape. For young Malaysians, BNPL offers quick gratification — the ability to buy now and
@@ -932,7 +618,7 @@
                 <footer class="mt-12 pt-6 border-t border-gray-200 flex items-center gap-4">
                     <span class="font-semibold text-gray-800">Share Post:</span>
                     <a href="#"
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+                        class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors animate-on-scroll fade-in-up delay-600">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
                                 d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
@@ -940,7 +626,7 @@
                         </svg>
                     </a>
                     <a href="#"
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white hover:bg-sky-600 transition-colors">
+                        class="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white hover:bg-sky-600 transition-colors animate-on-scroll fade-in-up delay-700">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path
                                 d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
@@ -953,10 +639,10 @@
     </div>
     <section class="py-8 md:py-12 lg:py-16">
         <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class=" rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
+            <div class=" rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8 animate-on-scroll fade-in-up">
                 <!-- Header with Title and Navigation -->
                 <div class="flex justify-between items-center mb-6 md:mb-8">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-black animate-on-scroll fade-in-up delay-200">
                         More Blogs
                     </h2>
                     <div class="flex space-x-2">
@@ -980,7 +666,7 @@
                 </div>
 
                 <!-- Carousel Container -->
-                <div class="overflow-hidden -mx-2">
+                <div class="overflow-hidden -mx-2 animate-on-scroll fade-in-up delay-300">
                     <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 px-2 pb-4">
                         <!-- Blog Card 1 -->
                         <div
@@ -1051,7 +737,7 @@
                 </div>
 
                 <!-- View More Button -->
-                <div class="text-center mt-6 md:mt-8">
+                <div class="text-center mt-6 md:mt-8 animate-on-scroll fade-in-up delay-500">
                     <button
                         class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2.5 px-5 sm:py-3 sm:px-6 rounded-lg transition-colors inline-flex items-center gap-2 sm:gap-4 text-sm sm:text-base">
                         <a href="blog-grid.html">View More</a>
@@ -1077,7 +763,7 @@
         <div class="max-w-screen-2xl mx-auto px-4">
             <div class="flex flex-col md:flex-row md:justify-between gap-8">
                 <!-- Left Column: Company Info -->
-                <div class="md:w-1/2 lg:w-2/5">
+                <div class="md:w-1/2 lg:w-2/5 animate-on-scroll fade-in-up">
                     <a href="#" class="inline-flex items-center gap-2 mb-8">
                         <img src="assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
                     </a>
@@ -1110,7 +796,7 @@
                 <!-- Right Column: Menu and Features -->
                 <div class="md:w-1/2 lg:w-1/3 flex flex-col md:flex-row gap-8">
                     <!-- Middle Column: Menu -->
-                    <div>
+                    <div class="animate-on-scroll fade-in-up delay-200">
                         <h3 class="text-lg font-semibold mb-4">Menu</h3>
                         <ul class="space-y-2">
                             <li>
@@ -1129,7 +815,7 @@
                         </ul>
                     </div>
                     <!-- Right Column: Features -->
-                    <div>
+                    <div class="animate-on-scroll fade-in-up delay-300">
                         <h3 class="text-lg font-semibold mb-4">Features</h3>
                         <ul class="space-y-2">
                             <li>
@@ -1146,13 +832,13 @@
                 </div>
             </div>
             <!-- Bottom Bar -->
-            <div class="border-t border-gray-700 mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+            <div class="border-t border-gray-700 mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center animate-on-scroll fade-in-up delay-500">
                 <div class="flex space-x-6 justify-center md:justify-start mb-4 md:mb-0">
                     <a href="#" class="text-gray-300 hover:text-white transition">Terms</a>
                     <a href="#" class="text-gray-300 hover:text-white transition">Privacy</a>
                     <a href="#" class="text-gray-300 hover:text-white transition">Cookies</a>
                 </div>
-                <div class="text-gray-400 text-center">© 2023 Moneybee Sdn. Bhd.</div>
+                <div class="text-gray-400 text-center">© 2025 Moneybee Sdn. Bhd.</div>
                 <div class="flex justify-center md:justify-end space-x-4">
                     <a href="#" class="hover:opacity-80 transition">
                         <svg width="32" height="32" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1189,165 +875,8 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById("mobileMenuButton");
-        const mobileMenu = document.getElementById("mobileMenu");
-        const iconHamburger = document.getElementById("iconHamburger");
-        const iconClose = document.getElementById("iconClose");
+    <script src="script.js"></script>
 
-        mobileMenuButton.addEventListener("click", () => {
-            const isExpanded =
-                mobileMenuButton.getAttribute("aria-expanded") === "true";
-
-            mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
-            mobileMenu.classList.toggle("hidden");
-            iconHamburger.classList.toggle("hidden");
-            iconClose.classList.toggle("hidden");
-        });
-
-        // Mobile dropdown functionality
-        const dropdownButtons = document.querySelectorAll(".mobile-dropdown-btn");
-
-        dropdownButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const targetId = button.getAttribute("data-target");
-                const targetContent = document.getElementById(targetId);
-                const arrow = button.querySelector(".dropdown-arrow");
-
-                // Toggle the specific dropdown
-                targetContent.classList.toggle("hidden");
-                arrow.classList.toggle("rotate-180");
-            });
-        });
-
-        // Desktop dropdown functionality
-        const dropdownGroups = document.querySelectorAll(".dropdown-group");
-        dropdownGroups.forEach((group) => {
-            const ul = group.querySelector("ul");
-            group.addEventListener("mouseenter", () => {
-                ul.classList.remove("invisible", "opacity-0", "translate-y-2");
-                ul.classList.add("visible", "opacity-100", "translate-y-0");
-            });
-            group.addEventListener("mouseleave", () => {
-                ul.classList.remove("visible", "opacity-100", "translate-y-0");
-                ul.classList.add("invisible", "opacity-0", "translate-y-2");
-            });
-        });
-
-        // Testimonial Carousel
-        let currentSlide = 0;
-        const carousel = document.getElementById("testimonial-carousel");
-        const dots = document.querySelectorAll(".dot");
-        const prevBtn = document.getElementById("prev-btn");
-        const nextBtn = document.getElementById("next-btn");
-        const totalSlides = 3;
-
-        function showSlide(index) {
-            currentSlide = index;
-            if (currentSlide >= totalSlides) currentSlide = 0;
-            if (currentSlide < 0) currentSlide = totalSlides - 1;
-
-            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-            // Update dots
-            dots.forEach((dot, i) => {
-                dot.classList.toggle("bg-blue-500", i === currentSlide);
-                dot.classList.toggle("bg-gray-300", i !== currentSlide);
-            });
-        }
-
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-
-        // Event listeners
-        if (prevBtn) prevBtn.addEventListener("click", prevSlide);
-        if (nextBtn) nextBtn.addEventListener("click", nextSlide);
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener("click", () => showSlide(index));
-        });
-
-        // Auto slide (optional)
-        // setInterval(nextSlide, 5000);
-
-        // Blog Carousel
-        let blogCurrentPosition = 0;
-        const blogCarousel = document.getElementById("blog-carousel");
-        const blogPrevBtn = document.getElementById("blog-prev-btn");
-        const blogNextBtn = document.getElementById("blog-next-btn");
-        const cardWidth = 320; // w-[280px] = 320px
-        const gap = 24; // space-x-6 = 24px
-        const scrollAmount = cardWidth + gap;
-        const totalCards = 4;
-        let visibleCards = window.innerWidth >= 1024 ? 3 : 1; // Show 3 on desktop, 1 on mobile
-        let maxPosition = (totalCards - visibleCards) * scrollAmount;
-
-        function updateBlogCarousel() {
-            blogCarousel.style.transform = `translateX(-${blogCurrentPosition}px)`;
-
-            // Disable buttons at limits
-            blogPrevBtn.style.opacity = blogCurrentPosition <= 0 ? "0.5" : "1";
-            blogNextBtn.style.opacity =
-                blogCurrentPosition >= maxPosition ? "0.5" : "1";
-        }
-
-        function blogNext() {
-            if (blogCurrentPosition < maxPosition) {
-                blogCurrentPosition += scrollAmount;
-                updateBlogCarousel();
-            }
-        }
-
-        function blogPrev() {
-            if (blogCurrentPosition > 0) {
-                blogCurrentPosition -= scrollAmount;
-                updateBlogCarousel();
-            }
-        }
-
-        // Event listeners for blog carousel
-        blogNextBtn.addEventListener("click", blogNext);
-        blogPrevBtn.addEventListener("click", blogPrev);
-
-        // Update on window resize
-        window.addEventListener("resize", () => {
-            const newVisibleCards = window.innerWidth >= 1024 ? 3 : 1;
-            if (newVisibleCards !== visibleCards) {
-                visibleCards = newVisibleCards;
-                maxPosition = (totalCards - visibleCards) * scrollAmount;
-                blogCurrentPosition = 0;
-                updateBlogCarousel();
-            }
-        });
-
-        // FAQ Toggle
-        function toggleFAQ(element) {
-            const answer = element.nextElementSibling;
-            const icon = element.querySelector("svg path");
-            answer.classList.toggle("hidden");
-            if (answer.classList.contains("hidden")) {
-                // collapsed, plus
-                icon.setAttribute(
-                    "d",
-                    "M18 14V26M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-                );
-                icon.setAttribute("stroke", "#7D7D7D");
-            } else {
-                // expanded, minus
-                icon.setAttribute(
-                    "d",
-                    "M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-                );
-                icon.setAttribute("stroke", "#323232");
-            }
-        }
-    </script>
 </body>
 
 </html>
